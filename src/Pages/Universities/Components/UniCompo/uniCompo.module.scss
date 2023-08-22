@@ -1,0 +1,94 @@
+@import "../../../../mixins.module.scss";
+
+.uniCompoContainer {
+  background-color: #fff;
+  padding: 2%;
+  margin-bottom: 4%;
+  height: 35vh;
+
+  // .rowContainer{
+  //     height:80%;
+  // }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .imageCol {
+    img {
+      width: 90%;
+      height: 80%;
+    }
+  }
+
+  .infoCol {
+    .buttonDiv {
+      @include x-sa;
+      p {
+        margin-bottom: 0;
+      }
+
+      .details {
+        width: 25%;
+        border-left-color: #b31811;
+        border-right-color: #b31811;
+        border-bottom-color: #b31811;
+        background: #fe2518;
+        color: whitesmoke;
+      }
+
+      .fee {
+        width: 25%;
+        background: #426aa7;
+        border-left: 1px solid #2b4a8a;
+        border-right: 1px solid #2b4a8a;
+        border-bottom: 2px solid #2b4a8a;
+        color: whitesmoke;
+      }
+
+      .gallery {
+        width: 25%;
+      }
+    }
+  }
+
+  .logoCol {
+    img {
+      width: 100%;
+      height: 80% !important;
+      height: auto;
+    }
+  }
+}
+
+// modal styling
+
+.modalOverlay{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:99;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.7);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent{
+  position: relative;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  z-index: 100;
+  padding: 20px;
+}
+
+.closeButton{
+  position:absolute;
+  top:5px;
+  right:5px;
+  cursor:pointer;
+}
+

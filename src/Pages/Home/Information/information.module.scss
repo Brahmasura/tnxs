@@ -1,0 +1,121 @@
+@import "../../../mixins.module.scss";
+
+
+
+.leftCol {
+  background: url("../../../Assets/Information/infoOne.jpg");
+  @include bg-center;
+  // @include border;
+  @include y-bot-left;
+  // padding-bottom:4%;
+  // padding-left:2% !important;
+  // height: 85vh;
+  // position:relative;  //new code
+  // z-index:-1;
+
+  @include colStyles;
+  height: 85vh;
+
+  .upperText {
+     @include infoText;
+    font-size: 13px;
+  }
+
+  h1 {
+     @include infoText;
+    @include infoHead;
+  }
+}
+
+.leftCol::after {
+  @include afterContent;
+}
+
+.rightCol {
+  // @include border;
+  height: 85vh;
+}
+
+.rightTopCol {
+  background: url("../../../Assets/Information/infoThree.jpg");
+  @include bg-center;
+  // @include border;
+  @include y-bot-left;
+  @include colStyles;
+  height: 42.5vh;
+
+  .upperText {
+     @include infoText;
+    font-size: 13px;
+  }
+
+  h1 {
+     @include infoText;
+    @include infoHead;
+  }
+}
+
+.rightTopCol::after {
+  @include afterContent;
+}
+
+.rightBotCol {
+  // @include border;
+  height: 42.5vh;
+}
+
+.rightBotLeft {
+  background: url("../../../Assets/Information/infoTwo.jpg");
+  @include bg-center;
+  // @include border;
+  @include y-bot-left;
+@include colStyles;
+  height: 42.5vh;
+
+  .upperText {
+     @include infoText;
+    font-size: 13px;
+  }
+
+  h1 {
+     @include infoText;
+    @include infoHead;
+  }
+}
+
+.rightBotLeft::after {
+  @include afterContent;
+}
+
+.rightBotRight {
+  background: url("../../../Assets/Information/infoFour.jpg");
+  @include bg-center;
+  @include y-bot-left;
+  padding-bottom: 4%;
+  padding-left: 2% !important;
+  // @include border;
+  position: relative; //new code
+
+
+  .upperText {
+    @include infoText;
+    font-size: 13px;
+  }
+
+  h1 {
+    @include infoText;
+    @include infoHead;
+  }
+}
+
+.rightBotRight::after {
+  @include afterContent;
+}
+
+.hrStyle {
+  @include infoText;
+  border: 4px solid #fe2216;
+  width: 30%;
+  opacity: 1;
+  margin: 0;
+}

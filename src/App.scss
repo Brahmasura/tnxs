@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.scroller {
+  overflow-y: scroll;
+}
+
+// the slider css begins
+
+.slick-prev {
+  z-index: 5 !important;
+  left: 7.2% !important;
+  // background: rgba(255, 221, 221, 0.54) !important;
+}
+
+.slick-prev:before {
+  font-size: 70px !important;
+  color: black !important;
+}
+
+.slick-next {
+  z-index: 5 !important;
+  right: 11.2% !important;
+  // background: rgba(255, 221, 221, 0.54) !important;
+}
+
+.slick-next:before {
+  font-size: 70px !important;
+  color: black !important;
+}
+
+.slick-dots {
+  bottom: 8% !important;
+}
+
+.slick-dots li {
+  margin: 0 1% !important;
+}
+
+.slick-dots li button:before {
+  font-size: 20px !important;
+  // color: #EECBCC !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: black !important;
+}
+
+// the slider css ends

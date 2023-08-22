@@ -1,0 +1,100 @@
+@import "../../../../mixins.module.scss";
+
+
+
+.RussInfoContainer {
+  .colOneContainer {
+    background: url("../../../../Assets/WhyRussia/Advantages.jpg");
+    @include bg-center;
+    @include y-bot-left;
+    @include colStyles;
+
+    .upperText {
+    @include infoText;
+      font-size: 20px;
+    }
+
+    h1 {
+    @include infoText;
+      @include infoHead;
+    }
+  }
+
+  .colOneContainer::after {
+    @include afterContent;
+  }
+
+  .colTwoContainer {
+    background: url("../../../../Assets/WhyRussia/Tradition\ of\ higher\ education.jpg");
+    @include bg-center;
+
+    @include y-bot-left;
+    @include colStyles;
+
+    .upperText {
+      @include infoText;
+      font-size: 20px;
+    }
+
+    h1 {
+      @include infoText;
+      @include infoHead;
+    }
+  }
+
+  .colTwoContainer::after {
+    @include afterContent;
+  }
+
+  .colThreeContainer {
+    background: url("../../../../Assets/WhyRussia/Testimonial.jpg");
+    @include bg-center;
+
+    @include y-bot-left;
+    @include colStyles;
+
+    .upperText {
+      @include infoText;
+      font-size: 20px;
+    }
+
+    h1 {
+      @include infoText;
+      @include infoHead;
+    }
+  }
+
+  .colThreeContainer::after {
+    @include afterContent;
+  }
+
+  .colFourContainer {
+    background: url("../../../../Assets/WhyRussia/Russian\ UNiversities\ in\ World\ Ranking.jpg");
+    @include bg-center;
+
+    @include y-bot-left;
+    @include colStyles;
+
+    .upperText {
+      @include infoText;
+      font-size: 20px;
+    }
+
+    h1 {
+      @include infoText;
+      @include infoHead;
+    }
+  }
+
+  .colFourContainer::after {
+    @include afterContent;
+  }
+
+  .hrStyle {
+    @include infoText;
+    border: 4px solid #fe2216;
+    width: 30%;
+    opacity: 1;
+    margin: 0;
+  }
+}

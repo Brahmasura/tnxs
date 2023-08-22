@@ -1,0 +1,19 @@
+@import '../../../../mixins.module.scss';
+
+.russIntroContainer{
+    height:60vh;
+    @include y-center;
+    @include padThree;
+
+    a{
+        color:red;
+    }
+
+    h1{
+       margin-top:2%;
+    }
+
+    p{
+        text-align:justify;
+    }
+}

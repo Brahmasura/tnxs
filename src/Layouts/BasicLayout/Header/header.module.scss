@@ -1,0 +1,129 @@
+@import "../../../mixins.module.scss";
+
+// element styling
+.headerContainer {
+  @include x-center;
+  // padding-inline: 7% !important;
+  height: auto;
+  border: 1px solid black;
+  // background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index:10;
+
+  .headerFirstCol {
+    width: 100%;
+    padding: 0.5% 7% 0.5% 7%;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .headerSecCol {
+    width: 100%;
+    padding: 0.1% 7%;
+  }
+}
+
+.brandCol {
+  @include x-center;
+  @include nopad;
+  a{
+    text-decoration: none;
+  }
+  img {
+    width: 28%;
+    height: auto;
+    border-radius: 60%;
+  }
+
+  .headText{
+    padding-left:4%;
+    // display:flex;
+    // flex-direction: column;
+    // justify-content: center;
+    @include y-start;
+    h1{
+      font-family:sans-serif;
+      font-style:normal;
+      font-weight:700;
+      font-size:1.7vw;
+      color:#dd3534;
+      margin-bottom: 0;
+    }
+    p{
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 1.3vw;
+      line-height: 22px;
+      margin:0;
+    }
+  }
+}
+
+.headLinkCol{
+  @include x-end;
+
+  .headLinkUl{
+    list-style-type: none;
+    @include x-sb;
+    width:45%;
+  }
+}
+
+
+
+// second head col style begins
+.linksCol {
+  padding: 0 !important;
+  @include x-center;
+
+  ul {
+    @include x-center;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    // color:black;
+    // color: black;
+    color:white;
+    font-weight: 700;
+    font-size: 19px;
+  }
+}
+
+ul li {
+  text-decoration: none;
+}
+
+.activeLink{
+  color:red !important;
+}
+
+// .inactiveLink{
+//   color:white !important;
+// }
+
+
+
+.buttonCol {
+  @include x-end;
+
+  button {
+    @include x-center;
+    padding: 2% 5%;
+    background-color: #dd3534;
+    border:0;
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../../mixins.module.scss";
+
+.stepsContainer {
+  height: 75vh;
+  padding-inline: 7%;
+  @include y-center;
+  @include border;
+  // @include bgcolor;
+  background-color: whitesmoke;
+
+  h1 {
+    @include heading;
+    margin-bottom: 3%;
+    color:#dd3534;
+  }
+}
+
+.stepContainer {
+  height: 42vh;
+
+  @include y-center;
+
+  .stepsRow {
+    width: 100%;
+  }
+
+  .stepsUpper {
+    height: 21vh;
+    // @include border;
+    background-size: 100% 100%;
+    background-position: 50% -102%;
+    @include x-center;
+  }
+
+  .stepsLower {
+    height: 21vh;
+    // @include border;
+    @include x-center;
+    background-color: white;
+
+    p{
+      font-family: sans-serif;
+      font-weight:600;
+      font: size 1.5vw;
+      color:red;
+      text-align:center;
+
+    
+    }
+  }
+}

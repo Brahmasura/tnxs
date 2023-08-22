@@ -1,0 +1,41 @@
+@import "../../../mixins.module.scss";
+
+.aboutIntroContainer {
+  @include x-center;
+}
+
+.contentContainer {
+  width: 70%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  a {
+    @include x-center;
+    @include theLink;
+  }
+
+  .mainHeading {
+   @include mainHeading;
+  }
+
+  h3 {
+    font-size: 27px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 24px;
+    text-align: justify;
+  }
+
+  .greyContainer {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 3%;
+    background-color: #f0f0f0;
+    @include x-center;
+    h2 {
+      text-align: center;
+    }
+  }
+}

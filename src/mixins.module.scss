@@ -1,0 +1,232 @@
+// horizontal centering
+@mixin x-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin x-end {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@mixin x-start {
+  display: flex !important;
+  justify-content: start;
+  align-items: center;
+}
+
+@mixin x-top {
+  display: flex !important;
+  justify-content: center;
+  align-items: start;
+}
+
+@mixin x-sb {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin x-sa{
+  display:flex !important;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+@mixin x-bottom {
+  display: flex !important;
+  justify-content: center;
+  align-items: end;
+}
+
+// vertical centering
+@mixin y-center {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin y-start {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+@mixin y-end {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+@mixin y-bot-left {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+
+// for background
+@mixin bg-center {
+  background-size: cover;
+  background-position: center;
+}
+
+// padding
+@mixin nopad {
+  padding: 0 !important;
+}
+
+@mixin padOne {
+  padding-inline: 7%;
+}
+
+@mixin padTwo {
+  padding-inline: 5%;
+}
+
+@mixin padThree {
+  padding-inline: 20%;
+}
+
+// background-color
+@mixin bgcolor {
+  background-color: #f0f0f0;
+}
+
+// bordering
+@mixin border {
+  border: 1px solid black;
+}
+
+@mixin redBorder {
+  border: 1px solid red;
+}
+
+// font styling
+@mixin heading {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+// footer font styling
+@mixin footerHead {
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+// the info section setting
+
+@mixin infoHead {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@mixin infoText {
+  position: relative;
+  z-index: 4;
+}
+
+@mixin colStyles {
+  padding-bottom: 4%;
+  padding-left: 2% !important;
+  height: 50vh;
+  position: relative; //new code
+  // z-index: -1;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@mixin afterContent {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; /* Adjust the height of the shadow as needed */
+  background-image: linear-gradient(to top, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  opacity: 0.5; /* Adjust the opacity of the shadow as needed */
+  box-shadow: 0px 0px 15px 5px black;
+}
+
+// **************************************the nested page style*******************************
+
+
+
+
+@mixin verticalPad{
+  padding-top:4%;
+  padding-bottom:4%;
+}
+
+@mixin theLink {
+  color: red;
+  font-size: 20px;
+  padding-bottom: 5%;
+  cursor: pointer;
+}
+
+@mixin theImage{
+  width:100%;
+  margin-bottom:3%;
+}
+
+@mixin mainHeading {
+  align-self: center;
+  font-size: 45px;
+  margin-bottom: 4%;
+  text-align:center !important;
+}
+
+@mixin subHeading {
+  font-size: 27px;
+  font-weight: 700;
+  margin-top:4%;
+}
+
+@mixin para {
+  font-size: 24px;
+  text-align: justify;
+}
+
+@mixin paraBold{
+  font-size: 24px;
+  text-align: justify;
+  font-weight:700;
+}
+
+@mixin grey {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 3%;
+  background-color: #f0f0f0;
+  // @include x-center;
+  p {
+    text-align: center;
+    font-weight:500;
+    text-align: justify;
+  }
+}
+
+
+@mixin xmar1{
+  margin-inline: 1%;
+  
+}
+
+
