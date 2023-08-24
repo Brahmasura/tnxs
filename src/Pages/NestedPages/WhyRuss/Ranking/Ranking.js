@@ -5,10 +5,15 @@ import rankPic from "../../../../Assets/Nested/Russian UNiversities in World Ran
 import { useContext } from "react";
 import { LinkContext } from "../../../../App";
 import Steps from "../../../Home/Steps/Steps";
-
+import { useState } from "react";
 
 const Ranking = () => {
   const { handleLinkClick } = useContext(LinkContext);
+  const [activeTab, setActiveTab] = useState(4);
+
+  const handleTabClick = (value) => {
+    setActiveTab(value);
+  };
   return (
     <>
       <div className={ranking.divContainer}>
@@ -22,6 +27,47 @@ const Ranking = () => {
               Why Russia
             </NavLink>
           </div>
+
+          {/* the tab div begins */}
+
+          <div className={ranking.tabsDiv}>
+            <NavLink to={"/advantages"}>
+              <button
+                className={activeTab === 1 ? ranking.activeTabs : ranking.tabs}
+                onClick={() => handleTabClick(1)}
+              >
+                Advantage
+              </button>
+            </NavLink>
+            <NavLink to={"/advantages"}>
+              <button
+                className={activeTab === 2 ? ranking.activeTabs : ranking.tabs}
+                onClick={() => handleTabClick(2)}
+              >
+                Opportunity
+              </button>
+            </NavLink>
+            
+            <NavLink to={"/advantages"}>
+              <button
+                className={activeTab === 3 ? ranking.activeTabs : ranking.tabs}
+                onClick={() => handleTabClick(3)}
+              >
+                Testimonials
+              </button>
+            </NavLink>
+            <NavLink to={"/ranking"}>
+              <button
+                className={activeTab === 4 ? ranking.activeTabs : ranking.tabs}
+                onClick={() => handleTabClick(4)}
+              >
+                Ranking
+              </button>
+            </NavLink>
+          </div>
+
+          {/* the tab div ends */}
+
           <h1>Russian Universities in World University Ranking</h1>
           <img src={rankPic} alt="the ranking" />
 
@@ -68,7 +114,7 @@ const Ranking = () => {
           </p>
         </div>
       </div>
-      <Steps/>
+      <Steps />
     </>
   );
 };

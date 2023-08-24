@@ -1,41 +1,73 @@
-@import '../../../../mixins.module.scss';
+@import "../../../../mixins.module.scss";
 
 .divContainer {
-    @include x-center;
+  @include x-center;
+}
+
+.rankContainer {
+  width: 80%;
+  @include verticalPad;
+  @include y-start;
+
+  .linkDiv {
+    align-self: center;
+    margin-bottom: 4%;
+
+    a {
+      @include theLink;
+    }
+    p {
+      display: inline;
+    }
   }
 
-  .rankContainer {
-    width: 80%;
-    @include verticalPad;
-    @include y-start;
-  
-    .linkDiv {
-      align-self: center;
-      margin-bottom:4%;
-  
-      a {
-        @include theLink;
-      }
-      p {
-        display: inline;
-      }
+  // stying for the active tabs begins
+
+  .tabsDiv {
+    width: 100%;
+    margin-bottom: 3%;
+    padding-inline: 15%;
+    @include x-center;
+
+    a {
+      @include xmar1;
     }
-  
-    img{
-     @include theImage;
+
+    .tabs {
+      background-color: white;
+      border-radius: 20px;
+      border: 2px solid #143f6b;
+      height: 2rem;
+      padding-inline: 10px;
+      font-weight: 600;
     }
-  
-    h1{
-      @include mainHeading;
+
+    .activeTabs {
+      background-color: #143f6b;
+      color: white;
+      border-radius: 20px;
+      border: 2px solid #143f6b;
+      height: 2rem;
+      padding-inline: 10px;
+      font-weight: 600;
     }
-  
-    h2{
-      @include subHeading;
-    }
-  
-    p{
-      @include para;
-    }
-  
-   
   }
+
+  // styling for the active tabs ends
+
+  img {
+    @include theImage;
+  }
+
+  h1 {
+    @include mainHeading;
+  }
+
+  h2 {
+    @include subHeading;
+  }
+
+  p {
+    @include para;
+  }
+}

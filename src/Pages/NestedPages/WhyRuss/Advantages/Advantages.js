@@ -6,9 +6,15 @@ import { useContext } from "react";
 import advOne from "../../../../Assets/students/IntroFive.jpg";
 import advTwo from "../../../../Assets/Nested/Advantages.jpg";
 import Steps from "../../../Home/Steps/Steps";
+import { useState } from "react";
 
 const Advantages = () => {
   const { handleLinkClick } = useContext(LinkContext);
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = (value) => {
+    setActiveTab(value);
+  };
   return (
     <>
       <div className={advantage.divContainer}>
@@ -22,6 +28,56 @@ const Advantages = () => {
               Why Russia
             </NavLink>
           </div>
+
+          {/* the tab div begins */}
+
+          <div className={advantage.tabsDiv}>
+            <NavLink to={"/advantages"}>
+              <button
+                className={
+                  activeTab === 1 ? advantage.activeTabs : advantage.tabs
+                }
+                onClick={() => handleTabClick(1)}
+              >
+                Advantage
+              </button>
+            </NavLink>
+
+            <NavLink to={"/advantages"}>
+              <button
+                className={
+                  activeTab === 2 ? advantage.activeTabs : advantage.tabs
+                }
+                onClick={() => handleTabClick(2)}
+              >
+                Opportunity
+              </button>
+            </NavLink>
+
+            <NavLink to={"/advantages"}>
+              <button
+                className={
+                  activeTab === 3 ? advantage.activeTabs : advantage.tabs
+                }
+                onClick={() => handleTabClick(3)}
+              >
+                Testimonials
+              </button>
+            </NavLink>
+
+            <NavLink to={"/ranking"}>
+              <button
+                className={
+                  activeTab === 4 ? advantage.activeTabs : advantage.tabs
+                }
+                onClick={() => handleTabClick(4)}
+              >
+                Ranking
+              </button>
+            </NavLink>
+          </div>
+
+          {/* the tab div ends */}
           <h1>ADVANTAGES</h1>
           <img src={advOne} alt="the advantages" />
           <div className={advantage.greyDiv}>
@@ -253,11 +309,9 @@ const Advantages = () => {
             endless: from the Golden Ring spanning 8 ancient Russian cities to
             traveling the legendary route of the Trans-Siberian Railway.
           </p>
-
-
         </div>
       </div>
-      <Steps/>
+      <Steps />
     </>
   );
 };

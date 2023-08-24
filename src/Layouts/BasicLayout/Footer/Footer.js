@@ -9,9 +9,14 @@ const Footer = () => {
         <div className={`col ${footer.linkCol}`}>
           <h1>WHY RUSSIA</h1>
           <ul className={footer.footerUl}>
-            <li>Advantages of Higher Education in Russia</li>
-            <li>Russian Universities in World University Ranking</li>
+            <NavLink to={"/advantages"} onClick={() => window.scrollTo(0, 0)}>
+              <li>Advantages of Higher Education in Russia</li>
+            </NavLink>
+            <NavLink to={"/ranking"} onClick={() => window.scrollTo(0, 0)}>
+              <li>Russian Universities in World University Ranking</li>
+            </NavLink>
             <li>Russian Higher Education in Figure</li>
+
             <li>Tradition of Higher education in Russia</li>
           </ul>
         </div>
