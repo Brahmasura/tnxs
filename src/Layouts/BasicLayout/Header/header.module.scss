@@ -25,15 +25,18 @@
 }
 
 .brandCol {
-  @include x-center;
+  // @include x-center;
   @include nopad;
   a{
     text-decoration: none;
+    @include x-center;
+    cursor:pointer;
   }
   img {
     width: 28%;
     height: auto;
     border-radius: 60%;
+  
   }
 
   .headText{
@@ -56,6 +59,7 @@
       font-size: 1.3vw;
       line-height: 22px;
       margin:0;
+      color:black;
     }
   }
 }
