@@ -17,11 +17,11 @@ const Safety = () => {
       <div className={style.divContainer}>
         <div className={style.safetyContainer}>
           <div className={style.linkDiv}>
-            <NavLink to={"/"} onClick={handleLinkClick(0)}>
+            <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
               Home
             </NavLink>
             <p className={style.slash}> / </p>
-            <NavLink to={"/lifeInRussia"} onClick={handleLinkClick(3)}>
+            <NavLink to={"/lifeInRussia"} onClick={() => handleLinkClick(3)}>
               Life In Russia
             </NavLink>
           </div>
