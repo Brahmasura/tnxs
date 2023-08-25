@@ -15,9 +15,9 @@ import Universities from "./Pages/Universities/Universities";
 import Prices from "./Pages/NestedPages/LifeInRuss/Prices/Prices";
 import Accomodation from "./Pages/NestedPages/LifeInRuss/Accomodation/Accomodation";
 import Climate from "./Pages/NestedPages/LifeInRuss/Climate/Climate";
-import Transport from './Pages/NestedPages/LifeInRuss/Transport/Transport';
-import Safety from './Pages/NestedPages/LifeInRuss/Safety/Safety';
-import Healthcare from './Pages/NestedPages/LifeInRuss/Healthcare/Healthcare';
+import Transport from "./Pages/NestedPages/LifeInRuss/Transport/Transport";
+import Safety from "./Pages/NestedPages/LifeInRuss/Safety/Safety";
+import Healthcare from "./Pages/NestedPages/LifeInRuss/Healthcare/Healthcare";
 
 export const LinkContext = createContext();
 
@@ -43,13 +43,11 @@ function App() {
             <Route path="/ranking" exact element={<Ranking />} />
             <Route path="/mbbsInRussia" exact element={<MbbsInRuss />} />
             <Route path="/prices" exact element={<Prices />} />
-            <Route path="/accomodation" exact element={<Accomodation/>} />
-            <Route path="/climate" exact element={<Climate/>} />
+            <Route path="/accomodation" exact element={<Accomodation />} />
+            <Route path="/climate" exact element={<Climate />} />
             <Route path="/transport" exact element={<Transport />} />
-            <Route path="/safety" exact element={<Safety/>} />
-            <Route path="/healthcare" exact element={<Healthcare/>} />
-
-            
+            <Route path="/safety" exact element={<Safety />} />
+            <Route path="/healthcare" exact element={<Healthcare />} />
           </Routes>
         </BasicLayout>
       </LinkContext.Provider>
