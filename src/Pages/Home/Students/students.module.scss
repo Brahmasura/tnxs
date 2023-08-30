@@ -6,7 +6,7 @@
 }
 
 .slideOne {
-  background: url("../../../Assets/students/IntroFive.jpg");
+  background: url("../../../Assets/students/IntroOne.jpg");
   @include bg-center;
   height: 85vh;
   position: relative;
@@ -14,7 +14,7 @@
 }
 
 .slideTwo {
-  background: url("../../../Assets/students/IntroTwo.jpg");
+  background: url("../../../Assets/students/IntroSix.jpg");
   @include bg-center;
   height: 85vh;
   position: relative;
@@ -22,7 +22,7 @@
 }
 
 .slideThree {
-  background: url("../../../Assets/students/IntroThree.jpg");
+  background: url("../../../Assets/students/IntroSeven.jpg");
   @include bg-center;
   height: 85vh;
   position: relative;
@@ -30,7 +30,7 @@
 }
 
 .slideFour {
-  background: url("../../../Assets/students/IntroFour.jpeg");
+  background: url("../../../Assets/students/IntroEight.jpg");
   @include bg-center;
   height: 85vh;
   position: relative;
@@ -38,10 +38,10 @@
 }
 
 .slideFive {
-  background: url("../../../Assets/students/IntroOne.jpg");
-  background-size: cover;
-  background-position: center;
-  // @include bg-center;
+  background: url("../../../Assets/students/IntroTen.jpg");
+  // background-size: cover;
+  // background-position: center;
+  @include bg-center;
   height: 85vh;
   position: relative;
   z-index: -1;

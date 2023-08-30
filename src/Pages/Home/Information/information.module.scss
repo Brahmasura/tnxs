@@ -106,6 +106,10 @@
     @include infoText;
     @include infoHead;
   }
+
+  a{
+    text-decoration: none;
+  }
 }
 
 .rightBotRight::after {
