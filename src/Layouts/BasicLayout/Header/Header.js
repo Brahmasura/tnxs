@@ -55,11 +55,16 @@ const Header = () => {
                     href="https://www.instagram.com/graduationabroad/"
                     target="_absolute"
                   >
-                    <img src={insta} alt="the link pic" />{" "}
+                    <img src={insta} alt="the link pic" />
                   </a>
                 </li>
                 <li>
-                  <img src={linke} alt="the link pic" />
+                  <a
+                    href="https://www.linkedin.com/in/siddharth-negi-03285969/"
+                    target="_absolute"
+                  >
+                    <img src={linke} alt="the link pic" />
+                  </a>
                 </li>
                 <li>
                   <img src={tweet} alt="the link pic" />
