@@ -6,10 +6,10 @@ import destiThree from "../../../Assets/Destination/uzbekistan.webp";
 import destiFour from "../../../Assets/Destination/italy.webp";
 
 const eduList = [
-  { image: destiOne, text: "RUSSIA", textOne:"universities", uValue:"10", textTwo:"population",pValue:"1 million", textThree:"Capital", cValue:"xyz"},
-  { image: destiTwo, text: "KAZAKHSTAN", textOne:"universities", uValue:"10", textTwo:"population",pValue:"1 million", textThree:"Capital", cValue:"xyz" },
-  { image: destiThree, text: "UZBEKISTAN", textOne:"universities", uValue:"10", textTwo:"population",pValue:"1 million", textThree:"Capital", cValue:"xyz" },
-  { image: destiFour, text: "ITALY", textOne:"universities", uValue:"10", textTwo:"population",pValue:"1 million", textThree:"Capital", cValue:"xyz" },
+  { image: destiOne, text: "RUSSIA", textOne:"universities", uValue:"12", textTwo:"population",pValue:"144.5 million", textThree:"Capital", cValue:"MOSCOW"},
+  { image: destiTwo, text: "KAZAKHSTAN", textOne:"universities", uValue:"4", textTwo:"population",pValue:"18.3 million", textThree:"Capital", cValue:"ALMATY" },
+  { image: destiThree, text: "UZBEKISTAN", textOne:"universities", uValue:"2", textTwo:"population",pValue:"33 million", textThree:"Capital", cValue:"TASHKENT" },
+  { image: destiFour, text: "ITALY", textOne:"universities", uValue:"28", textTwo:"population",pValue:"60.4 million", textThree:"Capital", cValue:"ROME" },
 ];
 
 const DiscoverRussia = () => {
