@@ -21,26 +21,42 @@ const Header = () => {
           <div className="row">
             {/* logo */}
 
-            
             <div className={`col-md-4 col-md-4 ${header.brandCol}`}>
-              <NavLink to={"/"} onClick={() => {handleLinkClick(0); window.scrollTo(0,0)}}>
-              <img src={gradLogo} alt="logo" />
-              <div className={header.headText}>
-                <h1>GRADUATION ABROAD</h1>
-                <p>
-                  Direct Representatives of Govt. Medical Universities in Abroad
-                </p>
-              </div>
+              <NavLink
+                to={"/"}
+                onClick={() => {
+                  handleLinkClick(0);
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <img src={gradLogo} alt="logo" />
+                <div className={header.headText}>
+                  <h1>GRADUATION ABROAD</h1>
+                  <p>
+                    Direct Representatives of Govt. Medical Universities in
+                    Abroad
+                  </p>
+                </div>
               </NavLink>
             </div>
-           
+
             <div className={`col-md-8 col-lg-8 ${header.headLinkCol}`}>
               <ul className={header.headLinkUl}>
                 <li>
-                  <img src={fb} alt="the link pic" />
+                  <a
+                    href="https://www.facebook.com/GraduationAbroad"
+                    target="_absolute"
+                  >
+                    <img src={fb} alt="the link pic" />
+                  </a>
                 </li>
                 <li>
-                  <img src={insta} alt="the link pic" />
+                  <a
+                    href="https://www.instagram.com/graduationabroad/"
+                    target="_absolute"
+                  >
+                    <img src={insta} alt="the link pic" />{" "}
+                  </a>
                 </li>
                 <li>
                   <img src={linke} alt="the link pic" />
