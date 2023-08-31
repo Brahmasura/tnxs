@@ -5,7 +5,7 @@ import icon from '../Assets/Whatsapp/whatsappIcon.svg';
 const Whatsapp = () => {
 
    const openWhatsapp = () => {
-        window.open('https://api.whatsapp.com/send?phone=9760390807', '_blank');
+        window.open('https://api.whatsapp.com/send?phone=+919760390807', '_blank');
    }
   return (
    <>
