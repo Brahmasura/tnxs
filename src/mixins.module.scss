@@ -43,12 +43,20 @@
 }
 
 // vertical centering
+
+@mixin y-justify-Center {
+  display:flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @mixin y-center {
   display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 
 @mixin y-start {
   display: flex !important;
