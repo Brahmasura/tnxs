@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import footer from "./footer.module.scss";
 import { NavLink } from "react-router-dom";
+import { LinkContext } from "../../../App";
 
 const Footer = () => {
+  const { handleLinkClick } = useContext(LinkContext);
   return (
     <div id="footer" className={`container-fluid ${footer.footerContainer}`}>
       <div className={`row ${footer.footerContent}`}>
@@ -54,8 +56,34 @@ const Footer = () => {
         <div className={`col ${footer.linkCol}`}>
           <h1>MBBS ABROAD</h1>
           <ul className={footer.footerUl}>
-            <li>MBBS in Russia</li>
+            <NavLink
+              to={"/mbbsRuss"}
+              onClick={() => {
+                handleLinkClick(0);
+                window.scrollTo(0, 0);
+              }}
+            >
+              <li>MBBS in Russia</li>
+            </NavLink>
             <li>MBBS in Italy</li>
+            <NavLink
+              to={"/mbbsUzbek"}
+              onClick={() => {
+                handleLinkClick(0);
+                window.scrollTo(0, 0);
+              }}
+            >
+              <li>MBBS in Uzbekistan</li>
+            </NavLink>
+            <NavLink
+              to={"/mbbsKazak"}
+              onClick={() => {
+                handleLinkClick(0);
+                window.scrollTo(0, 0);
+              }}
+            >
+              <li>MBBS in Kazakhstan</li>
+            </NavLink>
           </ul>
         </div>
         <div className={`col ${footer.linkCol}`}>
