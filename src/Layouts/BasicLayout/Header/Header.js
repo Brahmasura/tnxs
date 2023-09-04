@@ -85,6 +85,18 @@ const Header = () => {
               <ul className={header.linksList}>
                 <li>
                   <NavLink
+                    to={"/"}
+                    className={activeLink === 0 ? header.activeLink : null}
+                    onClick={() => {
+                      handleLinkClick(0);
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    HOME
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
                     to={"/whyRussia"}
                     className={activeLink === 1 ? header.activeLink : null}
                     onClick={() => {

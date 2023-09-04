@@ -1,15 +1,15 @@
 import React from "react";
 import education from "./education.module.scss";
-import imgOne from "../../../Assets/Education/imgOne.jpeg";
-import imgTwo from "../../../Assets/Education/imgTwo.webp";
-import imgThree from "../../../Assets/Education/imgThree.jpg";
-import imgFour from "../../../Assets/Education/imgFour.webp";
+import imgFive from "../../../Assets/Education/imgFive.jpg";
+import imgSix from "../../../Assets/Education/imgSix.jpg";
+import imgSeven from "../../../Assets/Education/imgSeven.jpg";
+import imgEight from "../../../Assets/Education/imgEight.webp";
 
 const eduList = [
-  { image: imgOne, text: "Top Russian Universities" },
-  { image: imgTwo, text: "Tuition fees in Russia" },
-  { image: imgThree, text: "Send your application to us" },
-  { image: imgFour, text: "MBBS in ITALY" },
+  { image: imgFive, text: "TOP RUSSIAN UNIVERSITIES" },
+  { image: imgSix, text: "FREQUENTLY ASKED QUESTIONS" },
+  { image: imgEight, text: "MBBS IN ITALY" },
+  { image: imgSeven, text: "SCHOLARSHIPS" },
 ];
 
 const Education = () => {

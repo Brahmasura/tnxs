@@ -11,6 +11,19 @@
   overflow-y: scroll;
 }
 
+// these are the latest changes acc. to sid
+
+#root{
+  display:flex;
+  justify-content: center;
+}
+
+.App{
+  width:90%;
+}
+
+//these are the latest changes acc. to Sid
+
 // the slider css begins
 
 .slick-prev {

@@ -68,8 +68,8 @@ const Students = () => {
         <div className={students.slideOne}></div>
         <div className={students.slideTwo}></div>
         <div className={students.slideThree}></div>
-        <div className={students.slideFour}></div>
-        <div className={students.slideFive}></div>
+        {/* <div className={students.slideFour}></div>
+        <div className={students.slideFive}></div> */}
       </Slider>
       </div>
     </>
