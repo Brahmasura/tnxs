@@ -6,10 +6,10 @@ import imgSeven from "../../../Assets/Education/imgSeven.jpg";
 import imgEight from "../../../Assets/Education/imgEight.webp";
 
 const eduList = [
-  { image: imgFive, text: "TOP RUSSIAN UNIVERSITIES" },
-  { image: imgSix, text: "FREQUENTLY ASKED QUESTIONS" },
-  { image: imgEight, text: "MBBS IN ITALY" },
-  { image: imgSeven, text: "SCHOLARSHIPS" },
+  { image: imgFive, text: "TOP RUSSIAN UNIVERSITIES", para: "Learn about tuition fee, distance from MOSCOW, and necessary details  " },
+  { image: imgSix, text: "FREQUENTLY ASKED QUESTIONS", para: "Diagnose your basic doubts about studying abroad" },
+  { image: imgEight, text: "MBBS IN ITALY", para: "Learn about iMAT, Fee structure and process to apply for education in ITALY" },
+  { image: imgSeven, text: "SCHOLARSHIPS", para: "Learn about tuition fee waivers, scholarship availabilty" },
 ];
 
 const Education = () => {
@@ -31,6 +31,7 @@ const Education = () => {
                 ></div>
                 <div className={`col-md-12 col-lg-12 ${education.optionLower}`}>
                   <p>{option.text}</p>
+                  <p className={education.subText}>{option.para}</p>
                 </div>
               </div>
             </div>
