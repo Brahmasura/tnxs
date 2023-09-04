@@ -30,6 +30,10 @@
     width: 22%;
     margin-inline: 1%;
 
+    a{
+      text-decoration:none;
+    }
+
     .optionUpper {
       @include y-bot-left;
       height: 34vh;
