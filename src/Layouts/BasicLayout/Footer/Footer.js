@@ -65,7 +65,9 @@ const Footer = () => {
             >
               <li>MBBS in Russia</li>
             </NavLink>
+            <NavLink to={"/mbbsItaly"} onClick={() => {handleLinkClick(0); window.scrollTo(0,0);}}>
             <li>MBBS in Italy</li>
+            </NavLink>
             <NavLink
               to={"/mbbsUzbek"}
               onClick={() => {
