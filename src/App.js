@@ -21,7 +21,9 @@ import Healthcare from "./Pages/NestedPages/LifeInRuss/Healthcare/Healthcare";
 import MbbsRuss from "./Pages/MbbsAbroad/MbbsRuss/MbbsRuss";
 import MbbsKazak from "./Pages/MbbsAbroad/MbbsKazak/MbbsKazak";
 import MbbsUzbek from "./Pages/MbbsAbroad/MbbsUzbek/MbbsUzbek";
+import MbbsItaly from './Pages/MbbsAbroad/MbbsItaly/MbbsItaly';
 import FiveSteps from "./Pages/NestedPages/FiveSteps/FiveSteps";
+import FaqInfo from "./Pages/NestedPages/FaqInfo/FaqInfo";
 
 export const LinkContext = createContext();
 
@@ -53,9 +55,11 @@ function App() {
             <Route path="/safety" exact element={<Safety />} />
             <Route path="/healthcare" exact element={<Healthcare />} />
             <Route path="/mbbsRuss" exact element={<MbbsRuss/>}/>
+            <Route path="/mbbsItaly" exact element={<MbbsItaly/>}/>
             <Route path="/mbbsKazak" exact element={<MbbsKazak/>}/>
             <Route path="/mbbsUzbek" exact element={<MbbsUzbek/>}/>
             <Route path="/nestedSteps" exact element={<FiveSteps/>}/>
+            <Route path="/faqInfo" exact element={<FaqInfo/>}/>
           </Routes>
         </BasicLayout>
       </LinkContext.Provider>

@@ -1,9 +1,9 @@
 import React from "react";
-import faq from './faq.module.scss';
-import faqOne from "../../../Assets/Faq/faq.jpeg";
-import faqTwo from "../../../Assets/Faq/engineering.jpg";
-import faqThree from "../../../Assets/Faq/business.jpg";
-import faqFour from "../../../Assets/Faq/MBBS.jpeg";
+import style from './usefulInfo.module.scss';
+import faqOne from "../../../Assets/UsefulInfo/faq.jpeg";
+import faqTwo from "../../../Assets/UsefulInfo/engineering.jpg";
+import faqThree from "../../../Assets/UsefulInfo/business.jpg";
+import faqFour from "../../../Assets/UsefulInfo/MBBS.jpeg";
 
 const eduList = [
   { image: faqOne, text: "Frequently asked questions" },
@@ -16,22 +16,22 @@ const eduList = [
 
 const Faq = () => {
   return (
-    <div className={faq.faqContainer}>
-      <h1 className={faq.faqTitle}>Useful Information</h1>
-      <div className={`container-fluid ${faq.colsContainer}`}>
-        <div className={`row ${faq.rowOptions}`}>
+    <div className={style.faqContainer}>
+      <h1 className={style.faqTitle}>Useful Information</h1>
+      <div className={`container-fluid ${style.colsContainer}`}>
+        <div className={`row ${style.rowOptions}`}>
           {eduList.map((option) => (
-            <div className={`col-md-3 col-lg-3 ${faq.optionContainer}`}>
+            <div className={`col-md-3 col-lg-3 ${style.optionContainer}`}>
               <div className="row">
                 <div
-                  className={`col-md-12 col-lg-12 ${faq.optionUpper}`}
+                  className={`col-md-12 col-lg-12 ${style.optionUpper}`}
                   style={{
                     backgroundImage: `url(${option.image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
                 ></div>
-                <div className={`col-md-12 col-lg-12 ${faq.optionLower}`}>
+                <div className={`col-md-12 col-lg-12 ${style.optionLower}`}>
                   <p>{option.text}</p>
                 </div>
               </div>

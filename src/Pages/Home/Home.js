@@ -5,7 +5,7 @@ import Students from "./Students/Students";
 import Steps from "./Steps/Steps";
 import Information from "./Information/Information";
 import Destinations from "./Destinations/Destinations";
-import Faq from "./Faq/Faq";
+import UsefulInfo from './UsefulInfo/UsefulInfo';
 import DiscoverRussia from "./Discover-Russia/DiscoverRussia";
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
       <Steps />
       <Information />
       <DiscoverRussia/>
-      <Faq />
+      <UsefulInfo/>
       <Destinations />
     </>
   );

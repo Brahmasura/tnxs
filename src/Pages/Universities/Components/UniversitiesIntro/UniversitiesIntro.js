@@ -8,27 +8,36 @@ const UniversitiesIntro = () => {
   return (
     <>
       <div className={style.uniIntroContainer}>
-        <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
-          Home
-        </NavLink>
+        <div className={style.linkDiv}>
+          <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
+            Home
+          </NavLink>
+          <p className={style.slash}> / </p>
+          <NavLink to={"/whyRussia"} onClick={() => handleLinkClick(2)}>
+            Study In Russia
+          </NavLink>
+        </div>
+
+        
         <h1>Universities in Russia</h1>
         <p>
-          Russia has a great number of universities throughout the country –
-          from Kaliningrad to Vladivostok. Some educational centres offer a full
-          range of programmes in various specialities, others are highly
-          specialized, for example, medical or technical universities. On the
-          map, you can find Russian universities participating in the 5-100
-          Excellence Project. Each university page will provide you with
-          information about their current educational programmes. A convenient
-          search filter will help you choose the most suitable programme by
-          subject and specialization. You can also use it to see which
-          programmes relate to each level of education – bachelor's, specialist,
-          master's and postgraduate studies. Check out the news, photos and
-          stories of international students and register a personal account. You
-          can submit an unlimited number of applications – quickly, free of
-          charge and directly to the university.
-          </p>
-        
+          Russian universities have long been a hidden gem on the global
+          academic landscape, and it's time to shine a spotlight on them. These
+          institutions offer a world-class education, vibrant cultural
+          experiences, and a welcoming environment for international
+          students.With a rich history and a commitment to excellence, Russian
+          universities consistently rank among the top in various international
+          university rankings. Whether you're pursuing medicine, engineering,
+          humanities, or any other field, you'll find a diverse range of
+          programs taught by renowned professors. Beyond academics, Russia's
+          universities provide a unique opportunity for personal growth. Explore
+          the country's rich cultural heritage, learn a new language, and build
+          lifelong friendships with students from around the world. If you're
+          curious about the endless possibilities that Russian universities
+          offer, delve deeper into our articles to uncover the remarkable
+          experiences and educational opportunities waiting for you. Your
+          academic journey starts here!
+        </p>
       </div>
     </>
   );

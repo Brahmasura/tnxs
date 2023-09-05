@@ -7,9 +7,21 @@
     padding-top:3%;
     padding-bottom:3%;
 
-    a{
-        color:red;
-    }
+    .linkDiv {
+        align-self: center;
+        margin-bottom:4%;
+    
+        a {
+          @include theLink;
+        }
+        p {
+          display: inline;
+        }
+      }
+
+    // a{
+    //     color:red;
+    // }
 
     h1{
        margin-top:2%;

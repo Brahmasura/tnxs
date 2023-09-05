@@ -33,7 +33,7 @@ const MbbsUzbek = () => {
                 Russia
               </button>
             </NavLink>
-            <NavLink to={"/mbbsRuss"}>
+            <NavLink to={"/mbbsItaly"}>
               <button
                 className={activeTab === 2 ? style.activeTabs : style.tabs}
                 onClick={() => handleTabClick(2)}
