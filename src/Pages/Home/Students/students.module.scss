@@ -1,14 +1,14 @@
 @import "../../../mixins.module.scss";
 
 .studentContainer {
-  height: 85vh;
+  height: 81.5vh;
 
 }
 
 .slideOne {
   background: url("../../../Assets/students/IntroFive.jpg");
   @include bg-center;
-  height: 85vh;
+  height: 81.5vh;
   position: relative;
   z-index: -1;
 }
@@ -16,7 +16,7 @@
 .slideTwo {
   background: url("../../../Assets/students/IntroSix.jpg");
   @include bg-center;
-  height: 85vh;
+  height: 81.5vh;
   position: relative;
   z-index: -1;
 }
@@ -24,7 +24,7 @@
 .slideThree {
   background: url("../../../Assets/students/IntroEleven.jpg");
   @include bg-center;
-  height: 85vh;
+  height: 81.5vh;
   position: relative;
   z-index: -1;
 }

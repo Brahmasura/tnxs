@@ -1,8 +1,11 @@
 @import "../../../../mixins.module.scss";
 
-
-
 .RussInfoContainer {
+  @include x-center;
+
+  .infoRow {
+    width: 100%;
+  }
   .colOneContainer {
     background: url("../../../../Assets/WhyRussia/Advantages.jpg");
     @include bg-center;
@@ -10,12 +13,12 @@
     @include colStyles;
 
     .upperText {
-    @include infoText;
+      @include infoText;
       font-size: 20px;
     }
 
     h1 {
-    @include infoText;
+      @include infoText;
       @include infoHead;
     }
   }

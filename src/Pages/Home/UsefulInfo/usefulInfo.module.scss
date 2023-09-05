@@ -3,10 +3,11 @@
 .faqContainer {
   @include nopad;
   @include y-center;
-  height: 79vh;
+  // height: 79vh;
+  height:81.5vh;
   padding-inline: 4% !important;
   // padding-top: 7% !important;
-  border: 1px solid black;
+  border: 1px 0 solid black;
   @include bgcolor;
 }
 .faqTitle {

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const StudyInRussInfo = () => {
   return (
     <div className={studyInRussInfo.studyInfoContainer}>
-      <div className="row">
+      <div className={`row ${studyInRussInfo.infoRow}`}>
         <div className={`col-lg-6 ${studyInRussInfo.colOneContainer}`}>
           <NavLink to={"/mbbsInRussia"}>
             <h1 className={studyInRussInfo.upperText}>MBBS in Russia</h1>

@@ -1,8 +1,12 @@
 @import "../../../../mixins.module.scss";
 
-
-
 .studyInfoContainer {
+  @include x-center;
+
+  .infoRow {
+    width: 100%;
+  }
+
   .colOneContainer {
     background: url("../../../../Assets/StudyInRussia/studyOne.jpg");
     @include bg-center;
@@ -11,7 +15,7 @@
 
     .upperText {
       @include infoText;
-      
+
       font-size: 20px;
     }
 

@@ -7,7 +7,7 @@ const LifeInRussInfo = () => {
   return (
     <>
       <div className={lifeInRussInfo.lifeInfoContainer}>
-        <div className="row">
+        <div className={`row ${lifeInRussInfo.infoRow}`}>
           <div className={`col-lg-6 ${lifeInRussInfo.colOneContainer}`}>
             <NavLink to={"/accomodation"} onClick={() => window.scrollTo(0, 0)}>
               <h1 className={lifeInRussInfo.upperText}>

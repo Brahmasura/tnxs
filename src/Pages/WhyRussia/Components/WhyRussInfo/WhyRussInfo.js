@@ -8,7 +8,7 @@ const WhyRussInfo = () => {
   return (
     <>
       <div className={whyRussInfo.RussInfoContainer}>
-        <div className="row">
+        <div className={`row ${whyRussInfo.infoRow}`}>
           <div className={`col-lg-6 ${whyRussInfo.colOneContainer}`}>
             <NavLink to={"/advantages"} onClick={() => window.scrollTo(0, 0)}>
               <h1 className={whyRussInfo.upperText}>ADVANTAGES</h1>

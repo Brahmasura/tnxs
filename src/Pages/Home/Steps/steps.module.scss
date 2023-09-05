@@ -1,7 +1,8 @@
 @import "../../../mixins.module.scss";
 
 .stepsContainer {
-  height: 75vh;
+  // height: 75vh;
+  height:81.5vh;
   padding-inline: 7%;
   @include y-center;
   @include border;

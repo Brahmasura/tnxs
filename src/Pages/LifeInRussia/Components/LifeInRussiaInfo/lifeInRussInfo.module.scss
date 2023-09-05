@@ -1,19 +1,24 @@
 @import "../../../../mixins.module.scss";
 
-
-
 .lifeInfoContainer {
+  @include x-center;
+
+  .infoRow {
+    width: 100%;
+  }
   .colOneContainer {
     background: url("../../../../Assets/LifeInRussia/lifeOne.jpg");
     @include bg-center;
     @include y-bot-left;
     @include colStyles;
 
-    .upperText {@include infoText;
+    .upperText {
+      @include infoText;
       font-size: 20px;
     }
 
-    h1 {@include infoText;
+    h1 {
+      @include infoText;
       @include infoHead;
     }
   }
@@ -29,11 +34,13 @@
     @include y-bot-left;
     @include colStyles;
 
-    .upperText {@include infoText;
+    .upperText {
+      @include infoText;
       font-size: 20px;
     }
 
-    h1 {@include infoText;
+    h1 {
+      @include infoText;
       @include infoHead;
     }
   }
@@ -49,11 +56,13 @@
     @include y-bot-left;
     @include colStyles;
 
-    .upperText {@include infoText;
+    .upperText {
+      @include infoText;
       font-size: 20px;
     }
 
-    h1 {@include infoText;
+    h1 {
+      @include infoText;
       @include infoHead;
     }
   }
@@ -69,11 +78,13 @@
     @include y-bot-left;
     @include colStyles;
 
-    .upperText {@include infoText;
+    .upperText {
+      @include infoText;
       font-size: 20px;
     }
 
-    h1 {@include infoText;
+    h1 {
+      @include infoText;
       @include infoHead;
     }
   }
@@ -89,11 +100,13 @@
     @include y-bot-left;
     @include colStyles;
 
-    .upperText {@include infoText;
+    .upperText {
+      @include infoText;
       font-size: 20px;
     }
 
-    h1 {@include infoText;
+    h1 {
+      @include infoText;
       @include infoHead;
     }
   }
