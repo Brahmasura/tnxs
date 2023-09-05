@@ -5,6 +5,7 @@
 .leftCol {
   background: url("../../../Assets/Information/infoOne.jpg");
   @include bg-center;
+  background-position:70%;
   // @include border;
   @include y-bot-left;
   // padding-bottom:4%;
