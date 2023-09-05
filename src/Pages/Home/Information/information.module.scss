@@ -37,8 +37,9 @@
 }
 
 .rightTopCol {
-  background: url("../../../Assets/Information/infoThree.jpg");
+  background: url("../../../Assets/students/IntroTen.jpg");
   @include bg-center;
+  background-position: 80% 35%;
   // @include border;
   @include y-bot-left;
   @include colStyles;

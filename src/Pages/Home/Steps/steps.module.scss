@@ -8,10 +8,29 @@
   // @include bgcolor;
   background-color: whitesmoke;
 
+  a{
+    text-decoration:none;
+    color: #333; /* Text color */
+    transition: text-decoration 0.2s;
+
+    :hover{
+      text-decoration: underline;
+    }
+  }
+
+  // .unHoveredLink {
+  //   text-decoration: none !important;
+  // }
+
+  // .hoveredLink {
+  //   text-decoration: dashed !important;
+  // }
+
   h1 {
     @include heading;
     margin-bottom: 3%;
-    color:#dd3534;
+    color: #dd3534;
+    
   }
 }
 
@@ -23,8 +42,8 @@
   .stepsRow {
     width: 100%;
 
-    a{
-      text-decoration:none;
+    a {
+      text-decoration: none;
     }
   }
 
@@ -42,14 +61,12 @@
     @include x-center;
     background-color: white;
 
-    p{
+    p {
       font-family: sans-serif;
-      font-weight:600;
+      font-weight: 600;
       font: size 1.5vw;
-      color:red;
-      text-align:center;
-
-    
+      color: red;
+      text-align: center;
     }
   }
 }
