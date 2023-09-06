@@ -72,7 +72,7 @@
   }
 
   .colFourContainer {
-    background: url("../../../../Assets/LifeInRussia/lifeFour.jpg");
+    background: url("../../../../Assets/Nested/safetyFirst.jpg");
     @include bg-center;
 
     @include y-bot-left;
@@ -94,7 +94,7 @@
   }
 
   .colFiveContainer {
-    background: url("../../../../Assets/LifeInRussia/lifeFive.jpg");
+    background: url("../../../../Assets/LifeInRussia/lifeSeven.png");
     @include bg-center;
 
     @include y-bot-left;
@@ -116,7 +116,9 @@
   }
 
   .colSixContainer {
-    background: url("../../../../Assets/LifeInRussia/lifeSix.jpg");
+    // background: url("../../../../Assets/LifeInRussia/lifeSix.jpg");
+    background: url("../../../../Assets/students/IntroSeven.jpg");
+
     @include bg-center;
 
     @include y-bot-left;

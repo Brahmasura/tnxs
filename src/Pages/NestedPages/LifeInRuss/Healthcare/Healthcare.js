@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { LinkContext } from "../../../../App";
 import style from "./healthcare.module.scss";
 import { NavLink } from "react-router-dom";
-import introFour from "../../../../Assets/students/IntroFour.jpeg";
+import healthPic from "../../../../Assets/Nested/HealthcareNested.webp";
 
 const Healthcare = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -82,7 +82,7 @@ const Healthcare = () => {
           {/* the tab div ends  */}
 
           <h1>Heathcare</h1>
-          <img src={introFour} alt="The climate" />
+          <img src={healthPic} alt="The climate" />
 
           <h2>Healthcare System Overview:</h2>
           <p>
