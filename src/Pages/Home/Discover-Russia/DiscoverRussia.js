@@ -43,7 +43,7 @@ const eduList = [
   {
     image: destiFour,
     text: "ITALY",
-    link:"/mbbsRuss",
+    link:"/mbbsItaly",
     textOne: "universities",
     uValue: "28",
     textTwo: "population",

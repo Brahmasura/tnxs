@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import style from "./climate.module.scss";
 import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
-import footer from "../../../../Assets/Footer/Footer.jpg";
+import climatePic from "../../../../Assets/Nested/climate.jpg";
 
 const Climate = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -82,7 +82,7 @@ const Climate = () => {
           {/* the tab div ends  */}
 
           <h1>Cilmate</h1>
-          <img src={footer} alt="The climate" />
+          <img src={climatePic} alt="The climate" />
 
           <p>
             Understanding the climate in Russia is essential for international

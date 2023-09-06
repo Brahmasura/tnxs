@@ -1,0 +1,35 @@
+@import "../../../../mixins.module.scss";
+
+.divContainer {
+  @include x-center;
+}
+
+.feeDiv{
+  width: 80%;
+  @include verticalPad;
+  @include y-start;
+
+  .linkDiv {
+    align-self: center;
+    margin-bottom: 4%;
+
+    a {
+      @include theLink;
+    }
+    p {
+      display: inline;
+    }
+  }
+
+  img {
+    @include theImage;
+  }
+
+  h1 {
+    @include mainHeading;
+  }
+
+  p {
+    @include para;
+  }
+}

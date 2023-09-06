@@ -13,6 +13,9 @@
   // height: 85vh;
   // position:relative;  //new code
   // z-index:-1;
+  transition: background-size 0.3s ease-in-out; 
+
+ 
 
   @include colStyles;
   height: 85vh;
@@ -30,6 +33,11 @@
 
 .leftCol::after {
   @include afterContent;
+  overflow: hidden;
+}
+
+.leftCol:hover{
+  background-size:160%;
 }
 
 .rightCol {
@@ -45,6 +53,8 @@
   @include y-bot-left;
   @include colStyles;
   height: 42.5vh;
+  transition: background-size 0.3s ease-in-out; 
+
 
   .upperText {
      @include infoText;
@@ -61,6 +71,12 @@
   @include afterContent;
 }
 
+.rightTopCol:hover{
+  background-size:101%;
+}
+
+
+
 .rightBotCol {
   // @include border;
   height: 42.5vh;
@@ -73,6 +89,8 @@
   @include y-bot-left;
 @include colStyles;
   height: 42.5vh;
+  transition: background-size 0.3s ease-in-out; 
+
 
   .upperText {
      @include infoText;
@@ -89,6 +107,10 @@
   @include afterContent;
 }
 
+.rightBotLeft:hover{
+  background-size:125%;
+}
+
 .rightBotRight {
   background: url("../../../Assets/Information/infoFour.jpg");
   @include bg-center;
@@ -97,6 +119,8 @@
   padding-left: 2% !important;
   // @include border;
   position: relative; //new code
+  transition: background-size 0.3s ease-in-out; 
+
 
 
   .upperText {
@@ -116,6 +140,10 @@
 
 .rightBotRight::after {
   @include afterContent;
+}
+
+.rightBotRight:hover{
+  background-size:160%;
 }
 
 .hrStyle {

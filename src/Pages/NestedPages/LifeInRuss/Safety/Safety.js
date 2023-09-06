@@ -25,9 +25,7 @@ const Safety = () => {
               Life In Russia
             </NavLink>
           </div>
-
           {/* the tab div begins */}
-
           <div className={style.tabsDiv}>
             <NavLink to={"/prices"}>
               <button
@@ -78,12 +76,9 @@ const Safety = () => {
               </button>
             </NavLink>
           </div>
-
           {/* the tab div ends  */}
-
           <h1>Safety</h1>
           <img src={introOne} alt="The Safety" />
-
           <h2>Introduction:</h2>
           <p>
             Studying in Russia is an exciting opportunity that comes with its
@@ -94,7 +89,6 @@ const Safety = () => {
             navigate public places, online security, leisure activities, road
             safety, and identity checks during your educational journey.
           </p>
-
           <h2>Public Places and Transport:</h2>
           <p>
             When exploring Russia's vibrant cities and using public transport,
@@ -112,7 +106,6 @@ const Safety = () => {
             Minimize carrying large amounts of cash and avoid storing all your
             bank card PINs in one location.
           </p>
-
           <h2>Cyber and Online Security:</h2>
           <p>
             Practice the same caution online in Russia as you would anywhere
@@ -130,7 +123,6 @@ const Safety = () => {
             If withdrawing cash, choose secure locations like bank outlets or
             ATMs, and refrain from exchanging money on the street.
           </p>
-
           <h2>Fraud Prevention:</h2>
           <p>
             Protect yourself from potential fraudsters and scams.
@@ -147,7 +139,6 @@ const Safety = () => {
             Opt for safe transportation options like public transport or
             established taxi services.
           </p>
-
           <h2>Road Safety:</h2>
           <p>
             Stay safe while navigating the streets of Russia.
@@ -158,7 +149,6 @@ const Safety = () => {
             Choose well-lit streets and well-known paths, especially when
             walking alone at night.
           </p>
-
           <h2>Identity Checks:</h2>
           <p>
             Carry essential identification documents with you, especially when
@@ -170,23 +160,31 @@ const Safety = () => {
             Understand that identity checks are part of counter-terrorism
             measures aimed at ensuring your safety.
           </p>
-
           <h2>Emergency Contacts:</h2>
           <p>
             Be prepared for any situation by keeping these emergency numbers
-            accessible.
-            <br />
-            General Rescue Service: 112 (landline and mobile phone)
-            <br />
-            Fire-Fighting Service: 01 (landline), 101 (mobile)
-            <br />
-            Police: 02 (landline), 103 (mobile)
-            <br />
-            Ambulance: 03 (landline), 103 (mobile)
-            <br />
-            Gas Service: 04 (landline), 104 (mobile)
-            <br />
+            accessible:
           </p>
+          <div className={style.emergencyDiv}>
+            <p>
+             
+              <strong>General Rescue Service:</strong> <span>112 </span>
+              (landline and mobile phone)
+              <br />
+              <strong>Fire-Fighting Service:</strong> <span>01 </span>
+              (landline), <span>101 </span> (mobile)
+              <br />
+              <strong>Police:</strong> <span>02 </span> (landline),
+              <span> 103 </span> (mobile)
+              <br />
+              <strong>Ambulance:</strong> <span>03 </span> (landline),
+              <span>103 </span> (mobile)
+              <br />
+              <strong>Gas Service:</strong> <span>04 </span> (landline),{" "}
+              <span>104 </span> (mobile)
+              <br />
+            </p>
+          </div>
 
           <h2>Conclusion:</h2>
           <p>

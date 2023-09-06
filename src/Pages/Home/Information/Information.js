@@ -50,7 +50,10 @@ const Information = () => {
                 <hr className={info.hrStyle} />
                 <NavLink
                   to={"/advantages"}
-                  onClick={() => {handleLinkClick(1); window.scrollTo(0, 0)}}
+                  onClick={() => {
+                    handleLinkClick(1);
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   <h1>Advantages of education in Russia </h1>
                 </NavLink>
@@ -70,7 +73,10 @@ const Information = () => {
                     <hr className={info.hrStyle} />
                     <NavLink
                       to={"/prices"}
-                      onClick={() => {handleLinkClick(3); window.scrollTo(0, 0)}}
+                      onClick={() => {
+                        handleLinkClick(3);
+                        window.scrollTo(0, 0);
+                      }}
                     >
                       <h1>Prices in Russia</h1>
                     </NavLink>
@@ -87,8 +93,11 @@ const Information = () => {
                     </NavLink>
                     <hr className={info.hrStyle} />
                     <NavLink
-                      to={"/ranking"}
-                      onClick={() => window.scrollTo(0, 0)}
+                      to={"/tuitionFee"}
+                      onClick={() => {
+                        handleLinkClick(2);
+                        window.scrollTo(0, 0);
+                      }}
                     >
                       <h1>Tution fee in Russia</h1>
                     </NavLink>

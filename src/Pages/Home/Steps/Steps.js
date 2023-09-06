@@ -20,7 +20,7 @@ const Steps = () => {
     <>
       <div className={steps.stepsContainer}>
         <NavLink to={"/nestedSteps"} onClick={() => window.scrollTo(0, 0)}>
-          <h1>Steps to Applying into a Russian University</h1>
+          <h1>5 Steps for Applying to a Russian University</h1>
         </NavLink>
 
         <div className={`container-fluid ${steps.colContainer}`}>
