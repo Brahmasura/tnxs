@@ -7,6 +7,7 @@ import Information from "./Information/Information";
 import Destinations from "./Destinations/Destinations";
 import UsefulInfo from './UsefulInfo/UsefulInfo';
 import DiscoverRussia from "./Discover-Russia/DiscoverRussia";
+import Testimonial from "./Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <DiscoverRussia/>
       <UsefulInfo/>
       <Destinations />
+      <Testimonial/>
     </>
   );
 };

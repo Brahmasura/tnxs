@@ -21,6 +21,39 @@
     }
   }
 
+  .tabsDiv {
+    width: 100%;
+    margin-bottom: 3%;
+    padding-inline: 15%;
+    @include x-center;
+
+    a {
+      @include xmar1;
+    }
+
+    .tabs {
+      background-color: white;
+      border-radius: 20px;
+      border: 2px solid #143f6b;
+      height: 2rem;
+      padding-inline: 10px;
+      font-weight: 600;
+      white-space:nowrap;
+    }
+
+    .activeTabs {
+      background-color: #143f6b;
+      color: white;
+      border-radius: 20px;
+      border: 2px solid #143f6b;
+      height: 2rem;
+      padding-inline: 10px;
+      font-weight: 600;
+      white-space:nowrap;
+    }
+  }
+
+
   img {
     @include theImage;
   }

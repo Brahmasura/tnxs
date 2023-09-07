@@ -25,6 +25,10 @@ import MbbsItaly from './Pages/MbbsAbroad/MbbsItaly/MbbsItaly';
 import FiveSteps from "./Pages/NestedPages/FiveSteps/FiveSteps";
 import FaqInfo from "./Pages/NestedPages/FaqInfo/FaqInfo";
 import Tuitionfee from './Pages/NestedPages/StudyInRuss/TuitionFee/Tuitionfee';
+import StudyUni from "./Pages/NestedPages/StudyInRuss/StudyUni/StudyUni";
+import StudyInEng from "./Pages/NestedPages/StudyInRuss/StudyInEng/StudyInEng";
+import Preparatory from "./Pages/NestedPages/StudyInRuss/Preparatory/Preparatory";
+import Validation from "./Pages/NestedPages/StudyInRuss/Validation/Validation";
 
 export const LinkContext = createContext();
 
@@ -62,6 +66,10 @@ function App() {
             <Route path="/nestedSteps" exact element={<FiveSteps/>}/>
             <Route path="/faqInfo" exact element={<FaqInfo/>}/>
             <Route path="/tuitionFee" exact element={<Tuitionfee/>}/>
+            <Route path="/studyUni" exact element={<StudyUni/>}/>
+            <Route path="/studyInEng" exact element={<StudyInEng/>}/>
+            <Route path="/preparatory" exact element={<Preparatory/>}/>
+            <Route path="/degreeValidation" exact element={<Validation/>}/>
           </Routes>
         </BasicLayout>
       </LinkContext.Provider>

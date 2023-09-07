@@ -7,8 +7,8 @@ import faqFour from "../../../Assets/UsefulInfo/MBBS.jpeg";
 
 const eduList = [
   { image: faqOne, text: "Frequently asked questions" },
-  { image: faqTwo, text: "Study Engineering in ITALY" },
-  { image: faqThree, text: "Study Business in Italy" },
+  { image: faqTwo, text: "Guidelines for applying to an Italian university" },
+  { image: faqThree, text: "Student Visa requirements" },
   { image: faqFour, text: "Study MBBS in Abroad" },
 ];
 

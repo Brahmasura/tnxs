@@ -72,7 +72,7 @@ const DiscoverRussia = () => {
                       backgroundRepeat: "no-repeat",
                     }}
                   >
-                    {" "}
+                   
                     <p>{option.text}</p>
                   </div>
                   <div

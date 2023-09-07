@@ -1,5 +1,5 @@
-import React from "react";
-import mbbs from "./mbbsInRuss.module.scss";
+import React, { useState } from "react";
+import style from "./mbbsInRuss.module.scss";
 import medical from "../../../../Assets/Nested/team-of-doctors.jpg";
 import { useContext } from "react";
 import { LinkContext } from "../../../../App";
@@ -8,20 +8,82 @@ import Steps from "../../../Home/Steps/Steps";
 
 const MbbsInRuss = () => {
   const { handleLinkClick } = useContext(LinkContext);
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = (value) => {
+    setActiveTab(value);
+  };
+
   return (
     <>
-      <div className={mbbs.divContainer}>
-        <div className={mbbs.mbbsContainer}>
-          <div className={mbbs.linkDiv}>
+      <div className={style.divContainer}>
+        <div className={style.mbbsContainer}>
+          <div className={style.linkDiv}>
             <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
               Home
             </NavLink>
-            <p className={mbbs.slash}> / </p>
+            <p className={style.slash}> / </p>
             <NavLink to={"/studyInRussia"} onClick={() => handleLinkClick(2)}>
               Study in Russia
             </NavLink>
           </div>
-          <h1>MBBS in Russia</h1>
+
+             {/* the tab div begins */}
+
+             <div className={style.tabsDiv}>
+            <NavLink to={"/mbbsInRussia"}>
+              <button
+                className={activeTab === 1 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(1)}
+              >
+                Mbbs In Russia
+              </button>
+            </NavLink>
+            <NavLink to={"/studyInEng"}>
+              <button
+                className={activeTab === 2 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(2)}
+              >
+                Study In English
+              </button>
+            </NavLink>
+            <NavLink to={"/preparatory"}>
+              <button
+                className={activeTab === 3 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(3)}
+              >
+               Preparatory Department
+              </button>
+            </NavLink>
+            <NavLink to={"/studyUni"}>
+              <button
+                className={activeTab === 4 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(4)}
+              >
+                Top Universities
+              </button>
+            </NavLink>
+            <NavLink to={"/degreeValidation"}>
+              <button
+                className={activeTab === 5 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(5)}
+              >
+                Validation of Degree
+              </button>
+            </NavLink>
+            <NavLink to={"/tuitionFee"}>
+              <button
+                className={activeTab === 6 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(6)}
+              >
+                Tuition Fee
+              </button>
+            </NavLink>
+          </div>
+
+          {/* the tab div ends  */}
+
+          <h1>MBBS In Russia</h1>
           <img src={medical} alt="the advantages" />
 
           <p>
