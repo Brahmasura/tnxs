@@ -96,3 +96,15 @@
   cursor:pointer;
 }
 
+
+
+
+//media query for small portrait
+
+
+@media (max-width:576px) and (orientation: portrait){
+  .uniCompoContainer{
+    height:auto;
+  }
+}
+

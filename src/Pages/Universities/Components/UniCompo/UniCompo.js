@@ -20,10 +20,10 @@ const UniCompo = ({ institution }) => {
       <div className={style.uniCompoContainer}>
         <h1>{university}</h1>
         <div className={`row ${style.rowContainer}`}>
-          <div className={`col-lg-4 ${style.imageCol}`}>
+          <div className={`col-12 col-sm-12 col-lg-4 ${style.imageCol}`}>
             <img src={image} alt={uni} />
           </div>
-          <div className={`col-lg-6 ${style.infoCol}`}>
+          <div className={`col-12 col-sm-12 col-lg-6 ${style.infoCol}`}>
             <p>City: {city}</p>
             <p>University Website: {web}</p>
             <p>
@@ -41,7 +41,7 @@ const UniCompo = ({ institution }) => {
               </button>
             </div>
           </div>
-          <div className={`col-lg-2 ${style.logoCol}`}>
+          <div className={`col-12 col-sm-12 col-lg-2 ${style.logoCol}`}>
             <img src={logo} alt={`${uni} logo`} />
           </div>
         </div>
