@@ -76,7 +76,7 @@ const FaqInfo = () => {
 
             <li>
               <h2>
-                {" "}
+               
                 Is there a compulsion of entrance test for admission in Russian
                 universities?
               </h2>

@@ -29,6 +29,7 @@ import StudyUni from "./Pages/NestedPages/StudyInRuss/StudyUni/StudyUni";
 import StudyInEng from "./Pages/NestedPages/StudyInRuss/StudyInEng/StudyInEng";
 import Preparatory from "./Pages/NestedPages/StudyInRuss/Preparatory/Preparatory";
 import Validation from "./Pages/NestedPages/StudyInRuss/Validation/Validation";
+import Scholarship from "./Pages/NestedPages/Scholarship/Scholarship";
 
 export const LinkContext = createContext();
 
@@ -65,6 +66,7 @@ function App() {
             <Route path="/mbbsUzbek" exact element={<MbbsUzbek/>}/>
             <Route path="/nestedSteps" exact element={<FiveSteps/>}/>
             <Route path="/faqInfo" exact element={<FaqInfo/>}/>
+            <Route path="/scholarship" exact element={<Scholarship/>}/>
             <Route path="/tuitionFee" exact element={<Tuitionfee/>}/>
             <Route path="/studyUni" exact element={<StudyUni/>}/>
             <Route path="/studyInEng" exact element={<StudyInEng/>}/>
