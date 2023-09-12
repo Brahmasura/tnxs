@@ -48,6 +48,7 @@ const Testimonial = () => {
   const [selectedStudent, setSelectedStudent] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+
   const handleReadMore = (value) => {
     setSelectedStudent(value);
     setIsModalOpen(true);

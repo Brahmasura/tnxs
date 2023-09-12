@@ -30,6 +30,12 @@
     width: 22%;
     margin-inline: 1%;
     // border: 2px solid red;
+
+   .applyDiv{
+    height:100%;
+    width:105%;
+
+   }
     .optionUpper {
       @include x-center;
       height: 30vh;

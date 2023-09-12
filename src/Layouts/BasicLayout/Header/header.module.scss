@@ -10,7 +10,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   position: sticky;
   top: 0;
-  z-index:10;
+  z-index: 10;
 
   .headerFirstCol {
     width: 100%;
@@ -27,55 +27,52 @@
 .brandCol {
   // @include x-center;
   @include nopad;
-  a{
+  a {
     text-decoration: none;
     @include x-center;
-    cursor:pointer;
+    cursor: pointer;
   }
   img {
     width: 20%;
     height: auto;
     border-radius: 60%;
-  
   }
 
-  .headText{
-    padding-left:4%;
+  .headText {
+    padding-left: 4%;
     // display:flex;
     // flex-direction: column;
     // justify-content: center;
     @include y-start;
-    h1{
-      font-family:sans-serif;
-      font-style:normal;
-      font-weight:700;
-      font-size:1.5vw;
-      color:#dd3534;
+    h1 {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.5vw;
+      color: #dd3534;
       margin-bottom: 0;
     }
-    p{
+    p {
       font-family: sans-serif;
       font-weight: 600;
       font-size: 1.1vw;
       line-height: 21px;
-      margin:0;
-      color:black;
+      margin: 0;
+      color: black;
     }
   }
 }
 
-.headLinkCol{
+.headLinkCol {
   @include x-end;
 
-  .headLinkUl{
+  .headLinkUl {
     list-style-type: none;
     @include x-sb;
-    width:45%;
-    margin-bottom:0;
+    width: 45%;
+    margin-bottom: 0;
   }
 }
-
-
 
 // second head col style begins
 .linksCol {
@@ -95,7 +92,7 @@
     text-decoration: none;
     // color:black;
     // color: black;
-    color:white;
+    color: white;
     font-weight: 700;
     font-size: 1.2vw;
   }
@@ -105,15 +102,13 @@ ul li {
   text-decoration: none;
 }
 
-.activeLink{
-  color:red !important;
+.activeLink {
+  color: red !important;
 }
 
 // .inactiveLink{
 //   color:white !important;
 // }
-
-
 
 .buttonCol {
   @include x-end;
@@ -122,7 +117,7 @@ ul li {
     @include x-center;
     padding: 2% 5%;
     background-color: #dd3534;
-    border:0;
+    border: 0;
     a {
       text-decoration: none;
       color: whitesmoke;
@@ -132,3 +127,140 @@ ul li {
     }
   }
 }
+
+// modal styling begins
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  position: relative;
+  width: 65%;
+  height: auto;
+  background-color: white;
+  z-index: 100;
+  padding: 10px;
+  @include x-center;
+
+  .modalRow {
+    width: 100%;
+  }
+
+  .modalLeftCol {
+    border: 1px solid #000;
+    background-color: grey;
+
+    h1 {
+      color: whitesmoke;
+      font-size: 25px;
+    }
+
+    .leftDivs {
+      padding:2%;
+      .leftImageTextDiv {
+        background-color: white;
+        @include y-center;
+        height: 90%;
+        img {
+          width: 40%;
+        }
+
+        p {
+          text-align: center;
+          font-size: 12px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .modalRightCol {
+    h1 {
+      color: #0b4292;
+      font-size: 30px;
+    }
+    h2 {
+      color: black;
+      font-size: 18px;
+    }
+    p {
+      color: black;
+    }
+
+    .formContainer {
+      @include y-center;
+
+      .formCols {
+        position: relative;
+
+        .formIcon {
+          position: absolute;
+          top: 33%;
+          left: 10%;
+          width: 7%;
+        }
+      }
+
+      input {
+        padding-left: 16%;
+      }
+
+      select {
+        padding-left: 16%;
+      }
+
+      .passportField {
+        padding-left: 7%;
+      }
+
+      .formIconPassport {
+        width: 3.8%;
+        top: 34%;
+        left: 5%;
+        position: absolute;
+      }
+    }
+
+    option.formField {
+      color: #8e8e8e;
+    }
+
+    select.formField {
+      width: 100%;
+    }
+
+    .formField {
+      margin: 2% 1%;
+    }
+
+    .termsPara {
+      font-size: 12px;
+    }
+
+    button {
+      width: 20%;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+// modal styling ends
