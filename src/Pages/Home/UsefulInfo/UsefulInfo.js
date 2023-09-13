@@ -5,6 +5,7 @@ import faqTwo from "../../../Assets/UsefulInfo/engineering.jpg";
 import faqThree from "../../../Assets/UsefulInfo/business.jpg";
 import faqFour from "../../../Assets/UsefulInfo/MBBS.jpeg";
 import applyImg from "../../../Assets/UsefulInfo/apply.png";
+import imgSix from '../../../Assets/Education/imgSix.jpg';
 import { NavLink } from "react-router-dom";
 
 const eduList = [
@@ -15,7 +16,8 @@ const eduList = [
     text: "Guidelines for applying to an Italian university",
   },
   { image: faqThree, text: "Student Visa requirements" },
-  { image: applyImg, text: "Study MBBS in Abroad" },
+  // { image: applyImg, text: "Study MBBS in Abroad" },
+  {image: imgSix, link: "/faqInfo", text: "Frequently Asked Questions" }
 ];
 
 const Faq = () => {
@@ -37,17 +39,6 @@ const Faq = () => {
                     width="100%"
                     height="100%"
                   />
-                </>
-              ) : index === 3 ? (
-                <>
-                  <div
-                    className={style.applyDiv}
-                    style={{
-                      backgroundImage: `url(${option.image})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  ></div>
                 </>
               ) : (
                 <div className="row">

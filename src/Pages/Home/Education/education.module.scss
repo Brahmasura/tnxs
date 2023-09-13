@@ -1,50 +1,47 @@
-@import '../../../mixins.module.scss';
-
+@import "../../../mixins.module.scss";
 
 .eduContainer {
   @include nopad;
   @include y-center;
   height: 81.5vh;
-  padding-inline:4% !important;
+  padding-inline: 4% !important;
   // padding-top: 7% !important;
   // border:1px solid black;
   @include bgcolor;
- 
-
-
- 
 }
 .eduTitle {
-   @include heading;
-   margin-bottom: 3%;
-  }
+  @include heading;
+  margin-bottom: 3%;
+}
 
 .colsContainer {
   @include x-center;
   @include nopad;
 
-
- 
-
   .rowOptions {
     width: 100%;
-    height:54vh;
+    height: 54vh;
     @include x-sb;
   }
 
   .optionContainer {
-    height:100%;
-    width:22%;
-    margin-inline:1%;
+    height: 100%;
+    width: 22%;
+    margin-inline: 1%;
     // border: 2px solid red;
 
-    a{
-      text-decoration:none;
-      
+    a {
+      text-decoration: none;
     }
+
+    .applyDiv {
+      height: 100%;
+      width: 105%;
+    }
+    
     .optionUpper {
       @include x-center;
-      height:30vh;
+      height: 30vh;
       // border:1px solid black;
 
       // img{
@@ -55,21 +52,21 @@
 
     .optionLower {
       @include y-center;
-      height:24vh;
+      height: 24vh;
       // border:1px solid black;
       background-color: white;
-      p{
+      p {
         font-family: sans-serif;
         font-style: normal;
         font-weight: 800;
-        font-size:15px;
+        font-size: 15px;
         text-align: center;
-        color:black;
+        color: black;
       }
 
-      .subText{
-        font-size:12px;
-        font-weight:550;
+      .subText {
+        font-size: 12px;
+        font-weight: 550;
       }
     }
   }
