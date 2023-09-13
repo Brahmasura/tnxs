@@ -30,6 +30,9 @@ import StudyInEng from "./Pages/NestedPages/StudyInRuss/StudyInEng/StudyInEng";
 import Preparatory from "./Pages/NestedPages/StudyInRuss/Preparatory/Preparatory";
 import Validation from "./Pages/NestedPages/StudyInRuss/Validation/Validation";
 import Scholarship from "./Pages/NestedPages/Scholarship/Scholarship";
+import Guidelines from "./Pages/NestedPages/UsefulInfo/ItalyGuidelines/Guidelines/Guidelines";
+import ItalyDocs from "./Pages/NestedPages/UsefulInfo/ItalyGuidelines/ItalyDocs/ItalyDocs";
+import Expenses from "./Pages/NestedPages/UsefulInfo/ItalyGuidelines/Expenses/Expenses";
 
 export const LinkContext = createContext();
 
@@ -72,6 +75,9 @@ function App() {
             <Route path="/studyInEng" exact element={<StudyInEng/>}/>
             <Route path="/preparatory" exact element={<Preparatory/>}/>
             <Route path="/degreeValidation" exact element={<Validation/>}/>
+            <Route path="/guidelines" exact element={<Guidelines/>}/>
+            <Route path="/documents" exact element={<ItalyDocs/>}/>
+            <Route path="/expenses" exact element={<Expenses/>}/>
           </Routes>
         </BasicLayout>
       </LinkContext.Provider>

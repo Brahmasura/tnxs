@@ -168,9 +168,11 @@ ul li {
     .leftDivs {
       padding:2%;
       .leftImageTextDiv {
+        width:114px;
+        height:114px;
         background-color: white;
         @include y-center;
-        height: 90%;
+        // height: 90%;
         img {
           width: 40%;
         }
@@ -202,6 +204,7 @@ ul li {
 
       .formCols {
         position: relative;
+        margin-bottom:2%;
 
         .formIcon {
           position: absolute;
@@ -249,7 +252,10 @@ ul li {
 
     button {
       width: 20%;
+      background-color: #ffae47;
+      border:1px solid #000;
       p {
+        color: white;
         margin-bottom: 0;
       }
     }
@@ -260,6 +266,7 @@ ul li {
   position: absolute;
   top: 5px;
   right: 5px;
+  width:2vw;
   cursor: pointer;
 }
 

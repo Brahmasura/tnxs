@@ -1,0 +1,78 @@
+@import '../../../../../mixins.module.scss';
+
+.divContainer {
+  @include x-center;
+}
+
+.guideContainer {
+  width: 80%;
+  @include verticalPad;
+  @include y-start;
+
+  .linkDiv {
+    align-self: center;
+    margin-bottom:4%;
+
+    a {
+      @include theLink;
+    }
+    p {
+      display: inline;
+    }
+  }
+
+  // styling for the actve tabs begins
+
+  .tabsDiv {
+    width: 100%;
+    margin-bottom: 3%;
+    padding-inline: 15%;
+    @include x-center;
+
+    a {
+      @include xmar1;
+    }
+
+    .tabs {
+      background-color: white;
+      border-radius: 20px;
+      border: 2px solid #143f6b;
+      height: 2rem;
+      padding-inline: 10px;
+      font-weight: 600;
+    }
+
+    .activeTabs {
+      background-color: #143f6b;
+      color: white;
+      border-radius: 20px;
+      border: 2px solid #143f6b;
+      height: 2rem;
+      padding-inline: 10px;
+      font-weight: 600;
+    }
+  }
+
+
+  // styling for the active tabs ends
+
+  img{
+   @include theImage;
+  }
+
+  h1{
+    @include mainHeading;
+  }
+
+  h2{
+    @include subHeading;
+  }
+
+  p{
+    @include para;
+  }
+
+  .redPara{
+    color:red;
+  }
+}
