@@ -4,7 +4,7 @@
    @include x-center;
  }
  
- .serviceContainer {
+ .directorContainer {
    width: 80%;
    @include verticalPad;
    @include y-start;
@@ -76,30 +76,3 @@
      color:red;
    }
  }
-
-// .serviceContainer{
-//     @include x-center;
-//     background-color: #f0f0f0;
-//     padding-top:5%;
-//     padding-bottom:5%;
-
-// }
-
-// .contentContainer{
-//  width:80%;
-
-//  img{
-//     width:100%;
-//     margin-bottom:4%;
-//  }
-
-//  h1{
-//     text-align: center !important;
-//     font-size: 45px;
-//     margin-bottom: 4%;
-//  }
-
-//  p{
-//     font-size:24px;
-//  }
-// }

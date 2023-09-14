@@ -1,12 +1,60 @@
-import React from "react";
-import ourService from "./ourServices.module.scss";
+import React, { useContext, useState } from "react";
+import style from "./ourServices.module.scss";
 import service from "../../../Assets/OurServices/our services.jpg";
+import { NavLink } from "react-router-dom";
+import { LinkContext } from "../../../App";
+import Steps from "../../Home/Steps/Steps";
 
 const OurServices = () => {
+  const { handleLinkClick } = useContext(LinkContext);
+  const [activeTab, setActiveTab] = useState(2);
+
+  const handleTabClick = (value) => {
+    setActiveTab(value);
+  };
   return (
     <>
-      <div className={ourService.serviceContainer}>
-        <div className={ourService.contentContainer}>
+      <div className={style.divContainer}>
+        <div className={style.serviceContainer}>
+          <div className={style.linkDiv}>
+            <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
+              Home
+            </NavLink>
+          </div>
+
+          {/* the tab div begins */}
+
+          <div className={style.tabsDiv}>
+            <NavLink to={"/aboutUs"}>
+              <button
+                className={activeTab === 1 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(1)}
+              >
+                About Us
+              </button>
+            </NavLink>
+
+            <NavLink to={"/ourServices"}>
+              <button
+                className={activeTab === 2 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(2)}
+              >
+                Our Services
+              </button>
+            </NavLink>
+
+            <NavLink to={"/directorDesk"}>
+              <button
+                className={activeTab === 3 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(3)}
+              >
+                Director's Desk
+              </button>
+            </NavLink>
+          </div>
+
+          {/* the tab div ends */}
+
           <img src={service} alt="the service logo" />
           <h1>Services Offered by Graduation Abroad</h1>
           <ul>
@@ -89,7 +137,9 @@ const OurServices = () => {
           </ul>
         </div>
       </div>
+      <Steps/>
     </>
+    
   );
 };
 

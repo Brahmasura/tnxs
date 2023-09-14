@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./usefulInfo.module.scss";
 import faqOne from "../../../Assets/UsefulInfo/faq.jpeg";
-import faqTwo from "../../../Assets/UsefulInfo/engineering.jpg";
 import faqThree from "../../../Assets/UsefulInfo/business.jpg";
+import italy from '../../../Assets/UsefulInfo/italyUsefulInfo.jpg';
 import faqFour from "../../../Assets/UsefulInfo/MBBS.jpeg";
 import applyImg from "../../../Assets/UsefulInfo/apply.png";
 import imgSix from '../../../Assets/Education/imgSix.jpg';
@@ -11,13 +11,14 @@ import { NavLink } from "react-router-dom";
 const eduList = [
   { image: faqOne, text: "Frequently asked questions" },
   {
-    image: faqTwo,
+    image: italy,
     link: "/guidelines",
-    text: "Guidelines for applying to an Italian university",
+    text: "GUIDELINES FOR ADMISSION IN ITALY",
+    para: "Learn documentation, services offered and expenses"
   },
-  { image: faqThree, text: "Student Visa requirements" },
+  { image: faqThree, text: "COURSES OFFERED IN ITALY", para:"Learn about courses, eligibility, intake, and deadlines" },
   // { image: applyImg, text: "Study MBBS in Abroad" },
-  {image: imgSix, link: "/faqInfo", text: "Frequently Asked Questions" }
+  {image: imgSix, link: "/faqInfo", text: "FREQUENTLY ASKED QUESTIONS", para:"Diagnose your basic doubts regarding education and life abroad" }
 ];
 
 const Faq = () => {
@@ -56,6 +57,8 @@ const Faq = () => {
                     ></div>
                     <div className={`col-md-12 col-lg-12 ${style.optionLower}`}>
                       <p>{option.text}</p>
+                      <p className={style.subText}>{option.para}</p>
+
                     </div>
                   </NavLink>
                 </div>

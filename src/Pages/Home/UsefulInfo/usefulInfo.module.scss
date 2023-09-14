@@ -4,7 +4,7 @@
   @include nopad;
   @include y-center;
   // height: 79vh;
-  height:81.5vh;
+  height: 81.5vh;
   padding-inline: 4% !important;
   // padding-top: 7% !important;
   border: 1px 0 solid black;
@@ -31,15 +31,14 @@
     margin-inline: 1%;
     // border: 2px solid red;
 
-    a{
+    a {
       text-decoration: none;
     }
 
-   .applyDiv{
-    height:100%;
-    width:105%;
-
-   }
+    .applyDiv {
+      height: 100%;
+      width: 105%;
+    }
     .optionUpper {
       @include x-center;
       height: 30vh;
@@ -47,7 +46,7 @@
     }
 
     .optionLower {
-      @include x-center;
+      @include y-center;
       height: 24vh;
       border: 1px solid black;
       background-color: white;
@@ -55,10 +54,15 @@
       p {
         font-family: sans-serif;
         font-style: normal;
-        font-weight: 600;
-        font-size: 1.8vw;
+        font-weight: 800;
+        font-size: 15px;
         text-align: center;
-        color:black;
+        color: black;
+      }
+
+      .subText {
+        font-size: 12px;
+        font-weight: 550;
       }
     }
   }

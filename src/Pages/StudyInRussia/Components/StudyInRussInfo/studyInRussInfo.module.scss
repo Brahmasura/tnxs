@@ -12,6 +12,7 @@
     @include bg-center;
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -29,12 +30,17 @@
     @include afterContent;
   }
 
+  .colOneContainer:hover{
+    background-size:102%;
+  }
+
   .colTwoContainer {
     background: url("../../../../Assets/StudyInRussia/studyTwo.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -51,12 +57,17 @@
     @include afterContent;
   }
 
+  .colTwoContainer:hover{
+    background-size:165%;
+  }
+
   .colThreeContainer {
     background: url("../../../../Assets/StudyInRussia/studyThree.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -73,12 +84,17 @@
     @include afterContent;
   }
 
+  .colThreeContainer:hover{
+    background-size:190%;
+  }
+
   .colFourContainer {
     background: url("../../../../Assets/StudyInRussia/studyFour.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -95,12 +111,17 @@
     @include afterContent;
   }
 
+  .colFourContainer:hover{
+    background-size:163%;
+  }
+
   .colFiveContainer {
     background: url("../../../../Assets/StudyInRussia/studyFive.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -117,12 +138,17 @@
     @include afterContent;
   }
 
+  .colFiveContainer:hover{
+    background-size:107%;
+  }
+
   .colSixContainer {
     background: url("../../../../Assets/StudyInRussia/studySix.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -137,6 +163,10 @@
 
   .colSixContainer::after {
     @include afterContent;
+  }
+
+  .colSixContainer:hover{
+    background-size:102%;
   }
 
   .hrStyle {

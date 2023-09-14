@@ -33,6 +33,9 @@ import Scholarship from "./Pages/NestedPages/Scholarship/Scholarship";
 import Guidelines from "./Pages/NestedPages/UsefulInfo/ItalyGuidelines/Guidelines/Guidelines";
 import ItalyDocs from "./Pages/NestedPages/UsefulInfo/ItalyGuidelines/ItalyDocs/ItalyDocs";
 import Expenses from "./Pages/NestedPages/UsefulInfo/ItalyGuidelines/Expenses/Expenses";
+import AboutIntro from "./Pages/AboutUs/AboutIntro/AboutIntro";
+import OurServices from "./Pages/AboutUs/OurServices/OurServices";
+import DirectorDesk from "./Pages/AboutUs/DirectorDesk/DirectorDesk";
 
 export const LinkContext = createContext();
 
@@ -53,7 +56,9 @@ function App() {
             <Route path="/studyInRussia" exact element={<StudyInRussia />} />
             <Route path="/lifeInRussia" exact element={<LifeInRussia />} />
             <Route path="/universities" exact element={<Universities />} />
-            <Route path="/aboutUs" exact element={<AboutUs />} />
+            <Route path="/aboutUs" exact element={<AboutIntro />} />
+            <Route path="/ourServices" exact element={<OurServices/>}/>
+            <Route path="/directorDesk" exact element={<DirectorDesk/>}/>
             <Route path="/advantages" exact element={<Advantages />} />
             <Route path="/ranking" exact element={<Ranking />} />
             <Route path="/mbbsInRussia" exact element={<MbbsInRuss />} />

@@ -1,21 +1,61 @@
-import React from "react";
-import aboutStyle from "./aboutIntro.module.scss";
+import React, { useState } from "react";
+import style from "./aboutIntro.module.scss";
 import { useContext } from "react";
 import { LinkContext } from "../../../App";
 import { NavLink } from "react-router-dom";
+import Steps from "../../Home/Steps/Steps";
 
 const AboutIntro = () => {
   const { handleLinkClick } = useContext(LinkContext);
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = (value) => {
+    setActiveTab(value);
+  };
   return (
     <>
-      <div className={aboutStyle.aboutIntroContainer}>
-        <div className={aboutStyle.contentContainer}>
-          <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
-            Home
-          </NavLink>
-          <h1 className={aboutStyle.mainHeading}>
-            Welcome to Graduation Abroad
-          </h1>
+      <div className={style.aboutIntroContainer}>
+        <div className={style.contentContainer}>
+          <div className={style.linkDiv}>
+            <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
+              Home
+            </NavLink>
+          </div>
+
+          {/* the tab div begins */}
+
+          <div className={style.tabsDiv}>
+            <NavLink to={"/aboutUs"}>
+              <button
+                className={activeTab === 1 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(1)}
+              >
+                About Us
+              </button>
+            </NavLink>
+
+            <NavLink to={"/ourServices"}>
+              <button
+                className={activeTab === 2 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(2)}
+              >
+                Our Services
+              </button>
+            </NavLink>
+
+            <NavLink to={"/directorDesk"}>
+              <button
+                className={activeTab === 3 ? style.activeTabs : style.tabs}
+                onClick={() => handleTabClick(3)}
+              >
+                Director's Desk
+              </button>
+            </NavLink>
+          </div>
+
+          {/* the tab div ends */}
+
+          <h1 className={style.mainHeading}>Welcome to Graduation Abroad</h1>
           <p>
             Dear Fellow Aspirers,
             <br />
@@ -38,7 +78,7 @@ const AboutIntro = () => {
             your money.
           </p>
 
-          <div className={aboutStyle.greyContainer}>
+          <div className={style.greyContainer}>
             <h2>
               Courses we are expertise in : MBBS (Bachelor in Medicine and
               Bachelor in Science).Why?
@@ -94,9 +134,9 @@ const AboutIntro = () => {
             Graduationabroad@outlook.com
             <br />
             <br />
-            +91 9997765101
+            +91-9760390807 (whatsapp, telegram)
             <br />
-            +91 9760390807
+            +91-9811464911 (whatsapp)
             <br />
             <br />
             Best Regards,
@@ -106,6 +146,7 @@ const AboutIntro = () => {
           </p>
         </div>
       </div>
+      <Steps/>
     </>
   );
 };

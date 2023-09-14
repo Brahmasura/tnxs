@@ -198,7 +198,7 @@ const Header = () => {
 
               <div className={`col-md-3 col-lg-3 ${header.buttonCol}`}>
                 <button onClick={handleModalClick}>
-                  <p>Contact Us</p>
+                  <p>Apply Online</p>
                 </button>
               </div>
             </div>

@@ -11,6 +11,7 @@
     @include bg-center;
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -27,12 +28,17 @@
     @include afterContent;
   }
 
+  .colOneContainer:hover{
+    background-size:101%;
+  }
+
   .colTwoContainer {
     background: url("../../../../Assets/WhyRussia/Tradition\ of\ higher\ education.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -49,12 +55,17 @@
     @include afterContent;
   }
 
+  .colTwoContainer:hover{
+    background-size:101%;
+  }
+
   .colThreeContainer {
     background: url("../../../../Assets/WhyRussia/Testimonial.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -71,12 +82,17 @@
     @include afterContent;
   }
 
+  .colThreeContainer:hover{
+    background-size:102%;
+  }
+
   .colFourContainer {
     background: url("../../../../Assets/WhyRussia/Russian\ UNiversities\ in\ World\ Ranking.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -91,6 +107,10 @@
 
   .colFourContainer::after {
     @include afterContent;
+  }
+
+  .colFourContainer:hover{
+    background-size:101%;
   }
 
   .hrStyle {

@@ -5,14 +5,63 @@
 }
 
 .contentContainer {
-  width: 70%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  // width: 70%;
+  // padding-top: 5%;
+  // padding-bottom: 5%;
+  width: 80%;
+  @include verticalPad;
+  @include y-start;
 
-  a {
-    @include x-center;
-    @include theLink;
+  // a {
+  //   @include x-center;
+  //   @include theLink;
+  // }
+
+  .linkDiv {
+    align-self: center;
+    // @include x-center;
+    margin-bottom:4%;
+
+    a {
+      @include theLink;
+    }
+    p {
+      display: inline;
+    }
   }
+
+  // styling for the actve tabs begins
+
+  .tabsDiv {
+    width: 100%;
+    margin-bottom: 3%;
+    padding-inline: 15%;
+    @include x-center;
+
+    a {
+      @include xmar1;
+    }
+
+    .tabs {
+      background-color: white;
+      border-radius: 20px;
+      border: 2px solid #143f6b;
+      height: 2rem;
+      padding-inline: 10px;
+      font-weight: 600;
+    }
+
+    .activeTabs {
+      background-color: #143f6b;
+      color: white;
+      border-radius: 20px;
+      border: 2px solid #143f6b;
+      height: 2rem;
+      padding-inline: 10px;
+      font-weight: 600;
+    }
+  }
+
 
   .mainHeading {
    @include mainHeading;

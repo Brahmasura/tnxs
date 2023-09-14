@@ -11,6 +11,7 @@
     @include bg-center;
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -27,12 +28,18 @@
     @include afterContent;
   }
 
+  .colOneContainer:hover {
+    background-size: 102%;
+  }
+
   .colTwoContainer {
     background: url("../../../../Assets/LifeInRussia/lifeTwo.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
+
 
     .upperText {
       @include infoText;
@@ -49,12 +56,18 @@
     @include afterContent;
   }
 
+  .colTwoContainer:hover{
+    background-size:190%;
+  }
+
   .colThreeContainer {
     background: url("../../../../Assets/LifeInRussia/lifeThree.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
+
 
     .upperText {
       @include infoText;
@@ -71,12 +84,18 @@
     @include afterContent;
   }
 
+  .colThreeContainer:hover{
+    background-size: 190%;
+  }
+
   .colFourContainer {
     background: url("../../../../Assets/Nested/safetyFirst.jpg");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
+
 
     .upperText {
       @include infoText;
@@ -93,12 +112,18 @@
     @include afterContent;
   }
 
+  .colFourContainer:hover{
+    background-size:160%;
+  }
+
   .colFiveContainer {
     background: url("../../../../Assets/LifeInRussia/lifeSeven.png");
     @include bg-center;
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
+
 
     .upperText {
       @include infoText;
@@ -115,6 +140,10 @@
     @include afterContent;
   }
 
+  .colFiveContainer:hover{
+    background-size:130%;
+  }
+
   .colSixContainer {
     // background: url("../../../../Assets/LifeInRussia/lifeSix.jpg");
     background: url("../../../../Assets/students/IntroSeven.jpg");
@@ -123,6 +152,7 @@
 
     @include y-bot-left;
     @include colStyles;
+    transition: background-size 0.3s ease-in-out;
 
     .upperText {
       @include infoText;
@@ -137,6 +167,10 @@
 
   .colSixContainer::after {
     @include afterContent;
+  }
+
+  .colSixContainer:hover {
+    background-size: 102%;
   }
 
   .hrStyle {
