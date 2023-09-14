@@ -2,20 +2,23 @@
 
 .stepsContainer {
   // height: 75vh;
-  height:81.5vh;
+  height:74.5vh;
   padding-inline: 7%;
   @include y-center;
   // @include border;
   // @include bgcolor;
-  background-color: whitesmoke;
+  background-color: white;
 
   a{
+    
     text-decoration:none;
     color: #333; /* Text color */
     transition: text-decoration 0.2s;
 
     :hover{
-      text-decoration: underline;
+      font-weight:500;
+      // text-decoration: underline;
+      // text-decoration-thickness: 2px;
     }
   }
 
@@ -29,8 +32,12 @@
 
   h1 {
     @include heading;
-    margin-bottom: 3%;
+    font-weight:300;
+    font-family: 'Open Sans', sans-serif !important;
+    margin-bottom: 2%;
     color: #dd3534;
+
+    
     
   }
 }
@@ -57,7 +64,7 @@
   }
 
   .stepsLower {
-    height: 21vh;
+    height: 9vh;
     // @include border;
     @include x-center;
     background-color: white;

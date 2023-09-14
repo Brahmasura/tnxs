@@ -83,7 +83,7 @@
 }
 
 .rightBotLeft {
-  background: url("../../../Assets/Information/infoTwo.jpg");
+  background: url("../../../Assets/Information/pricesInRuss.jpg");
   @include bg-center;
   // @include border;
   @include y-bot-left;
@@ -108,11 +108,11 @@
 }
 
 .rightBotLeft:hover{
-  background-size:125%;
+  background-size:136%;
 }
 
 .rightBotRight {
-  background: url("../../../Assets/Information/infoFour.jpg");
+  background: url("../../../Assets/Information/dollar.jpg");
   @include bg-center;
   @include y-bot-left;
   padding-bottom: 4%;
@@ -143,7 +143,7 @@
 }
 
 .rightBotRight:hover{
-  background-size:160%;
+  background-size:102%;
 }
 
 .hrStyle {

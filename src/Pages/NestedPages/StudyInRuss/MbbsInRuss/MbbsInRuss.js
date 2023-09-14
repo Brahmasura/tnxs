@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./mbbsInRuss.module.scss";
-import medical from "../../../../Assets/Nested/team-of-doctors.jpg";
+import mbbsInner from "../../../../Assets/Nested/mbbsInner.jpg";
 import { useContext } from "react";
 import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
@@ -84,7 +84,7 @@ const MbbsInRuss = () => {
           {/* the tab div ends  */}
 
           <h1>MBBS In Russia</h1>
-          <img src={medical} alt="the advantages" />
+          <img src={mbbsInner} alt="the advantages" />
 
           <p>
             MBBS study in abroad, Now a day’s mostly youngsters choices is

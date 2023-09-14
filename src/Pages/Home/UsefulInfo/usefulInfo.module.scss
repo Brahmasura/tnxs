@@ -42,13 +42,13 @@
     .optionUpper {
       @include x-center;
       height: 30vh;
-      border: 1px solid black;
+      // border: 1px solid black;
     }
 
     .optionLower {
       @include y-center;
       height: 24vh;
-      border: 1px solid black;
+      // border: 1px solid black;
       background-color: white;
 
       p {

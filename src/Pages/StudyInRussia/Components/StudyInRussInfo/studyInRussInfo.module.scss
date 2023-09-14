@@ -8,7 +8,7 @@
   }
 
   .colOneContainer {
-    background: url("../../../../Assets/StudyInRussia/studyOne.jpg");
+    background: url("../../../../Assets/StudyInRussia/mbbsOuter.jpg");
     @include bg-center;
     @include y-bot-left;
     @include colStyles;
@@ -89,7 +89,7 @@
   }
 
   .colFourContainer {
-    background: url("../../../../Assets/StudyInRussia/studyFour.jpg");
+    background: url("../../../../Assets/StudyInRussia/uniOuter.jpg");
     @include bg-center;
 
     @include y-bot-left;
@@ -112,11 +112,11 @@
   }
 
   .colFourContainer:hover{
-    background-size:163%;
+    background-size:108%;
   }
 
   .colFiveContainer {
-    background: url("../../../../Assets/StudyInRussia/studyFive.jpg");
+    background: url("../../../../Assets/StudyInRussia/validOuter.jpg");
     @include bg-center;
 
     @include y-bot-left;
@@ -139,7 +139,7 @@
   }
 
   .colFiveContainer:hover{
-    background-size:107%;
+    background-size:103%;
   }
 
   .colSixContainer {

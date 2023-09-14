@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./usefulInfo.module.scss";
 import faqOne from "../../../Assets/UsefulInfo/faq.jpeg";
-import faqThree from "../../../Assets/UsefulInfo/business.jpg";
+import courseOffered from "../../../Assets/UsefulInfo/courseOffered.jpg";
 import italy from '../../../Assets/UsefulInfo/italyUsefulInfo.jpg';
 import faqFour from "../../../Assets/UsefulInfo/MBBS.jpeg";
 import applyImg from "../../../Assets/UsefulInfo/apply.png";
@@ -16,7 +16,7 @@ const eduList = [
     text: "GUIDELINES FOR ADMISSION IN ITALY",
     para: "Learn documentation, services offered and expenses"
   },
-  { image: faqThree, text: "COURSES OFFERED IN ITALY", para:"Learn about courses, eligibility, intake, and deadlines" },
+  { image: courseOffered, text: "COURSES OFFERED IN ITALIAN UNIVERSITIES", para:"Learn about courses, eligibility, intake, and deadlines" },
   // { image: applyImg, text: "Study MBBS in Abroad" },
   {image: imgSix, link: "/faqInfo", text: "FREQUENTLY ASKED QUESTIONS", para:"Diagnose your basic doubts regarding education and life abroad" }
 ];

@@ -10,9 +10,9 @@ import { NavLink } from "react-router-dom";
 const stepsList = [
   { image: imgOne, text: "Choose Program and University" },
   { image: imgTwo, text: "Prepare your Documents" },
-  { image: imgThree, text: "Learn About Financing and Scholarship" },
-  { image: imgFour, text: "Apply for Admission" },
-  { image: imgFive, text: "collect your Invitation and get your Student Visa" },
+  { image: imgThree, text: "Learn about Financing and Scholarship" },
+  { image: imgFour, text: "Apply for Admission to a university" },
+  { image: imgFive, text: "Get Invitation to apply for Student Visa" },
 ];
 
 const Steps = () => {
@@ -20,7 +20,7 @@ const Steps = () => {
     <>
       <div className={steps.stepsContainer}>
         <NavLink to={"/nestedSteps"} onClick={() => window.scrollTo(0, 0)}>
-          <h1>5 Steps for Applying to a Russian University</h1>
+          <h1>Steps for Applying to a Russian University</h1>
         </NavLink>
 
         <div className={`container-fluid ${steps.colContainer}`}>
