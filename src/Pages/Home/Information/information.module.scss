@@ -153,3 +153,37 @@
   opacity: 1;
   margin: 0;
 }
+
+
+
+// styling for mobile portrait begins
+@media (max-width:576px) and (orientation:portrait){
+  .leftCol{
+    height:50vh;
+  }
+
+  .rightCol{
+    height:auto;
+  }
+
+  .rightTopCol{
+    height:50vh;
+  }
+
+  .rightBotCol{
+    height:auto;
+  }
+
+  .rightBotLeft{
+    height:50vh;
+  }
+
+  .rightBotRight{
+    height:50vh;
+  }
+}
+
+
+
+
+// styling for mobile portrait ends

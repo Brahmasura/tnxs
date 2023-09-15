@@ -72,9 +72,37 @@
     p {
       font-family: sans-serif;
       font-weight: 600;
-      font: size 1.5vw;
+      font-size: 15px;
       color: red;
       text-align: center;
     }
   }
 }
+
+
+
+// styling for mobile portrait begins 
+@media (max-width:576px) and (orientation:portrait){
+  .stepsContainer{
+    height:auto;
+    padding-inline:unset;
+
+    h1{
+      font-size:24px;
+      line-height: 2.2rem;
+
+    }
+  }
+
+  .stepContainer{
+   .stepsUpper{
+    height:20vh;
+   }
+
+  
+  }
+}
+
+
+
+// styling for mobile portrait ends

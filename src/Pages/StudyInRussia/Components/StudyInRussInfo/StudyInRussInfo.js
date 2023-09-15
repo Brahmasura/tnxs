@@ -16,7 +16,7 @@ const StudyInRussInfo = () => {
         </div>
 
         <div className={`col-6 col-lg-3 ${studyInRussInfo.colTwoContainer}`}>
-          <NavLink to={"/mbbsInRussia"} onClick={() => window.scrollTo(0, 0)}>
+          <NavLink to={"/studyInEng"} onClick={() => window.scrollTo(0, 0)}>
             <h1 className={studyInRussInfo.upperText}>Study in English</h1>
             <hr className={studyInRussInfo.hrStyle} />
             <h1>Study in Russia without knowing Russian</h1>
@@ -59,7 +59,7 @@ const StudyInRussInfo = () => {
           >
           <h1 className={studyInRussInfo.upperText}>Tuition Fee</h1>
           <hr className={studyInRussInfo.hrStyle} />
-          <h1>Step By Step Guidance</h1></NavLink>
+          <h1>Learn about University Fee and other expenses</h1></NavLink>
         </div>
       </div>
     </div>
