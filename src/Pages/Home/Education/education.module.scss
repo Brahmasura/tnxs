@@ -38,7 +38,7 @@
       height: 100%;
       width: 105%;
     }
-    
+
     .optionUpper {
       @include x-center;
       height: 30vh;
@@ -72,12 +72,38 @@
   }
 }
 
-// .optionContainer {
-//   .optionUpper {
-//     @include x-center;
-//   }
 
-//   .optionLower {
-//     @include x-center;
-//   }
-// }
+
+// styling for mobile portrait
+
+@media (max-width: 576px) and (orientation: portrait) {
+  .eduContainer {
+    height: auto;
+    padding-inline: 0 !important;
+  }
+
+  //yet to be changed
+  .eduTitle {
+    font-size: 25px;
+  }
+
+  .colsContainer {
+    display: block;
+
+    .rowOptions {
+      width: unset;
+      height: auto;
+    }
+
+    .optionContainer{
+      height:auto;
+      width:100%;
+      margin:2% 0;
+
+      .applyDiv{
+        height:60vh;
+        width:auto;
+      }
+    }
+  }
+}

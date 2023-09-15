@@ -23,7 +23,7 @@ const Education = () => {
       <div className={`container-fluid ${education.colsContainer}`}>
         <div className={`row ${education.rowOptions}`}>
           {eduList.map((option, index) => (
-            <div className={`col-md-3 col-lg-3 ${education.optionContainer}`} key={index}>
+            <div className={`col-6 col-sm-6 col-md-3 col-lg-3 ${education.optionContainer}`} key={index}>
             {/* testing code begins  */}
             {index === 1 ? (
               <>
