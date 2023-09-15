@@ -49,8 +49,116 @@ const Header = () => {
     });
   };
 
+  const [isNavCollapsed, setIsNavCollapsed] = useState(false);
+
+  const handleNavCollapse = () => {
+    setIsNavCollapsed(!isNavCollapsed);
+  };
+
   return (
     <>
+      {/* the mobile header layout begins  */}
+
+      <>
+        <div class={`container-fluid ${header.mobHeaderContainer}`}>
+          <nav
+            className={`navbar navbar-expand-lg navbar-light ${header.mobHeaderLogo}`}
+          >
+            <NavLink className="navbar-brand" to={"/"}>
+              <img src={gradLogo} alt="brand logo" />
+            </NavLink>
+            <button
+              className="navbar-toggler"
+              type="button"
+              onClick={handleNavCollapse}
+              // data-bs-toggle="collapse"
+              // data-bs-target="#navbarTogglerDemo01"
+              // aria-controls="navbarTogglerDemo01"
+              // aria-expanded="false"
+              // aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div
+              className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+              id="navbarTogglerDemo01"
+            >
+              <ul className="navbar-nav ms-auto">
+                <li className="navbar-item">
+                  <NavLink
+                    className="nav-link"
+                    to={"/"}
+                    onClick={handleNavCollapse}
+                  >
+                    HOME
+                  </NavLink>
+                </li>
+              
+                <li className="navbar-item">
+                  <NavLink
+                    className="nav-link"
+                    to={"/whyRussia"}
+                    onClick={handleNavCollapse}
+                  >
+                    Why Russia
+                  </NavLink>
+                </li>
+                <li className="navbar-item">
+                  <NavLink
+                    className="nav-link"
+                    to={"/studyInRussia"}
+                    onClick={handleNavCollapse}
+                  >
+                    Study In Russia
+                  </NavLink>
+                </li>
+                <li className="navbar-item">
+                  <NavLink
+                    className="nav-link"
+                    to={"/lifeInRussia"}
+                    onClick={handleNavCollapse}
+                  >
+                    Life In Russia
+                  </NavLink>
+                </li>
+                <li className="navbar-item">
+                  <NavLink
+                    className="nav-link"
+                    to={"/universities"}
+                    onClick={handleNavCollapse}
+                  >
+                    Universities
+                  </NavLink>
+                </li>
+                <li className="navbar-item">
+                  <NavLink
+                    className="nav-link"
+                    to={"/aboutUs"}
+                    onClick={handleNavCollapse}
+                  >
+                    About Us
+                  </NavLink>
+                </li>
+                <li className="navbar-item">
+                  <button
+                    className={header.joinUsBtn}
+                    onClick={() => {
+                      handleNavCollapse();
+                      handleModalClick();
+                    }}
+                  >
+                    Apply Online
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </>
+
+      {/* the mobile header layout ends */}
+
+      {/* the real web layout */}
       <div className={`container-fluid ${header.headerContainer}`}>
         <div className="row">
           <div className={`col-md-12 col-lg-12 ${header.headerFirstCol}`}>
