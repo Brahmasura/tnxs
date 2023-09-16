@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import russIntroStyle from "./russIntro.module.scss";
+import style from "./russIntro.module.scss";
 import { NavLink } from "react-router-dom";
 import { LinkContext } from "../../../../App";
 
@@ -7,8 +7,12 @@ const RussIntro = () => {
     const {handleLinkClick} = useContext(LinkContext);
   return (
     <>
-      <div className={russIntroStyle.russIntroContainer}>
-        <NavLink to={"/"} onClick={() => handleLinkClick(0)}>Home</NavLink>
+      <div className={style.russIntroContainer}>
+        <div className={style.linkDiv}>
+            <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
+              Home
+            </NavLink>
+          </div>
         <h1>Why Russia</h1>
         <p>
           Russia is a highly educated country with over half of its residents

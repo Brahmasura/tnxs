@@ -9,7 +9,7 @@ const WhyRussInfo = () => {
     <>
       <div className={whyRussInfo.RussInfoContainer}>
         <div className={`row ${whyRussInfo.infoRow}`}>
-          <div className={`col-lg-6 ${whyRussInfo.colOneContainer}`}>
+          <div className={`col-12 col-lg-6 ${whyRussInfo.colOneContainer}`}>
             <NavLink to={"/advantages"} onClick={() => window.scrollTo(0, 0)}>
               <h1 className={whyRussInfo.upperText}>ADVANTAGES</h1>
             </NavLink>
@@ -17,7 +17,7 @@ const WhyRussInfo = () => {
             <h1>Reasons to study in Russia</h1>
           </div>
 
-          <div className={`col-lg-6 ${whyRussInfo.colTwoContainer}`}>
+          <div className={`col-12 col-lg-6 ${whyRussInfo.colTwoContainer}`}>
             <h1 className={whyRussInfo.upperText}>
               WORK OPPORTUNITIES FOR INTERNATIONAL STUDENTS
             </h1>
@@ -25,13 +25,13 @@ const WhyRussInfo = () => {
             <h1>Work permit, Part time jobs</h1>
           </div>
 
-          <div className={`col-lg-6 ${whyRussInfo.colThreeContainer}`}>
+          <div className={`col-12 col-lg-6 ${whyRussInfo.colThreeContainer}`}>
             <h1 className={whyRussInfo.upperText}>TESTIMONIALS</h1>
             <hr className={whyRussInfo.hrStyle} />
             <h1>Know what it's like to study in Russia</h1>
           </div>
 
-          <div className={`col-lg-6 ${whyRussInfo.colFourContainer}`}>
+          <div className={`col-12 col-lg-6 ${whyRussInfo.colFourContainer}`}>
            <NavLink to={"/ranking"} onClick={() => window.scrollTo(0, 0)}>
            <h1 className={whyRussInfo.upperText}>
               RUSSIAN UNIVERSITIES IN WORLD RANKING

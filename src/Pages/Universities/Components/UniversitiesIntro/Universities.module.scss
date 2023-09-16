@@ -1,33 +1,39 @@
 @import '../../../../mixins.module.scss';
 
 .uniIntroContainer{
-    // height:60vh;
-    @include y-center;
-    @include padThree;
-    padding-top:3%;
-    padding-bottom:3%;
+  height: auto;
+  @include y-top-center;
+  @include padThree;
+  @include verticalPad;
 
-    .linkDiv {
-        align-self: center;
-        margin-bottom:4%;
-    
-        a {
-          @include theLink;
-        }
-        p {
-          display: inline;
-        }
-      }
+  .linkDiv {
+    align-self: center;
+    margin-bottom: 4%;
 
-    // a{
-    //     color:red;
-    // }
-
-    h1{
-       margin-top:2%;
+    a {
+      @include theLink;
     }
-
-    p{
-        text-align:justify;
+    p {
+      display: inline;
     }
+  }
+
+  h1 {
+    @include mainHeading;
+  }
+
+  p {
+    font-size: 1.3vw;
+    text-align: justify;
+  }
 }
+
+// styling mobile portrait begins
+
+@media (max-width: 576px) and (orientation: portrait) {
+  .uniIntroContainer {
+    @include levTwoIntroMob;
+  }
+}
+
+// styling mobile portrait ends

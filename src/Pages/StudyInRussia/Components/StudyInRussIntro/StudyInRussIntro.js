@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import studyInRussIntro from "./studyInRussIntro.module.scss";
+import style from "./studyInRussIntro.module.scss";
 import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
 
@@ -7,10 +7,12 @@ const StudyInRussIntro = () => {
   const { handleLinkClick } = useContext(LinkContext);
   return (
     <>
-      <div className={studyInRussIntro.studyIntroContainer}>
-        <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
-          Home
-        </NavLink>
+      <div className={style.studyIntroContainer}>
+      <div className={style.linkDiv}>
+            <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
+              Home
+            </NavLink>
+          </div>
         <h1>Study in Russia</h1>
         <p>
           Studying in Russia is both prestigious and advantageous. You can be

@@ -181,3 +181,78 @@
     margin: 0;
   }
 }
+
+// styling for mobile portrait begins
+
+@media (max-width:576px) and (orientation:portrait){
+  .colOneContainer{
+    height:35vh !important;
+    .upperText {
+     font-size:4vw;
+    }
+
+    h1 {
+     font-size:6vw;
+    }
+  }
+
+  .colTwoContainer{
+    height:35vh !important;
+ .upperText {
+     font-size:4vw;
+    }
+
+    h1 {
+     font-size:6vw;
+    }
+  }
+
+  .colThreeContainer{
+    height:35vh !important;
+ .upperText {
+     font-size:4vw;
+    }
+
+    h1 {
+     font-size:6vw;
+    }
+  }
+
+  .colFourContainer{
+    height:35vh !important;
+ .upperText {
+     font-size:4vw;
+    }
+
+    h1 {
+     font-size:6vw;
+    }
+  }
+
+  .colFiveContainer{
+    height:35vh !important;
+ .upperText {
+     font-size:4vw;
+    }
+
+    h1 {
+     font-size:6vw;
+    }
+  }
+
+  .colSixContainer{
+    height:35vh !important;
+ .upperText {
+     font-size:4vw;
+    }
+
+    h1 {
+     font-size:6vw;
+    }
+  }
+}
+
+
+
+
+// styling for mobile portrait ends 

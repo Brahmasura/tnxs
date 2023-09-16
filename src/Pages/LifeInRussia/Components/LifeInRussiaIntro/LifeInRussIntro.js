@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import lifeInRussIntro from "./lifeInRussIntro.module.scss";
+import style from "./lifeInRussIntro.module.scss";
 import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
 
@@ -7,10 +7,12 @@ const LifeInRussIntro = () => {
   const { handleLinkClick } = useContext(LinkContext);
   return (
     <>
-      <div className={lifeInRussIntro.lifeIntroContainer}>
-        <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
-          Home
-        </NavLink>
+      <div className={style.lifeIntroContainer}>
+      <div className={style.linkDiv}>
+            <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
+              Home
+            </NavLink>
+          </div>
         <h1>Life in Russia</h1>
         <p>
           The decision to study abroad is a very serious step. You have to
