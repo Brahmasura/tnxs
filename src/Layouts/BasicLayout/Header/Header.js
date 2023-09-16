@@ -66,6 +66,13 @@ const Header = () => {
           >
             <NavLink className="navbar-brand" to={"/"}>
               <img src={gradLogo} alt="brand logo" />
+              <div className={header.mobileHeadText}>
+                    <h1>GRADUATION ABROAD</h1>
+                    <p>
+                      Direct Representatives of Govt. <br/> Medical Universities in
+                      Abroad
+                    </p>
+                  </div>
             </NavLink>
             <button
               className="navbar-toggler"

@@ -83,3 +83,45 @@
     }
   }
 }
+
+
+// styling for mobile portrait begins 
+
+@media (max-width:576px) and (orientation:portrait){
+  .discoverContainer{
+    height:auto;
+    padding-inline:0 !important;
+  }
+
+  .discoverTitle{
+    font-size:25px;
+  }
+
+  .colsContainer{
+    .rowOptions{
+      height:auto;
+    }
+
+    .optionContainer{
+      width:100%;
+      margin:2% 0;
+
+
+      .optionLower{
+        height:20vh;
+
+        .lowerText{
+          p{
+            font-size:15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+// styling for mobile portrait ends 

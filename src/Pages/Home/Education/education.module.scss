@@ -72,38 +72,54 @@
   }
 }
 
-
-
 // styling for mobile portrait
 
 @media (max-width: 576px) and (orientation: portrait) {
   .eduContainer {
     height: auto;
-    padding-inline: 0 !important;
+    // padding-inline: 0 !important;
+    padding: 12% 4% !important;
   }
 
   //yet to be changed
   .eduTitle {
-    font-size: 25px;
+    font-size: 7vw;
+    line-height:32px;
   }
 
   .colsContainer {
     display: block;
 
     .rowOptions {
-      width: unset;
+      width: 100%;
       height: auto;
     }
 
-    .optionContainer{
-      height:auto;
-      width:100%;
-      margin:2% 0;
+    .optionContainer {
+      height: auto;
+      width: 100%;
+      margin: 4% 0;
 
-      .applyDiv{
-        height:60vh;
-        width:auto;
+      .innerContainer {
+        padding: 0;
       }
+
+      .applyDiv {
+        height: 54vh;
+        width: auto;
+      }
+
+      .optionLower{
+        p{
+          font-size:18px;
+        }
+
+        .subText{
+          font-size:14px;
+        }
+      }
+
+
     }
   }
 }

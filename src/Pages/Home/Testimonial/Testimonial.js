@@ -67,7 +67,7 @@ const Testimonial = () => {
           <div className={`row ${style.rowTesti}`}>
             {testiList.map((student, index) => (
               <div
-                className={`col-md-3 col-lg-3 ${style.studentCard}`}
+                className={`col-12 col-sm-12 col-md-3 col-lg-3 ${style.studentCard}`}
                 key={index}
               >
                 <img src={student.stuPic} alt="student" />

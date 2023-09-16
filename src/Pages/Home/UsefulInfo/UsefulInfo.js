@@ -29,7 +29,7 @@ const Faq = () => {
         <div className={`row ${style.rowOptions}`}>
           {eduList.map((option, index) => (
             <div
-              className={`col-md-3 col-lg-3 ${style.optionContainer}`}
+              className={`col-12 col-sm-12 col-md-3 col-lg-3 ${style.optionContainer}`}
               key={index}
             >
               {index === 0 ? (
@@ -48,14 +48,14 @@ const Faq = () => {
                     onClick={() => window.scrollTo(0, 0)}
                   >
                     <div
-                      className={`col-md-12 col-lg-12 ${style.optionUpper}`}
+                      className={`col-12 col-sm-12 col-md-12 col-lg-12 ${style.optionUpper}`}
                       style={{
                         backgroundImage: `url(${option.image})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                       }}
                     ></div>
-                    <div className={`col-md-12 col-lg-12 ${style.optionLower}`}>
+                    <div className={`col-12 col-sm-12 col-md-12 col-lg-12 ${style.optionLower}`}>
                       <p>{option.text}</p>
                       <p className={style.subText}>{option.para}</p>
 

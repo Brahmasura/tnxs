@@ -60,11 +60,11 @@ const DiscoverRussia = () => {
       <div className={`container-fluid ${discover.colsContainer}`}>
         <div className={`row ${discover.rowOptions}`}>
           {eduList.map((option) => (
-            <div className={`col-md-3 col-lg-3 ${discover.optionContainer}`}>
+            <div className={` col-12 col-sm-12 col-md-3 col-lg-3 ${discover.optionContainer}`}>
               <div className="row">
                 <NavLink to={option.link} onClick={() => window.scrollTo(0, 0)}>
                   <div
-                    className={`col-md-12 col-lg-12 ${discover.optionUpper}`}
+                    className={`col-12 col-sm-12 col-md-12 col-lg-12 ${discover.optionUpper}`}
                     style={{
                       backgroundImage: `url(${option.image})`,
                       backgroundSize: "100% 93%",
@@ -76,7 +76,7 @@ const DiscoverRussia = () => {
                     <p>{option.text}</p>
                   </div>
                   <div
-                    className={`col-md-12 col-lg-12 container-fluid ${discover.optionLower}`}
+                    className={`col-12 col-sm-12 col-md-12 col-lg-12 container-fluid ${discover.optionLower}`}
                   >
                     <div className="row">
                       <div className={`col-12 ${discover.lowerText}`}>
