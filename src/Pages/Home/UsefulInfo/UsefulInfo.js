@@ -2,10 +2,10 @@ import React from "react";
 import style from "./usefulInfo.module.scss";
 import faqOne from "../../../Assets/UsefulInfo/faq.jpeg";
 import courseOffered from "../../../Assets/UsefulInfo/courseOffered.jpg";
-import italy from '../../../Assets/UsefulInfo/italyUsefulInfo.jpg';
+import italy from "../../../Assets/UsefulInfo/italyUsefulInfo.jpg";
 import faqFour from "../../../Assets/UsefulInfo/MBBS.jpeg";
 import applyImg from "../../../Assets/UsefulInfo/apply.png";
-import imgSix from '../../../Assets/Education/imgSix.jpg';
+import imgSix from "../../../Assets/Education/imgSix.jpg";
 import { NavLink } from "react-router-dom";
 
 const eduList = [
@@ -14,11 +14,20 @@ const eduList = [
     image: italy,
     link: "/guidelines",
     text: "GUIDELINES FOR ADMISSION IN ITALY",
-    para: "Learn documentation, services offered and expenses"
+    para: "Learn documentation, services offered and expenses",
   },
-  { image: courseOffered, text: "COURSES OFFERED IN ITALIAN UNIVERSITIES", para:"Learn about courses, eligibility, intake, and deadlines" },
+  {
+    image: courseOffered,
+    text: "COURSES OFFERED IN ITALIAN UNIVERSITIES",
+    para: "Learn about courses, eligibility, intake, and deadlines",
+  },
   // { image: applyImg, text: "Study MBBS in Abroad" },
-  {image: imgSix, link: "/faqInfo", text: "FREQUENTLY ASKED QUESTIONS", para:"Diagnose your basic doubts regarding education and life abroad" }
+  {
+    image: imgSix,
+    link: "/faqInfo",
+    text: "FREQUENTLY ASKED QUESTIONS",
+    para: "Diagnose your basic doubts regarding education and life abroad",
+  },
 ];
 
 const Faq = () => {
@@ -39,6 +48,7 @@ const Faq = () => {
                     title="facebook plugin"
                     width="100%"
                     height="100%"
+                    allowFullScreen
                   />
                 </>
               ) : (
@@ -55,10 +65,11 @@ const Faq = () => {
                         backgroundPosition: "center",
                       }}
                     ></div>
-                    <div className={`col-12 col-sm-12 col-md-12 col-lg-12 ${style.optionLower}`}>
+                    <div
+                      className={`col-12 col-sm-12 col-md-12 col-lg-12 ${style.optionLower}`}
+                    >
                       <p>{option.text}</p>
                       <p className={style.subText}>{option.para}</p>
-
                     </div>
                   </NavLink>
                 </div>

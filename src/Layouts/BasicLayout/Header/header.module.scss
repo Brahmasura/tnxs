@@ -296,37 +296,49 @@ ul li {
       a {
         margin: 0;
         padding: 0;
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         img {
           width: 100%;
           height: auto;
           max-height: 13.5vw;
-          border-radius:100%;
+          border-radius: 100%;
         }
 
-        .mobileHeadText{
-          margin-left:2.5%;
-        
-          h1{
-            font-size:3.8vw;
-            color: #dd3534;
-            margin-bottom:0;
+        .mobileHeadText {
+          margin-left: 2.5%;
 
+          h1 {
+            font-size: 3.8vw;
+            color: #dd3534;
+            margin-bottom: 0;
           }
 
-          p{
-                font-size:2.8vw;
-                margin-bottom:0;
+          p {
+            font-size: 2.8vw;
+            margin-bottom: 0;
           }
         }
       }
 
-      li{
+      .textLinkUl {
+        margin-top: 4%;
+      }
+
+      li {
         display: flex !important;
         justify-content: center;
-        margin:1%;
+        margin: 1%;
+      }
+
+      .mobileHeadLinksCol {
+        margin-top: 3.5%;
+        .mobileHeadLinkUl {
+          padding: 0 !important;
+          margin-bottom: 0;
+          @include x-sa;
+        }
       }
     }
   }
@@ -334,6 +346,41 @@ ul li {
   .headerContainer {
     display: none !important;
   }
+
+  .modalOverlay {
+    overflow: hidden;
+  }
+
+  .modalContent {
+    width: 95%;
+   padding:3% 2%;
+    max-height: 100%;
+    overflow-y: auto;
+
+    .modalLeftCol {
+      display: none;
+    }
+
+    .modalRightCol {
+      h1 {
+        font-size: 7vw;
+        text-align: center;
+      }
+      h2 {
+        font-size: 4vw;
+        text-align: center;
+      }
+
+      .termsPara {
+        font-size: 3vw;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.closeButton{
+  width:7vw;
 }
 
 // mobile header styling ends

@@ -32,6 +32,7 @@
 
     a {
       text-decoration: none;
+      padding: 0;
     }
 
     .applyDiv {
@@ -84,7 +85,7 @@
   //yet to be changed
   .eduTitle {
     font-size: 7vw;
-    line-height:32px;
+    line-height: 2rem;
   }
 
   .colsContainer {
@@ -109,17 +110,18 @@
         width: auto;
       }
 
-      .optionLower{
-        p{
-          font-size:18px;
+      .optionLower {
+        height: 18vh;
+        padding: 5%;
+        p {
+          font-size: 4vw;
         }
 
-        .subText{
-          font-size:14px;
+        .subText {
+          font-size: 3.5vw;
+          color: #808080db;
         }
       }
-
-
     }
   }
 }

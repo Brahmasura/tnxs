@@ -49,7 +49,7 @@ const Header = () => {
     });
   };
 
-  const [isNavCollapsed, setIsNavCollapsed] = useState(false);
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = () => {
     setIsNavCollapsed(!isNavCollapsed);
@@ -90,7 +90,7 @@ const Header = () => {
               className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
               id="navbarTogglerDemo01"
             >
-              <ul className="navbar-nav ms-auto">
+                <ul className={`navbar-nav ms-auto ${header.textLinkUl}`}>
                 <li className="navbar-item">
                   <NavLink
                     className="nav-link"
@@ -158,6 +158,46 @@ const Header = () => {
                   </button>
                 </li>
               </ul>
+
+              {/* the mobile link col begins */}
+
+              <div className={`navbar-item ${header.mobileHeadLinksCol}`}>
+                <ul className={header.mobileHeadLinkUl}>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/GraduationAbroad"
+                      target="_absolute"
+                    >
+                      <img src={fb} alt="the link pic" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/graduationabroad/"
+                      target="_absolute"
+                    >
+                      <img src={insta} alt="the link pic" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/siddharth-negi-03285969/"
+                      target="_absolute"
+                    >
+                      <img src={linke} alt="the link pic" />
+                    </a>
+                  </li>
+                  <li>
+                    <img src={tweet} alt="the link pic" />
+                  </li>
+                  <li>
+                    <img src={youtube} alt="the link pic" />
+                  </li>
+                </ul>
+              </div>
+
+
+              {/* the mobile link col ends */}
             </div>
           </nav>
         </div>
@@ -337,7 +377,7 @@ const Header = () => {
                   <h1>How GradAbroad will help you?</h1>
                   <div className={`container-fluid ${header.leftContainer}`}>
                     <div className="row">
-                      <div className={`col-lg-6 ${header.leftDivs}`}>
+                      <div className={` col-12 col-lg-6 ${header.leftDivs}`}>
                         <div className={header.leftImageTextDiv}>
                           <img src={leftOne} alt="leftIcons" />
                           <p>Admission Councelling</p>

@@ -29,23 +29,86 @@
   z-index: -1;
 }
 
-.slideFour {
-  background: url("../../../Assets/students/IntroEight.jpg");
-  @include bg-center;
-  height: 85vh;
-  position: relative;
-  z-index: -1;
+// .slideFour {
+//   background: url("../../../Assets/students/IntroEight.jpg");
+//   @include bg-center;
+//   height: 85vh;
+//   position: relative;
+//   z-index: -1;
+// }
+
+// .slideFive {
+//   background: url("../../../Assets/students/IntroTen.jpg");
+//   // background-size: cover;
+//   // background-position: center;
+//   @include bg-center;
+//   height: 85vh;
+//   position: relative;
+//   z-index: -1;
+// }
+
+
+
+
+// styling for mobile portrait begins
+
+@media (max-width:576px) and (orientation:portrait){
+  .studentContainer{
+    height:auto;
+  }
+
+  .slideOne{
+      height:90vh;
+  }
+
+  .slideTwo{
+    height:90vh;
+
+  }
+
+  .slideThree{
+    height:90vh;
+
+  }
 }
 
-.slideFive {
-  background: url("../../../Assets/students/IntroTen.jpg");
-  // background-size: cover;
-  // background-position: center;
-  @include bg-center;
-  height: 85vh;
-  position: relative;
-  z-index: -1;
-}
+
+
+
+
+// styling for mobile portrait ends
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // .studentContainer {
 //   height: 85vh;

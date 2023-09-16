@@ -159,7 +159,19 @@
 // styling for mobile portrait begins
 @media (max-width:576px) and (orientation:portrait){
   .leftCol{
-    height:50vh;
+    height:43vh;
+    padding-left: 3% !important;
+    .upperText{
+      font-size:4vw;
+    }
+
+    h1{
+      font-size:6vw;
+    }
+  }
+
+  .leftCol:hover{
+    background-size:153%;
   }
 
   .rightCol{
@@ -167,7 +179,15 @@
   }
 
   .rightTopCol{
-    height:50vh;
+    height:27vh;
+    padding-left: 3% !important;
+    .upperText{
+      font-size:4vw;
+    }
+
+    h1{
+      font-size:6vw;
+    }
   }
 
   .rightBotCol{
@@ -175,11 +195,35 @@
   }
 
   .rightBotLeft{
-    height:50vh;
+    height:30vh;
+    padding-left: 3% !important;
+    .upperText{
+      font-size:4vw;
+    }
+
+    h1{
+      font-size:6vw;
+    }
+  }
+
+  .rightBotLeft:hover{
+    background-size:180%;
   }
 
   .rightBotRight{
-    height:50vh;
+    height:30vh;
+    padding-left: 3% !important;
+    .upperText{
+      font-size:4vw;
+    }
+
+    h1{
+      font-size:6vw;
+    }
+  }
+
+  .rightBotRight:hover{
+    background-size:120%;
   }
 }
 

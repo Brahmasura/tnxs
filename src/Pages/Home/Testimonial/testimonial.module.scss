@@ -6,10 +6,12 @@
   height: 81.5vh;
   padding-inline: 4% !important;
   border: 1px 0 solid black;
+  background-color: #27374D;
 
   .testiTitle {
     @include heading;
     margin-bottom: 3%;
+    color:#DDE6ED;
   }
 
   .colsContainer {
@@ -27,7 +29,8 @@
       width: 22%;
       margin-inline: 1%;
       padding: 1%;
-      background-color: grey;
+      // background-color: grey;
+      background-color:#9DB2BF;
       border-radius: 4%;
 
       hr {
@@ -53,6 +56,7 @@
       img {
         width: 100%;
         height: auto;
+        border-radius:6%;
       }
     }
   }
@@ -106,38 +110,68 @@
 @media (max-width: 576px) and (orientation: portrait) {
   .testiContainer {
     height: auto;
+    padding: 12% 4% !important;
 
     .testiTitle {
-      font-size: 25px;
+      font-size: 7vw;
+      line-height: 2rem;
     }
 
-    .colsContainer{
-      .rowTesti{
-        height:auto;
+    .colsContainer {
+      .rowTesti {
+        height: auto;
       }
 
-      .studentCard{
-        width:100%;
-        margin:2% 0;
+      .studentCard {
+        width: 100%;
+        margin: 4% 0;
+        padding: 3%;
+        @include y-center;
 
-       .namePara{
-        font-size: 6.5vw;
-       }
+        img {
+          border-radius: 2%;
+        }
 
-       .uniPara{
-        font-size: 5.5vw;
-       }
+        .namePara {
+          font-size: 6.5vw;
+          margin-bottom: 0;
+          margin-top: 2%;
+        }
 
-       .cardQoute{
-        font-size: 4.5vw;
-        
-       }
+        .uniPara {
+          font-size: 5.5vw;
+        }
+
+        .cardQoute {
+          font-size: 4.5vw;
+        }
       }
     }
   }
 
-  .rowTesti {
+  .modalOverlay {
+    overflow: hidden;
+  }
+  
+  .modalContent {
+    width: 95%;
+    max-height:90%;
+    overflow-y:auto;
+  
+    .modalTitlePara {
+      font-size: 4.5vw;
+    }
+  
+    .modalQoute {
+      font-size: 5vw;
+    }
+  
+    .modalBottomPara {
+      font-size: 4vw;
+    }
   }
 }
+
+
 
 // styling for mobile portrait ends

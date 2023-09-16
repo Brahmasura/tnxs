@@ -4,12 +4,12 @@
   @include nopad;
   @include y-center;
   // height: 79vh;
-  height:81.5vh;
+  height: 81.5vh;
   padding-inline: 4% !important;
   // padding-top: 7% !important;
-  
+
   border: 1px 0 solid black;
-//   @include bgcolor;
+  //   @include bgcolor;
 }
 .discoverTitle {
   @include heading;
@@ -31,8 +31,8 @@
     width: 22%;
     margin-inline: 1%;
 
-    a{
-      text-decoration:none;
+    a {
+      text-decoration: none;
     }
 
     .optionUpper {
@@ -64,7 +64,7 @@
       .lowerText {
         p {
           margin-bottom: 0;
-          font-size:1vw;
+          font-size: 1vw;
         }
 
         .lowerTextLeft {
@@ -84,35 +84,42 @@
   }
 }
 
+// styling for mobile portrait begins
 
-// styling for mobile portrait begins 
-
-@media (max-width:576px) and (orientation:portrait){
-  .discoverContainer{
-    height:auto;
-    padding-inline:0 !important;
+@media (max-width: 576px) and (orientation: portrait) {
+  .discoverContainer {
+    height: auto;
+    padding: 12% 4% !important;
   }
 
-  .discoverTitle{
-    font-size:25px;
+  .discoverTitle {
+    font-size: 7vw;
+    line-height: 2rem;
   }
 
-  .colsContainer{
-    .rowOptions{
-      height:auto;
+  .colsContainer {
+    .rowOptions {
+      height: auto;
     }
 
-    .optionContainer{
-      width:100%;
-      margin:2% 0;
+    .optionContainer {
+      width: 100%;
+      margin: 2% 0;
 
+      .optionUpper {
+        p {
+          padding-inline: 2%;
+          margin-left: 3%;
+          font-size: 6.5vw;
+        }
+      }
 
-      .optionLower{
-        height:20vh;
+      .optionLower {
+        height: 20vh;
 
-        .lowerText{
-          p{
-            font-size:15px;
+        .lowerText {
+          p {
+            font-size: 4vw;
           }
         }
       }
@@ -120,8 +127,4 @@
   }
 }
 
-
-
-
-
-// styling for mobile portrait ends 
+// styling for mobile portrait ends

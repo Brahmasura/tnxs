@@ -81,4 +81,21 @@
 
     box-shadow: unset;
   }
+
+  .slick-prev{
+    left:2.2% !important;
+  }
+
+  .slick-prev:before{
+    font-size:12vw !important;
+  }
+
+
+  .slick-next{
+    right:9.2% !important;
+  }
+
+  .slick-next:before{
+    font-size:12vw !important;
+  }
 }

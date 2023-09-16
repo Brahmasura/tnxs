@@ -14,7 +14,7 @@ const Information = () => {
     <>
       <div className={`container-fluid ${info.infoContainer}`}>
         <div className="row">
-          <div className={`col-md-6 col-lg-6 ${info.leftCol}`}>
+          <div className={`col-12 col-sm-12 col-md-6 col-lg-6 ${info.leftCol}`}>
             <NavLink
               to={"/lifeInRussia"}
               onClick={() => {
@@ -35,9 +35,9 @@ const Information = () => {
               <h1>Accommodation for students</h1>
             </NavLink>
           </div>
-          <div className={`col-md-6 col-lg-6 ${info.rightCol}`}>
+          <div className={`col-12 col-sm-12 col-md-6 col-lg-6 ${info.rightCol}`}>
             <div className="row">
-              <div className={`col-md-12 col-lg-12 ${info.rightTopCol}`}>
+              <div className={`col-12 col-sm-12 col-md-12 col-lg-12 ${info.rightTopCol}`}>
                 <NavLink
                   to={"/whyRussia"}
                   onClick={() => {
@@ -58,9 +58,9 @@ const Information = () => {
                   <h1>Advantages of education in Russia </h1>
                 </NavLink>
               </div>
-              <div className={`col-md-12 col-lg-12 ${info.rightBottomCol}`}>
+              <div className={`col-12 col-sm-12 col-md-12 col-lg-12 ${info.rightBottomCol}`}>
                 <div className="row">
-                  <div className={`col-md-6 col-lg-6 ${info.rightBotLeft}`}>
+                  <div className={` col-6 col-sm-6 col-md-6 col-lg-6 ${info.rightBotLeft}`}>
                     <NavLink
                       to={"/lifeInRussia"}
                       onClick={() => {
@@ -81,7 +81,7 @@ const Information = () => {
                       <h1>Prices in Russia</h1>
                     </NavLink>
                   </div>
-                  <div className={`col-md-6 col-lg-6 ${info.rightBotRight}`}>
+                  <div className={`col-6 col-sm-6 col-md-6 col-lg-6 ${info.rightBotRight}`}>
                     <NavLink
                       to={"/studyInRussia"}
                       onClick={() => {
