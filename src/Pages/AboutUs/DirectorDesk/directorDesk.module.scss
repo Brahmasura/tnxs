@@ -76,3 +76,25 @@
      color:red;
    }
  }
+
+
+ // styling for mobile portrait begins
+
+@media (max-width: 576px) and (orientation: portrait) {
+  .directorContainer {
+    width: 90%;
+
+    .linkDiv{
+      margin-bottom:5%;
+    }
+
+    .tabsDiv {
+      margin-bottom:7%;
+      overflow-x: auto;
+      justify-content: start;
+      padding-inline:unset;
+    }
+  }
+}
+
+// styling for mobile portrait ends

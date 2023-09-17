@@ -49,6 +49,7 @@
       height: 2rem;
       padding-inline: 10px;
       font-weight: 600;
+      white-space:nowrap;
     }
 
     .activeTabs {
@@ -59,6 +60,7 @@
       height: 2rem;
       padding-inline: 10px;
       font-weight: 600;
+      white-space:nowrap;
     }
   }
 
@@ -68,13 +70,15 @@
   }
 
   h3 {
-    font-size: 27px;
-    font-weight: 700;
+    // font-size: 27px;
+    // font-weight: 700;
+    @include subHeading;
   }
 
   p {
-    font-size: 24px;
-    text-align: justify;
+    // font-size: 24px;
+    // text-align: justify;
+    @include para;
   }
 
   .greyContainer {
@@ -85,6 +89,29 @@
     @include x-center;
     h2 {
       text-align: center;
+      @include subHeading;
     }
   }
 }
+
+
+// styling for mobile portrait begins
+
+@media (max-width: 576px) and (orientation: portrait) {
+  .contentContainer {
+    width: 90%;
+
+    .linkDiv{
+      margin-bottom:5%;
+    }
+
+    .tabsDiv {
+      margin-bottom:7%;
+      overflow-x: auto;
+      justify-content: start;
+      padding-inline:unset;
+    }
+  }
+}
+
+// styling for mobile portrait ends

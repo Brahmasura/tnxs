@@ -40,6 +40,7 @@
       height: 2rem;
       padding-inline: 10px;
       font-weight: 600;
+      white-space:nowrap;
     }
 
     .activeTabs {
@@ -50,6 +51,7 @@
       height: 2rem;
       padding-inline: 10px;
       font-weight: 600;
+      white-space:nowrap;
     }
   }
 
@@ -79,7 +81,8 @@
     }
   }
 
-  // styling for the active tabs ends
+
+ // styling for the active tabs ends
 
   //   img{
   //    @include theImage;
@@ -97,3 +100,25 @@
   //     color:red;
   //   }
 }
+
+
+// styling for mobile portrait begins
+
+@media (max-width: 576px) and (orientation: portrait) {
+  .expContainer {
+    width: 90%;
+
+    .linkDiv{
+      margin-bottom:5%;
+    }
+
+    .tabsDiv {
+      margin-bottom:7%;
+      overflow-x: auto;
+      justify-content: start;
+      padding-inline:unset;
+    }
+  }
+}
+
+// styling for mobile portrait ends
