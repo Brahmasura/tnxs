@@ -11,7 +11,7 @@
 
   .linkDiv {
     align-self: center;
-    margin-bottom:4%;
+    margin-bottom: 4%;
 
     a {
       @include theLink;
@@ -53,26 +53,46 @@
     }
   }
 
-
   // styling for the active tabs ends
 
-  img{
-   @include theImage;
+  img {
+    @include theImage;
   }
 
-  h1{
+  h1 {
     @include mainHeading;
   }
 
-  h2{
+  h2 {
     @include subHeading;
   }
 
-  p{
+  p {
     @include para;
   }
 
-  .greyDiv{
+  .greyDiv {
     @include grey;
   }
 }
+
+// styling for mobile portrait begins
+
+@media (max-width: 576px) and (orientation: portrait) {
+  .advContainer {
+    width: 90%;
+
+    .linkDiv{
+      margin-bottom:5%;
+    }
+
+    .tabsDiv {
+      margin-bottom:7%;
+      overflow-x: auto;
+      justify-content: start;
+      padding-inline:unset;
+    }
+  }
+}
+
+// styling for mobile portrait ends
