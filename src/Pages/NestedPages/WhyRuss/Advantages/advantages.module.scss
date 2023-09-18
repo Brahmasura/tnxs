@@ -76,21 +76,33 @@
   }
 }
 
+// mobile landscape styling begins
+@media (max-width: 900px) and (orientation: landscape) {
+  .advContainer {
+    .tabsDiv {
+      padding-inline: unset;
+      overflow-x: auto;
+    }
+  }
+}
+
+// mobile landscape styling ends
+
 // styling for mobile portrait begins
 
 @media (max-width: 576px) and (orientation: portrait) {
   .advContainer {
     width: 90%;
 
-    .linkDiv{
-      margin-bottom:5%;
+    .linkDiv {
+      margin-bottom: 5%;
     }
 
     .tabsDiv {
-      margin-bottom:7%;
+      margin-bottom: 7%;
       overflow-x: auto;
       justify-content: start;
-      padding-inline:unset;
+      padding-inline: unset;
     }
   }
 }

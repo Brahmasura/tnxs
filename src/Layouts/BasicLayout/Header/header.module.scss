@@ -117,6 +117,26 @@ ul li {
 .buttonCol {
   @include x-end;
 
+  .whatsappDiv {
+    display: flex;
+    margin-right: 9%;
+
+    align-items: center;
+    justify-content: end;
+    img {
+      width: 2vw;
+      height: auto;
+    }
+
+    p {
+      font-size: 1.2vw;
+      color: white;
+      font-weight: 600;
+      margin-bottom: 0;
+      margin-left: 8%;
+    }
+  }
+
   button {
     @include x-center;
     padding: 2% 5%;
@@ -303,10 +323,10 @@ ul li {
     }
   }
 
-  .buttonCol{
-    button{
-      p{
-        font-size:1.5vw;
+  .buttonCol {
+    button {
+      p {
+        font-size: 1.5vw;
       }
     }
   }
@@ -338,10 +358,6 @@ ul li {
       h2 {
         font-size: 2vw;
       }
-
-   
-
-
     }
   }
 }
@@ -392,8 +408,30 @@ ul li {
         }
       }
 
+      .whatsappDiv {
+        @include x-center;
+        img {
+          width: 8.2vw;
+          height: auto;
+        }
+      }
+
       .textLinkUl {
         margin-top: 4%;
+
+        // .mobApplyDiv{
+        //   @include x-sa;
+
+        //   .whatsappDiv{
+        //     @include x-center;
+
+        //     p{
+        //       margin-bottom:0;
+        //       margin-left:2%;
+        //     }
+        //   }
+
+        // }
       }
 
       li {

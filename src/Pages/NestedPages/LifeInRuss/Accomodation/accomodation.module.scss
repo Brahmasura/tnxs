@@ -69,6 +69,19 @@
       }
 }
 
+// mobile landscape styling begins
+@media (max-width: 900px) and (orientation: landscape) {
+  .accomContainer {
+    .tabsDiv {
+      @include x-start;
+      padding-inline: unset;
+      overflow-x: auto;
+    }
+  }
+}
+
+// mobile landscape styling ends
+
 
 // styling for mobile portrait begins
 

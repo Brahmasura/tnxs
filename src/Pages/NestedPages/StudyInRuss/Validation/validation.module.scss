@@ -66,6 +66,19 @@
   }
 }
 
+// mobile landscape styling begins
+@media (max-width: 900px) and (orientation: landscape) {
+  .validationContainer {
+    .tabsDiv {
+      @include x-end;
+      padding-inline: unset;
+      overflow-x: auto;
+    }
+  }
+}
+
+// mobile landscape styling ends
+
 
 // styling for mobile portrait begins
 

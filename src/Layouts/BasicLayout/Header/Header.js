@@ -7,6 +7,7 @@ import insta from "../../../Assets/Header/insta.png";
 import linke from "../../../Assets/Header/linke.png";
 import tweet from "../../../Assets/Header/tweet.png";
 import youtube from "../../../Assets/Header/youtu.png";
+import icon from "../../../Assets/Whatsapp/whatsappTwo.svg";
 import { LinkContext } from "../../../App";
 import modalClosePic from "../../../Assets/Testimonial/modalClosePic.svg";
 import userIcon from "../../../Assets/Form/userIcon.png";
@@ -55,6 +56,11 @@ const Header = () => {
     setIsNavCollapsed(!isNavCollapsed);
   };
 
+  // handling the whatsapp click
+  const openWhatsapp = () => {
+    window.open("https://api.whatsapp.com/send?phone=+919760390807", "_blank");
+  };
+
   return (
     <>
       {/* the mobile header layout begins  */}
@@ -67,13 +73,19 @@ const Header = () => {
             <NavLink className="navbar-brand" to={"/"}>
               <img src={gradLogo} alt="brand logo" />
               <div className={header.mobileHeadText}>
-                    <h1>GRADUATION ABROAD</h1>
-                    <p>
-                      Direct Representatives of Govt. <br/> Medical Universities in
-                      Abroad
-                    </p>
-                  </div>
+                <h1>GRADUATION ABROAD</h1>
+                <p>
+                  Direct Representatives of Govt. <br /> Medical Universities in
+                  Abroad
+                </p>
+              </div>
             </NavLink>
+
+              {/* whatsapp icon */}
+              <div class={header.whatsappDiv} onClick={openWhatsapp}>
+                  <img src={icon} alt="whatsapp" />
+                  {/* <p>Chat</p> */}
+                </div>
             <button
               className="navbar-toggler"
               type="button"
@@ -90,7 +102,7 @@ const Header = () => {
               className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
               id="navbarTogglerDemo01"
             >
-                <ul className={`navbar-nav ms-auto ${header.textLinkUl}`}>
+              <ul className={`navbar-nav ms-auto ${header.textLinkUl}`}>
                 <li className="navbar-item">
                   <NavLink
                     className="nav-link"
@@ -100,7 +112,7 @@ const Header = () => {
                     HOME
                   </NavLink>
                 </li>
-              
+
                 <li className="navbar-item">
                   <NavLink
                     className="nav-link"
@@ -146,7 +158,12 @@ const Header = () => {
                     About Us
                   </NavLink>
                 </li>
-                <li className="navbar-item">
+                <li className="navbar-item" >
+                   {/* whatsapp icon */}
+                   {/* <div class={header.whatsappDiv} onClick={openWhatsapp}>
+                  <img src={icon} alt="whatsapp" />
+                  <p>Chat</p>
+                </div> */}
                   <button
                     className={header.joinUsBtn}
                     onClick={() => {
@@ -195,7 +212,6 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-
 
               {/* the mobile link col ends */}
             </div>
@@ -349,9 +365,19 @@ const Header = () => {
                     </NavLink>
                   </li>
                 </ul>
+                {/* whatsapp icon */}
+                {/* <div class={header.whatsappDiv} onClick={openWhatsapp}>
+                  <img src={icon} alt="whatsapp" />
+                  <p>Chat</p> */}
+                {/* </div> */}
               </div>
 
               <div className={`col-md-3 col-lg-3 ${header.buttonCol}`}>
+                 {/* whatsapp icon */}
+                 <div class={header.whatsappDiv} onClick={openWhatsapp}>
+                  <img src={icon} alt="whatsapp" />
+                  <p>Chat</p>
+                </div>
                 <button onClick={handleModalClick}>
                   <p>Apply Online</p>
                 </button>
@@ -529,7 +555,9 @@ const Header = () => {
                         </div>
 
                         {/* passport availability */}
-                        <div className={`col-md-12 col-lg-12 ${header.formCols}`}>
+                        <div
+                          className={`col-md-12 col-lg-12 ${header.formCols}`}
+                        >
                           <select
                             required
                             className={`form-control ${header.formField} ${header.passportField}`}
@@ -557,7 +585,9 @@ const Header = () => {
                         </div>
 
                         {/* the user message */}
-                        <div className={`col-md-12 col-lg-12 ${header.formCols}`}>
+                        <div
+                          className={`col-md-12 col-lg-12 ${header.formCols}`}
+                        >
                           <textarea
                             required
                             placeholder="Kindly Leave Your Message Here"

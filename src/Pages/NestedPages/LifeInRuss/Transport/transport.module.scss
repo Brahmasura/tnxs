@@ -69,6 +69,20 @@
   }
 
 
+  // mobile landscape styling begins
+@media (max-width: 900px) and (orientation: landscape) {
+  .transportContainer {
+    .tabsDiv {
+      @include x-center;
+      padding-inline: unset;
+      overflow-x: auto;
+    }
+  }
+}
+
+// mobile landscape styling ends
+
+
   // styling for mobile portrait begins
 
 @media (max-width: 576px) and (orientation: portrait) {

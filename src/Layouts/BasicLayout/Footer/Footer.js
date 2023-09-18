@@ -53,7 +53,48 @@ const Footer = () => {
             </NavLink>
           </ul>
         </div>
+        {/* <div className={`col ${footer.linkCol}`}> */}
+          {/* <h1>MBBS ABROAD</h1>
+          <ul className={footer.footerUl}>
+            <NavLink
+              to={"/mbbsRuss"}
+              onClick={() => {
+                handleLinkClick(0);
+                window.scrollTo(0, 0);
+              }}
+            >
+              <li>MBBS in Russia</li>
+            </NavLink>
+            <NavLink to={"/mbbsItaly"} onClick={() => {handleLinkClick(0); window.scrollTo(0,0);}}>
+            <li>MBBS in Italy</li>
+            </NavLink>
+            <NavLink
+              to={"/mbbsUzbek"}
+              onClick={() => {
+                handleLinkClick(0);
+                window.scrollTo(0, 0);
+              }}
+            >
+              <li>MBBS in Uzbekistan</li>
+            </NavLink>
+            <NavLink
+              to={"/mbbsKazak"}
+              onClick={() => {
+                handleLinkClick(0);
+                window.scrollTo(0, 0);
+              }}
+            >
+              <li>MBBS in Kazakhstan</li>
+            </NavLink>
+          </ul> */}
+        {/* </div> */}
         <div className={`col ${footer.linkCol}`}>
+          <h1>ABOUT US</h1>
+          <ul className={footer.footerUl}>
+            <li>Our Services</li>
+            <li>Director's Desk</li>
+          </ul>
+
           <h1>MBBS ABROAD</h1>
           <ul className={footer.footerUl}>
             <NavLink
@@ -87,13 +128,8 @@ const Footer = () => {
               <li>MBBS in Kazakhstan</li>
             </NavLink>
           </ul>
-        </div>
-        <div className={`col ${footer.linkCol}`}>
-          <h1>ABOUT US</h1>
-          <ul className={footer.footerUl}>
-            <li>Our Services</li>
-            <li>Director's Desk</li>
-          </ul>
+
+
         </div>
       </div>
     </div>
