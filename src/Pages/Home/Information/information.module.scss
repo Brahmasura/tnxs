@@ -1,11 +1,9 @@
 @import "../../../mixins.module.scss";
 
-
-
 .leftCol {
   background: url("../../../Assets/Information/infoOne.jpg");
   @include bg-center;
-  background-position:70%;
+  background-position: 70%;
   // @include border;
   @include y-bot-left;
   // padding-bottom:4%;
@@ -13,20 +11,18 @@
   // height: 85vh;
   // position:relative;  //new code
   // z-index:-1;
-  transition: background-size 0.3s ease-in-out; 
-
- 
+  transition: background-size 0.3s ease-in-out;
 
   @include colStyles;
   height: 85vh;
 
   .upperText {
-     @include infoText;
+    @include infoText;
     font-size: 13px;
   }
 
   h1 {
-     @include infoText;
+    @include infoText;
     @include infoHead;
   }
 }
@@ -36,8 +32,8 @@
   overflow: hidden;
 }
 
-.leftCol:hover{
-  background-size:160%;
+.leftCol:hover {
+  background-size: 160%;
 }
 
 .rightCol {
@@ -53,16 +49,15 @@
   @include y-bot-left;
   @include colStyles;
   height: 42.5vh;
-  transition: background-size 0.3s ease-in-out; 
-
+  transition: background-size 0.3s ease-in-out;
 
   .upperText {
-     @include infoText;
+    @include infoText;
     font-size: 13px;
   }
 
   h1 {
-     @include infoText;
+    @include infoText;
     @include infoHead;
   }
 }
@@ -71,11 +66,9 @@
   @include afterContent;
 }
 
-.rightTopCol:hover{
-  background-size:101%;
+.rightTopCol:hover {
+  background-size: 101%;
 }
-
-
 
 .rightBotCol {
   // @include border;
@@ -87,18 +80,17 @@
   @include bg-center;
   // @include border;
   @include y-bot-left;
-@include colStyles;
+  @include colStyles;
   height: 42.5vh;
-  transition: background-size 0.3s ease-in-out; 
-
+  transition: background-size 0.3s ease-in-out;
 
   .upperText {
-     @include infoText;
+    @include infoText;
     font-size: 13px;
   }
 
   h1 {
-     @include infoText;
+    @include infoText;
     @include infoHead;
   }
 }
@@ -107,8 +99,8 @@
   @include afterContent;
 }
 
-.rightBotLeft:hover{
-  background-size:136%;
+.rightBotLeft:hover {
+  background-size: 136%;
 }
 
 .rightBotRight {
@@ -119,9 +111,7 @@
   padding-left: 2% !important;
   // @include border;
   position: relative; //new code
-  transition: background-size 0.3s ease-in-out; 
-
-
+  transition: background-size 0.3s ease-in-out;
 
   .upperText {
     @include infoText;
@@ -133,7 +123,7 @@
     @include infoHead;
   }
 
-  a{
+  a {
     text-decoration: none;
   }
 }
@@ -142,8 +132,8 @@
   @include afterContent;
 }
 
-.rightBotRight:hover{
-  background-size:102%;
+.rightBotRight:hover {
+  background-size: 102%;
 }
 
 .hrStyle {
@@ -154,80 +144,125 @@
   margin: 0;
 }
 
-
-
-// styling for mobile portrait begins
-@media (max-width:576px) and (orientation:portrait){
-  .leftCol{
-    height:43vh;
-    padding-left: 3% !important;
-    .upperText{
-      font-size:4vw;
+// styling for mobile landscape begins
+@media (max-width: 900px) and (orientation: landscape) {
+  .leftCol {
+    .upperText {
+      font-size: 2vw;
     }
 
-    h1{
-      font-size:6vw;
+    h1 {
+      font-size: 2.8vw;
     }
   }
 
-  .leftCol:hover{
-    background-size:153%;
-  }
-
-  .rightCol{
-    height:auto;
-  }
-
-  .rightTopCol{
-    height:27vh;
-    padding-left: 3% !important;
-    .upperText{
-      font-size:4vw;
+  .rightTopCol {
+    .upperText {
+      font-size: 2vw;
     }
 
-    h1{
-      font-size:6vw;
+    h1 {
+      font-size:2.8vw;
     }
   }
 
-  .rightBotCol{
-    height:auto;
-  }
-
-  .rightBotLeft{
-    height:30vh;
-    padding-left: 3% !important;
-    .upperText{
-      font-size:4vw;
+  .rightBotLeft {
+    .upperText {
+      font-size: 2vw;
     }
 
-    h1{
-      font-size:6vw;
+    h1 {
+      font-size: 2.8vw;
     }
   }
 
-  .rightBotLeft:hover{
-    background-size:180%;
-  }
-
-  .rightBotRight{
-    height:30vh;
-    padding-left: 3% !important;
-    .upperText{
-      font-size:4vw;
+  .rightBotRight {
+    .upperText {
+      font-size: 2vw;
     }
 
-    h1{
-      font-size:6vw;
+    h1 {
+      font-size: 2.8vw;
     }
   }
 
-  .rightBotRight:hover{
-    background-size:120%;
+  .hrStyle{
+    border: 3px solid #fe2216;
+
   }
 }
 
+// styling for mobile landscape begins
 
+// styling for mobile portrait begins
+@media (max-width: 576px) and (orientation: portrait) {
+  .leftCol {
+    height: 43vh;
+    padding-left: 3% !important;
+    .upperText {
+      font-size: 4vw;
+    }
 
+    h1 {
+      font-size: 6vw;
+    }
+  }
+
+  .leftCol:hover {
+    background-size: 153%;
+  }
+
+  .rightCol {
+    height: auto;
+  }
+
+  .rightTopCol {
+    height: 27vh;
+    padding-left: 3% !important;
+    .upperText {
+      font-size: 4vw;
+    }
+
+    h1 {
+      font-size: 6vw;
+    }
+  }
+
+  .rightBotCol {
+    height: auto;
+  }
+
+  .rightBotLeft {
+    height: 30vh;
+    padding-left: 3% !important;
+    .upperText {
+      font-size: 4vw;
+    }
+
+    h1 {
+      font-size: 6vw;
+    }
+  }
+
+  .rightBotLeft:hover {
+    background-size: 180%;
+  }
+
+  .rightBotRight {
+    height: 30vh;
+    padding-left: 3% !important;
+    .upperText {
+      font-size: 4vw;
+    }
+
+    h1 {
+      font-size: 6vw;
+    }
+  }
+
+  .rightBotRight:hover {
+    background-size: 120%;
+  }
+}
 
 // styling for mobile portrait ends

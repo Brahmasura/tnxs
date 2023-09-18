@@ -105,6 +105,49 @@
 
 // the modal styling ends
 
+
+
+// mobile landscape styling begins 
+@media (max-width: 900px) and (orientation: landscape) {
+  .testiContainer {
+    height: auto;
+    padding: 1% 4% 4% !important;
+
+    .testiTitle {
+      font-size: 3.8vw;
+    }
+
+    .colsContainer {
+      .studentCard{
+        
+          .namePara {
+            font-size: 1.3vw;
+            margin-bottom:5%;
+          }
+  
+          .uniPara {
+            font-size: 1.1vw;
+            margin-bottom:0;
+          }
+
+          .cardQoute{
+            font-size:1.2vw;
+          }
+       
+      }
+    }
+  }
+
+
+
+
+}
+
+
+
+
+// mobile landscape styling ends
+
 // styling for mobile portrait begins
 
 @media (max-width: 576px) and (orientation: portrait) {

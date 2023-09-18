@@ -10,7 +10,7 @@
   // @include border;
   height: 80vh;
   padding-top: 3%;
-  padding-bottom:3%;
+  padding-bottom: 3%;
 }
 
 .footerContent {
@@ -30,9 +30,9 @@
 .footerUl {
   padding-left: 0;
   list-style-type: none;
-  a{
+  a {
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
   }
 
   li {
@@ -45,19 +45,22 @@
   }
 }
 
-
-// styling for mobile portrait begins
-
-@media (max-width:576px) and (orientation:portrait){
-  .footerContainer{
-    height:auto;
-    padding:3% 2%;
+// mobile landscape styling begins
+@media (max-width: 900px) and (orientation: landscape) {
+  .footerContainer {
+    height: auto;
   }
 }
 
+// mobile landscape styling ends
 
+// styling for mobile portrait begins
 
-
-
+@media (max-width: 576px) and (orientation: portrait) {
+  .footerContainer {
+    height: auto;
+    padding: 3% 2%;
+  }
+}
 
 // styling for mobile portrait ends

@@ -278,6 +278,76 @@ ul li {
 
 // modal styling ends
 
+// mobile landscape styling begins
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .brandCol {
+    img {
+      width: 24%;
+    }
+
+    .headText {
+      h1 {
+        font-size: 1.6vw;
+      }
+      p {
+        font-size: 1.2vw;
+        line-height: 0.8rem;
+      }
+    }
+  }
+
+  .headLinkCol {
+    .headLinkUl {
+      width: 80%;
+    }
+  }
+
+  .buttonCol{
+    button{
+      p{
+        font-size:1.5vw;
+      }
+    }
+  }
+
+  .modalOverlay {
+    overflow: auto;
+  }
+
+  .modalContent {
+    width: 80%;
+    max-height: 90%;
+
+    .modalRow {
+      height: 100%;
+    }
+
+    .modalLeftCol {
+      display: none;
+    }
+
+    .modalRightCol {
+      height: 80vh;
+      overflow-y: auto;
+
+      h1 {
+        font-size: 2.8vw;
+      }
+
+      h2 {
+        font-size: 2vw;
+      }
+
+   
+
+
+    }
+  }
+}
+
+// mobile landscape styling ends
+
 // mobile header styling begins
 
 @media (max-width: 576px) and (orientation: portrait) {
@@ -353,7 +423,7 @@ ul li {
 
   .modalContent {
     width: 95%;
-   padding:3% 2%;
+    padding: 3% 2%;
     max-height: 100%;
     overflow-y: auto;
 
@@ -378,11 +448,9 @@ ul li {
     }
   }
 
-  .closeButton{
-    width:7vw;
+  .closeButton {
+    width: 7vw;
   }
 }
-
-
 
 // mobile header styling ends

@@ -431,7 +431,7 @@ const Header = () => {
                     <div className={`container-fluid ${header.formContainer}`}>
                       <div className="row">
                         {/* name */}
-                        <div className={`col-lg-6 ${header.formCols}`}>
+                        <div className={`col-md-6 col-lg-6 ${header.formCols}`}>
                           <input
                             required
                             type="text"
@@ -449,7 +449,7 @@ const Header = () => {
                         </div>
 
                         {/* email */}
-                        <div className={`col-lg-6 ${header.formCols}`}>
+                        <div className={`col-md-6 col-lg-6 ${header.formCols}`}>
                           <input
                             required
                             type="email"
@@ -467,7 +467,7 @@ const Header = () => {
                         </div>
 
                         {/* contact */}
-                        <div className={`col-lg-6 ${header.formCols}`}>
+                        <div className={`col-md-6 col-lg-6 ${header.formCols}`}>
                           <input
                             required
                             type="text"
@@ -485,7 +485,7 @@ const Header = () => {
                         </div>
 
                         {/* course type */}
-                        <div className={`col-lg-6 ${header.formCols}`}>
+                        <div className={`col-md-6 col-lg-6 ${header.formCols}`}>
                           <select
                             required
                             className={`form-control ${header.formField}`}
@@ -529,7 +529,7 @@ const Header = () => {
                         </div>
 
                         {/* passport availability */}
-                        <div className={`col-lg-12 ${header.formCols}`}>
+                        <div className={`col-md-12 col-lg-12 ${header.formCols}`}>
                           <select
                             required
                             className={`form-control ${header.formField} ${header.passportField}`}
@@ -557,7 +557,7 @@ const Header = () => {
                         </div>
 
                         {/* the user message */}
-                        <div className={`col-lg-12 ${header.formCols}`}>
+                        <div className={`col-md-12 col-lg-12 ${header.formCols}`}>
                           <textarea
                             required
                             placeholder="Kindly Leave Your Message Here"

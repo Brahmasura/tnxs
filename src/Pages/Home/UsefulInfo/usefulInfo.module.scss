@@ -68,6 +68,38 @@
   }
 }
 
+
+
+// styling for mobile landscape begins
+@media (max-width: 900px) and (orientation: landscape) {
+  .faqContainer {
+    height: auto;
+    padding: 1% 4% 4% !important;
+  }
+
+  .faqTitle {
+    font-size: 3.8vw;
+  }
+
+  .colsContainer {
+    .optionContainer {
+      .optionLower {
+        p {
+          font-size: 1.3vw;
+          margin-bottom:0;
+        }
+
+        .subText {
+          font-size: 1.1vw;
+          margin-bottom:0;
+        }
+      }
+    }
+  }
+}
+
+// styling for mobile landscape ends
+
 // styling for mobile portrait begins
 
 @media (max-width: 576px) and (orientation: portrait) {
