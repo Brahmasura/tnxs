@@ -25,7 +25,7 @@ const UniCompo = ({ institution }) => {
           </div>
           <div className={`col-12 col-sm-8 col-md-8 col-lg-6 ${style.infoCol}`}>
             <p><span className={style.titlePara}>City:</span> {city}</p>
-            <p><span className={style.titlePara}>University Website:</span> {web}</p>
+            <p><span className={style.titlePara}>University Website: </span><a href={web}>{web}</a></p>
             <p>
               <span className={style.titlePara}>{uniDist} distance from Moscow:</span> {distance} kilometers
             </p>

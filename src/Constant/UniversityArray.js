@@ -70,18 +70,7 @@ const UniArray = [
     pdf: omskPdf,
   },
 
-  {
-    university: "KAZAN FEDERAL UNIVERSITY",
-    uni: "Kazan",
-    image: kazan,
-    city: " Kazan, RUSSIA",
-    web: "http://kpfu.ru/eng",
-    uniDist: "KAZAN",
-    distance: "809",
-    logo: kazanLogo,
-    pdf: kazanPdf,
-  },
-
+ 
   {
     university: "KURSK STATE MEDICAL UNIVERSITY ",
     uni: "Kursk",
@@ -104,6 +93,19 @@ const UniArray = [
     logo: bashkirLogo,
     pdf: bashkirPdf,
   },
+
+  {
+    university: "KAZAN FEDERAL UNIVERSITY",
+    uni: "Kazan",
+    image: kazan,
+    city: " Kazan, RUSSIA",
+    web: "http://kpfu.ru/eng",
+    uniDist: "KAZAN",
+    distance: "809",
+    logo: kazanLogo,
+    pdf: kazanPdf,
+  },
+
 ];
 
 export default UniArray;
