@@ -1,0 +1,24 @@
+@import "../../../mixins.module.scss";
+
+.divContainer {
+    @include x-center;
+  }
+
+.mapContainer {
+
+  width: 80%;
+  @include verticalPad;
+  @include y-center;
+
+  .linkDiv {
+    align-self: center;
+    margin-bottom: 4%;
+
+    a {
+      @include theLink;
+    }
+    p {
+      display: inline;
+    }
+  }
+}

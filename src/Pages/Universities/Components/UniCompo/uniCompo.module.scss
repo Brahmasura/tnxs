@@ -2,12 +2,12 @@
 
 .uniCompoContainer {
   background-color: #fff;
-  padding:1% 2%;
+  padding: 1% 2%;
   margin-bottom: 4%;
   height: 35vh;
 
-  .rowContainer{
-      height:80%;
+  .rowContainer {
+    height: 70%;
   }
 
   h1 {
@@ -15,7 +15,7 @@
   }
 
   .imageCol {
-    height:100%;
+    height: 100%;
     img {
       width: 90%;
       height: 100%;
@@ -23,8 +23,16 @@
   }
 
   .infoCol {
-    height:100%;
-   @include y-justify-Center;
+    height: 100%;
+    @include y-justify-Center;
+
+    .titlePara {
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
     .buttonDiv {
       @include x-sa;
       p {
@@ -56,7 +64,7 @@
   }
 
   .logoCol {
-    height:100%;
+    height: 100%;
     img {
       width: 100%;
       height: 100% !important;
@@ -67,20 +75,20 @@
 
 // modal styling
 
-.modalOverlay{
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:99;
-  width:100%;
-  height:100%;
-  background-color:rgba(0,0,0,0.7);
-  display:flex;
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modalContent{
+.modalContent {
   position: relative;
   width: 80%;
   height: 80%;
@@ -89,22 +97,91 @@
   padding: 20px;
 }
 
-.closeButton{
-  position:absolute;
-  top:5px;
-  right:5px;
-  cursor:pointer;
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
 }
 
 
 
-
-//media query for small portrait
-
-
-@media (max-width:576px) and (orientation: portrait){
+// mobile landscape styling begins 
+@media (max-width:900px) and (orientation:landscape){
   .uniCompoContainer{
     height:auto;
+
+    h1{
+      font-size:2.5vw;
+    }
+
+    .infoCol{
+      p{
+        font-size:1.7vw;
+      }
+    }
+
+
+    .logoCol{
+      display:none;
+    }
   }
 }
 
+
+
+
+// mobile landscape styling ends
+
+//mobile portrait styling begins
+
+@media (max-width: 576px) and (orientation: portrait) {
+  .uniCompoContainer {
+    height: auto;
+    padding: 2%;
+    margin-bottom: 10%;
+
+    h1 {
+      font-size: 5vw;
+      text-align: center;
+    }
+
+    .imageCol {
+      @include x-center;
+      margin-bottom: 4%;
+    }
+
+    .infoCol {
+      p {
+        text-align: center;
+      }
+      .buttonDiv {
+        .details {
+          p {
+            font-size: 4vw;
+          }
+        }
+
+        .fee {
+          width: 40%;
+          p {
+            font-size: 4vw;
+          }
+        }
+
+        .gallery {
+          p {
+            font-size: 4vw;
+          }
+        }
+      }
+    }
+
+    .logoCol {
+      display: none;
+    }
+  }
+}
+
+
+// mobile portrait styling ends

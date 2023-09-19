@@ -36,6 +36,7 @@ import Expenses from "./Pages/NestedPages/UsefulInfo/ItalyGuidelines/Expenses/Ex
 import AboutIntro from "./Pages/AboutUs/AboutIntro/AboutIntro";
 import OurServices from "./Pages/AboutUs/OurServices/OurServices";
 import DirectorDesk from "./Pages/AboutUs/DirectorDesk/DirectorDesk";
+import Sitemap from "./Pages/NestedPages/SiteMap/Sitemap";
 
 export const LinkContext = createContext();
 
@@ -83,6 +84,8 @@ function App() {
             <Route path="/guidelines" exact element={<Guidelines/>}/>
             <Route path="/documents" exact element={<ItalyDocs/>}/>
             <Route path="/expenses" exact element={<Expenses/>}/>
+            <Route path="/siteMap" exact element={<Sitemap/>}/>
+
           </Routes>
         </BasicLayout>
       </LinkContext.Provider>

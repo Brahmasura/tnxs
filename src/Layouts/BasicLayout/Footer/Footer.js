@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import footer from "./footer.module.scss";
+import qr from "../../../Assets/Footer/whatsappQr.png";
 import { NavLink } from "react-router-dom";
 import { LinkContext } from "../../../App";
 
@@ -8,6 +9,18 @@ const Footer = () => {
   return (
     <div id="footer" className={`container-fluid ${footer.footerContainer}`}>
       <div className={`row ${footer.footerContent}`}>
+        {/* the qr col begins  */}
+        <div className={`col ${footer.qrCol}`}>
+          <h1 className={footer.brandHead}>GRADUATION ABROAD</h1>
+          <p>Direct Representatives of Govt. Medical Universities in Abroad</p>
+          <img src={qr} alt="whatsapp QR" />
+          <p>Scan the QR above to connect with us on Whatsapp</p>
+          <NavLink to={"/siteMap"} onClick={() => window.scrollTo(0,0)}>
+          <p className={footer.mapPara}>Site Map</p></NavLink>
+        </div>
+
+        {/* the qr col ends */}
+
         <div className={`col ${footer.linkCol}`}>
           <h1>WHY RUSSIA</h1>
           <ul className={footer.footerUl}>
@@ -54,7 +67,7 @@ const Footer = () => {
           </ul>
         </div>
         {/* <div className={`col ${footer.linkCol}`}> */}
-          {/* <h1>MBBS ABROAD</h1>
+        {/* <h1>MBBS ABROAD</h1>
           <ul className={footer.footerUl}>
             <NavLink
               to={"/mbbsRuss"}
@@ -106,8 +119,14 @@ const Footer = () => {
             >
               <li>MBBS in Russia</li>
             </NavLink>
-            <NavLink to={"/mbbsItaly"} onClick={() => {handleLinkClick(0); window.scrollTo(0,0);}}>
-            <li>MBBS in Italy</li>
+            <NavLink
+              to={"/mbbsItaly"}
+              onClick={() => {
+                handleLinkClick(0);
+                window.scrollTo(0, 0);
+              }}
+            >
+              <li>MBBS in Italy</li>
             </NavLink>
             <NavLink
               to={"/mbbsUzbek"}
@@ -128,8 +147,6 @@ const Footer = () => {
               <li>MBBS in Kazakhstan</li>
             </NavLink>
           </ul>
-
-
         </div>
       </div>
     </div>

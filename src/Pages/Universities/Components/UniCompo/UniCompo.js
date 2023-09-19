@@ -5,7 +5,7 @@ const UniCompo = ({ institution }) => {
   const { university, uni, image, city, web, uniDist, distance, logo, pdf } =
     institution;
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleFeeClick = () => {
     // window.open(pdf, "_blank");
@@ -14,20 +14,20 @@ const UniCompo = ({ institution }) => {
 
   const closeModal = () => {
     setIsModalOpen(false);
-  }
+  };
   return (
     <>
       <div className={style.uniCompoContainer}>
         <h1>{university}</h1>
         <div className={`row ${style.rowContainer}`}>
-          <div className={`col-12 col-sm-12 col-lg-4 ${style.imageCol}`}>
+          <div className={`col-12 col-sm-4 col-md-4 col-lg-4 ${style.imageCol}`}>
             <img src={image} alt={uni} />
           </div>
-          <div className={`col-12 col-sm-12 col-lg-6 ${style.infoCol}`}>
-            <p>City: {city}</p>
-            <p>University Website: {web}</p>
+          <div className={`col-12 col-sm-8 col-md-8 col-lg-6 ${style.infoCol}`}>
+            <p><span className={style.titlePara}>City:</span> {city}</p>
+            <p><span className={style.titlePara}>University Website:</span> {web}</p>
             <p>
-              {uniDist} distance from Moscow: {distance} kilometers
+              <span className={style.titlePara}>{uniDist} distance from Moscow:</span> {distance} kilometers
             </p>
             <div className={style.buttonDiv}>
               <button className={style.details}>
@@ -47,21 +47,18 @@ const UniCompo = ({ institution }) => {
         </div>
       </div>
 
-
       {/* code for the modal */}
 
-      {
-        isModalOpen && (
-          <div className={style.modalOverlay} onClick={closeModal}>
-            <div className={style.modalContent}>
-              <iframe src={pdf} title="pdf viewer" width="100%" height="100%"/>
-              <button className={style.closeButton} onClick={closeModal}>
-                close
-              </button>
-             </div>
+      {isModalOpen && (
+        <div className={style.modalOverlay} onClick={closeModal}>
+          <div className={style.modalContent}>
+            <iframe src={pdf} title="pdf viewer" width="100%" height="100%" />
+            <button className={style.closeButton} onClick={closeModal}>
+              close
+            </button>
           </div>
-        )
-      }
+        </div>
+      )}
     </>
   );
 };
