@@ -75,6 +75,10 @@
     @include x-sb;
     width: 45%;
     margin-bottom: 0;
+    // img{
+    //   width:90%;
+    //   height:auto;
+    // }
   }
 }
 
@@ -125,7 +129,7 @@ ul li {
     align-items: center;
     justify-content: end;
     img {
-      width: 2vw;
+      width: 1.7vw;
       height: auto;
     }
 

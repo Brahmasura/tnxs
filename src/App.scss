@@ -8,9 +8,13 @@
   display: none;
 }
 
-.scroller {
-  overflow-y: scroll;
-}
+// .scroller {
+//   scroll-snap-type: y mandatory;
+//   scroll-snap-align: center;
+//   scroll-behavior: smooth;
+//   height:100vh;
+//   overflow-y: scroll;
+// }
 
 // these are the latest changes acc. to sid
 

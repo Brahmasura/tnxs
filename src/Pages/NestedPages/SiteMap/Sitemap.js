@@ -26,7 +26,7 @@ const Sitemap = () => {
               <li><NavLink to={"/advantages"} onClick={() => window.scrollTo(0,0)}>Testimonial </NavLink></li>
               <li><NavLink to={"/ranking"} onClick={() => window.scrollTo(0,0)}>World Ranking </NavLink></li>
             </ul>
-          </li>
+          </li><br/>
 
           <li>
           <NavLink to={"/studyInRussia"} onClick={() => window.scrollTo(0,0)}>Study In Russia </NavLink> 
@@ -38,7 +38,7 @@ const Sitemap = () => {
               <li><NavLink to={"/degreeValidation"} onClick={() => window.scrollTo(0,0)}>Validation of Degree </NavLink></li>
               <li><NavLink to={"/tuitionFee"} onClick={() => window.scrollTo(0,0)}>Tuition Fee </NavLink></li>
             </ul>
-          </li>
+          </li><br/>
 
           <li>
           <NavLink to={"/lifeInRussia"} onClick={() => window.scrollTo(0,0)}>Life In Russia</NavLink>
@@ -50,7 +50,7 @@ const Sitemap = () => {
               <li><NavLink to={"/safety"} onClick={() => window.scrollTo(0,0)}>Safety </NavLink></li> 
               <li><NavLink to={"/healthcare"} onClick={() => window.scrollTo(0,0)}>Healthcare </NavLink></li>
             </ul>
-          </li>
+          </li><br/>
 
             <li><NavLink to={"/mbbsRuss"} onClick={() => window.scrollTo(0,0)}>MBBS Abroad </NavLink>
             <ul>

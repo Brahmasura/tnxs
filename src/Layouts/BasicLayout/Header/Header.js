@@ -5,7 +5,7 @@ import gradLogo from "../../../Assets/Header/gradLogo.png";
 import fb from "../../../Assets/Header/fb.png";
 import insta from "../../../Assets/Header/insta.png";
 import linke from "../../../Assets/Header/linke.png";
-import tweet from "../../../Assets/Header/tweet.png";
+import tweet from "../../../Assets/Header/twitterX.png";
 import youtube from "../../../Assets/Header/youtu.png";
 import icon from "../../../Assets/Whatsapp/whatsappTwo.svg";
 import { LinkContext } from "../../../App";
@@ -81,11 +81,11 @@ const Header = () => {
               </div>
             </NavLink>
 
-              {/* whatsapp icon */}
-              <div class={header.whatsappDiv} onClick={openWhatsapp}>
-                  <img src={icon} alt="whatsapp" />
-                  {/* <p>Chat</p> */}
-                </div>
+            {/* whatsapp icon */}
+            <div class={header.whatsappDiv} onClick={openWhatsapp}>
+              <img src={icon} alt="whatsapp" />
+              {/* <p>Chat</p> */}
+            </div>
             <button
               className="navbar-toggler"
               type="button"
@@ -158,9 +158,9 @@ const Header = () => {
                     About Us
                   </NavLink>
                 </li>
-                <li className="navbar-item" >
-                   {/* whatsapp icon */}
-                   {/* <div class={header.whatsappDiv} onClick={openWhatsapp}>
+                <li className="navbar-item">
+                  {/* whatsapp icon */}
+                  {/* <div class={header.whatsappDiv} onClick={openWhatsapp}>
                   <img src={icon} alt="whatsapp" />
                   <p>Chat</p>
                 </div> */}
@@ -205,10 +205,14 @@ const Header = () => {
                     </a>
                   </li>
                   <li>
-                    <img src={tweet} alt="the link pic" />
+                    <a href="https://www.twitter.com" target="_absolute">
+                      <img src={tweet} alt="the link pic" />
+                    </a>
                   </li>
                   <li>
-                    <img src={youtube} alt="the link pic" />
+                    <a href="https://www.youtube.com" target="_absolute">
+                      <img src={youtube} alt="the link pic" />
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -373,8 +377,8 @@ const Header = () => {
               </div>
 
               <div className={`col-md-3 col-lg-3 ${header.buttonCol}`}>
-                 {/* whatsapp icon */}
-                 <div class={header.whatsappDiv} onClick={openWhatsapp}>
+                {/* whatsapp icon */}
+                <div class={header.whatsappDiv} onClick={openWhatsapp}>
                   <img src={icon} alt="whatsapp" />
                   <p>Chat</p>
                 </div>
@@ -453,7 +457,11 @@ const Header = () => {
                     Please leave you information, your admission manager will
                     contact you shortly
                   </h2>
-                  <form>
+                  <form
+                    action="mailto:akhilesh6194officiaL@gmail.com"
+                    method="post"
+                    enctype="text/plain"
+                  >
                     <div className={`container-fluid ${header.formContainer}`}>
                       <div className="row">
                         {/* name */}

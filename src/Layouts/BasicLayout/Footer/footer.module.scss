@@ -6,7 +6,8 @@
   background-size: cover;
   background-position: center 62%;
   @include x-center;
-  @include padTwo;
+  // @include padTwo;
+  padding-inline:1%;
   // @include border;
   // height: 80vh;
   height: auto;
@@ -24,14 +25,21 @@
   @include y-start;
   h1 {
     @include footerHead;
+    font-weight:800;
     color: #dd3534;
-    font-size: 1.6vw;
+    font-size: 1.3vw;
   }
 
+
+
   p {
-    font-size: 1.3vw;
+    font-size: 1.1vw;
+    font-weight:500;
     color: whitesmoke;
+
+    
   }
+
 
   a{
     text-decoration:none;
@@ -52,7 +60,7 @@
   @include y-start;
   h1 {
     @include footerHead;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
   }
 }
 
@@ -68,7 +76,7 @@
     color: whitesmoke;
     font-family: sans-serif;
     // font-size: 15px;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     margin-bottom: 6.5%;
     line-height: 1.5rem;
   }

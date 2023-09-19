@@ -13,10 +13,20 @@ const Footer = () => {
         <div className={`col ${footer.qrCol}`}>
           <h1 className={footer.brandHead}>GRADUATION ABROAD</h1>
           <p>Direct Representatives of Govt. Medical Universities in Abroad</p>
+
+          <p>
+            <span className={footer.contactUsDiv}>CONTACT US :-</span>
+            <br />
+            withgraduationabroad@gmail.com <br />
+            +91-9760390807
+            <br /> +91-9811464911
+          </p>
+
           <img src={qr} alt="whatsapp QR" />
-          <p>Scan the QR above to connect with us on Whatsapp</p>
-          <NavLink to={"/siteMap"} onClick={() => window.scrollTo(0,0)}>
-          <p className={footer.mapPara}>Site Map</p></NavLink>
+          <p>Scan to connect on Whatsapp</p>
+          <NavLink to={"/siteMap"} onClick={() => window.scrollTo(0, 0)}>
+            <p className={footer.mapPara}>Site Map</p>
+          </NavLink>
         </div>
 
         {/* the qr col ends */}
@@ -38,9 +48,29 @@ const Footer = () => {
         <div className={`col ${footer.linkCol}`}>
           <h1>STUDY IN RUSSIA</h1>
           <ul className={footer.footerUl}>
-            <li>Preparatory Department</li>
-            <li>Study in English</li>
-            <li>MBBS in Russia</li>
+            <NavLink to={"/preparatory"} onClick={() => window.scrollTo(0, 0)}>
+              <li>Preparatory Department</li>
+            </NavLink>
+            <NavLink to={"/studyInEng"} onClick={() => window.scrollTo(0, 0)}>
+              <li>Study in English</li>
+            </NavLink>
+            <NavLink to={"/mbbsInRussia"} onClick={() => window.scrollTo(0, 0)}>
+              <li>MBBS in Russia</li>
+            </NavLink>
+            <NavLink to={"/universities"} onClick={() => window.scrollTo(0, 0)}>
+              <li>Top Universities</li>
+            </NavLink>
+            <NavLink
+              to={"/degreeValidation"}
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              <li>Validation Of Degree</li>
+            </NavLink>
+            <NavLink to={"/tuitionFee"} onClick={() => window.scrollTo(0, 0)}>
+              <li>Tuition Fee</li>
+            </NavLink>
+
+           
           </ul>
         </div>
         <div className={`col ${footer.linkCol}`}>
@@ -104,8 +134,12 @@ const Footer = () => {
         <div className={`col ${footer.linkCol}`}>
           <h1>ABOUT US</h1>
           <ul className={footer.footerUl}>
-            <li>Our Services</li>
-            <li>Director's Desk</li>
+            <NavLink to={"/ourServices"} onClick={() => window.scrollTo(0, 0)}>
+              <li>Our Services</li>
+            </NavLink>
+            <NavLink to={"/directorDesk"} onClick={() => window.scrollTo(0, 0)}>
+              <li>Director's Desk</li>
+            </NavLink>
           </ul>
 
           <h1>MBBS ABROAD</h1>
