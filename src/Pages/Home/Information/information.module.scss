@@ -1,7 +1,7 @@
 @import "../../../mixins.module.scss";
 
 .leftCol {
-  background: url("../../../Assets/Information/infoOne.jpg");
+  background: url("../../../Assets/Information/infoOne.webp");
   @include bg-center;
   background-position: 70%;
   // @include border;
@@ -42,7 +42,7 @@
 }
 
 .rightTopCol {
-  background: url("../../../Assets/students/IntroTen.jpg");
+  background: url("../../../Assets/Information/infoTwo.webp");
   @include bg-center;
   background-position: 80% 35%;
   // @include border;
@@ -76,7 +76,7 @@
 }
 
 .rightBotLeft {
-  background: url("../../../Assets/Information/pricesInRuss.jpg");
+  background: url("../../../Assets/Information/infoThree.webp");
   @include bg-center;
   // @include border;
   @include y-bot-left;
@@ -104,7 +104,7 @@
 }
 
 .rightBotRight {
-  background: url("../../../Assets/Information/dollar.jpg");
+  background: url("../../../Assets/Information/infoFour.webp");
   @include bg-center;
   @include y-bot-left;
   padding-bottom: 4%;

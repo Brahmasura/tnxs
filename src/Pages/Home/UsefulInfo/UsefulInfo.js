@@ -1,10 +1,10 @@
 import React from "react";
 import style from "./usefulInfo.module.scss";
 import faqOne from "../../../Assets/UsefulInfo/faq.jpeg";
-import courseOffered from "../../../Assets/UsefulInfo/courseOffered.jpg";
-import italy from "../../../Assets/UsefulInfo/italyUsefulInfo.jpg";
-import faqFour from "../../../Assets/UsefulInfo/MBBS.jpeg";
-import applyImg from "../../../Assets/UsefulInfo/apply.png";
+import courseOffered from "../../../Assets/UsefulInfo/courseOffered.webp";
+import italy from "../../../Assets/UsefulInfo/italyUsefulInfo.webp";
+// import faqFour from "../../../Assets/UsefulInfo/MBBS.jpeg";
+// import applyImg from "../../../Assets/UsefulInfo/apply.png";
 import imgSix from "../../../Assets/Education/imgSix.jpg";
 import { NavLink } from "react-router-dom";
 

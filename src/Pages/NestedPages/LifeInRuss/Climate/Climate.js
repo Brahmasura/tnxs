@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import style from "./climate.module.scss";
 import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
-import climatePic from "../../../../Assets/Nested/climate.jpg";
+import climatePic from "../../../../Assets/LifeInRussia/inClimate.webp";
 
 const Climate = () => {
   const { handleLinkClick } = useContext(LinkContext);

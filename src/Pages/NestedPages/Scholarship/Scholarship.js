@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import style from "./scholarship.module.scss";
 import { NavLink } from "react-router-dom";
 import { LinkContext } from "../../../App";
-import imgSeven from "../../../Assets/Education/imgSeven.jpg";
+import imgSeven from "../../../Assets/Education/imgSeven.webp";
 
 const Scholarship = () => {
   const { handleLinkClick } = useContext(LinkContext);

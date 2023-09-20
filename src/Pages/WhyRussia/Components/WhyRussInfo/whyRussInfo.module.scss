@@ -7,7 +7,7 @@
     width: 100%;
   }
   .colOneContainer {
-    background: url("../../../../Assets/WhyRussia/advantageOuter.jpg");
+    background: url("../../../../Assets/WhyRussia/advantageOuter.webp");
     @include bg-center;
     @include y-bot-left;
     @include colStyles;
@@ -33,7 +33,7 @@
   }
 
   .colTwoContainer {
-    background: url("../../../../Assets/WhyRussia/Tradition\ of\ higher\ education.jpg");
+    background: url("../../../../Assets/WhyRussia/Tradition\ of\ higher\ education.webp");
     @include bg-center;
 
     @include y-bot-left;
@@ -60,7 +60,7 @@
   }
 
   .colThreeContainer {
-    background: url("../../../../Assets/WhyRussia/Testimonial.jpg");
+    background: url("../../../../Assets/WhyRussia/testiOuter.webp");
     @include bg-center;
 
     @include y-bot-left;
@@ -87,7 +87,7 @@
   }
 
   .colFourContainer {
-    background: url("../../../../Assets/WhyRussia/Russian\ UNiversities\ in\ World\ Ranking.jpg");
+    background: url("../../../../Assets/WhyRussia/russianRanking.webp");
     @include bg-center;
 
     @include y-bot-left;

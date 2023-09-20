@@ -2,19 +2,19 @@
 
 .studentContainer {
   height: 81.5vh;
-
 }
 
 .slideOne {
-  background: url("../../../Assets/students/IntroFive.jpg");
+  background: url("../../../Assets/students/Slider1.webp");
   @include bg-center;
+  background-size:100% 140% !important;
   height: 81.5vh;
   position: relative;
   z-index: -1;
 }
 
 .slideTwo {
-  background: url("../../../Assets/students/IntroSix.jpg");
+  background: url("../../../Assets/students/Slider2.webp");
   @include bg-center;
   height: 81.5vh;
   position: relative;
@@ -22,7 +22,7 @@
 }
 
 .slideThree {
-  background: url("../../../Assets/students/IntroEleven.jpg");
+  background: url("../../../Assets/students/Slider3.webp");
   @include bg-center;
   height: 81.5vh;
   position: relative;
@@ -47,68 +47,28 @@
 //   z-index: -1;
 // }
 
-
-
-
 // styling for mobile portrait begins
 
-@media (max-width:576px) and (orientation:portrait){
-  .studentContainer{
-    height:auto;
+@media (max-width: 576px) and (orientation: portrait) {
+  .studentContainer {
+    height: auto;
   }
 
-  .slideOne{
-      height:90vh;
+  .slideOne {
+    height: 90vh;
+    background-size: 290% 140% !important;
   }
 
-  .slideTwo{
-    height:90vh;
-
+  .slideTwo {
+    height: 90vh;
   }
 
-  .slideThree{
-    height:90vh;
-
+  .slideThree {
+    height: 90vh;
   }
 }
 
-
-
-
-
 // styling for mobile portrait ends
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // .studentContainer {
 //   height: 85vh;

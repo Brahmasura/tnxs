@@ -3,7 +3,7 @@ import advantage from "./advantages.module.scss";
 import { NavLink } from "react-router-dom";
 import { LinkContext } from "../../../../App";
 import { useContext } from "react";
-import advOuter from "../../../../Assets/WhyRussia/advantagesInner.jpg";
+import advInner from "../../../../Assets/WhyRussia/advantagesInner.webp";
 import advTwo from "../../../../Assets/Nested/Advantages.jpg";
 import Steps from "../../../Home/Steps/Steps";
 import { useState } from "react";
@@ -79,7 +79,7 @@ const Advantages = () => {
 
           {/* the tab div ends */}
           <h1>ADVANTAGES</h1>
-          <img src={advOuter} alt="the advantages" />
+          <img src={advInner} alt="the advantages" />
           <div className={advantage.greyDiv}>
             <p>
               According to the Organisation for Economic Cooperation and

@@ -1,10 +1,9 @@
 import React from "react";
 import education from "./education.module.scss";
-import imgFive from "../../../Assets/Education/imgFive.jpg";
-import imgSix from "../../../Assets/Education/imgSix.jpg";
-import imgSeven from "../../../Assets/Education/imgSeven.jpg";
+import imgFive from "../../../Assets/Education/imgFive.webp";
+import imgSeven from "../../../Assets/Education/imgSeven.webp";
 import imgEight from "../../../Assets/Education/imgEight.webp";
-import applyImg from '../../../Assets/UsefulInfo/apply.png';
+import applyImg from '../../../Assets/Education/apply.webp';
 import { NavLink } from "react-router-dom";
 
 const eduList = [
