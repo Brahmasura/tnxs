@@ -1,6 +1,8 @@
 @import "../../../mixins.module.scss";
 
 .discoverContainer {
+  // background: url("../../../Assets/Destination/discoverBack.png");
+  // @include bg-center;
   @include nopad;
   @include y-center;
   // height: 79vh;
@@ -13,7 +15,8 @@
 }
 .discoverTitle {
   @include heading;
-  margin-bottom: 3%;
+  // font-family:"fuggles";
+   margin-bottom: 3%;
 }
 
 .colsContainer {
@@ -39,7 +42,9 @@
       @include y-bot-left;
       height: 34vh;
       p {
-        font-family: sans-serif;
+        // font-family: sans-serif;
+        font-family: "croissant one", sans-serif;
+        
         font-size: 2vw;
         color: whitesmoke;
         background-color: rgba(0, 0, 0, 0.5);
@@ -100,18 +105,15 @@
       .optionLower {
         .lowerText {
           .lowerTextLeft {
-            p{
+            p {
               font-size: 0.7vw;
             }
-          
           }
 
           .lowerTextRight {
-            p{
+            p {
               font-size: 0.7vw;
-
             }
-           
           }
         }
         // p {
@@ -141,6 +143,9 @@
   .discoverTitle {
     font-size: 7vw;
     line-height: 2rem;
+    font-family: "'Cinzel Decorative'";
+    font-weight: 600;
+    color: #002838;
   }
 
   .colsContainer {

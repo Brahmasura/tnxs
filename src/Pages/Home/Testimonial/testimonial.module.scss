@@ -1,17 +1,20 @@
 @import "../../../mixins.module.scss";
 
 .testiContainer {
+  //    background: url("../../../Assets/Testimonial/testiBack.png");
+  // @include bg-center;
   @include nopad;
   @include y-center;
   height: 81.5vh;
   padding-inline: 4% !important;
   border: 1px 0 solid black;
-  background-color: #27374D;
+  background-color: #27374d;
 
   .testiTitle {
     @include heading;
+    font-family: 'Playfair Display SC', serif;
     margin-bottom: 3%;
-    color:#DDE6ED;
+    color: #dde6ed;
   }
 
   .colsContainer {
@@ -30,24 +33,32 @@
       margin-inline: 1%;
       padding: 1%;
       // background-color: grey;
-      background-color:#9DB2BF;
+      background-color: #9db2bf;
       border-radius: 4%;
+     
 
       hr {
-        margin: 0 0;
+        margin: 0.5rem 0;
       }
 
       .namePara {
+        font-family:"permanent marker";
         text-align: center;
         font-size: 1.5vw;
+        margin-top: 5%;
+        margin-bottom: 0;;
       }
 
       .uniPara {
+        font-family: "montserrat";
         text-align: center;
         font-size: 1.1vw;
+        margin-bottom:0;
+        
       }
 
       .cardQoute {
+        font-family:"open sans";
         display: inline;
         text-align: center;
         font-size: 1.2vw;
@@ -56,7 +67,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius:6%;
+        border-radius: 6%;
       }
     }
   }
@@ -105,9 +116,7 @@
 
 // the modal styling ends
 
-
-
-// mobile landscape styling begins 
+// mobile landscape styling begins
 @media (max-width: 900px) and (orientation: landscape) {
   .testiContainer {
     height: auto;
@@ -118,42 +127,33 @@
     }
 
     .colsContainer {
-      .studentCard{
-        
-          .namePara {
-            font-size: 1.3vw;
-            margin-bottom:5%;
-          }
-  
-          .uniPara {
-            font-size: 1.1vw;
-            margin-bottom:0;
-          }
+      .studentCard {
+        .namePara {
+          font-size: 1.3vw;
+          margin-bottom: 5%;
+        }
 
-          .cardQoute{
-            font-size:1.2vw;
-          }
-       
+        .uniPara {
+          font-size: 1.1vw;
+          margin-bottom: 0;
+        }
+
+        .cardQoute {
+          font-size: 1.2vw;
+        }
       }
     }
   }
 
-  .modalOverlay{
-    overflow:hidden;
+  .modalOverlay {
+    overflow: hidden;
   }
 
-  .modalContent{
-    max-height:90%;
-    overflow-y:auto;
+  .modalContent {
+    max-height: 90%;
+    overflow-y: auto;
   }
-
-
-
-
 }
-
-
-
 
 // mobile landscape styling ends
 
@@ -172,16 +172,17 @@
     .colsContainer {
       .rowTesti {
         height: auto;
+        padding-inline:3%;
       }
 
       .studentCard {
         width: 100%;
         margin: 4% 0;
-        padding: 3%;
+        padding: 5%;
         @include y-center;
 
         img {
-          border-radius: 2%;
+          border-radius: 6%;
         }
 
         .namePara {
@@ -204,26 +205,24 @@
   .modalOverlay {
     overflow: hidden;
   }
-  
+
   .modalContent {
     width: 95%;
-    max-height:90%;
-    overflow-y:auto;
-  
+    max-height: 90%;
+    overflow-y: auto;
+
     .modalTitlePara {
       font-size: 4.5vw;
     }
-  
+
     .modalQoute {
       font-size: 5vw;
     }
-  
+
     .modalBottomPara {
       font-size: 4vw;
     }
   }
 }
-
-
 
 // styling for mobile portrait ends

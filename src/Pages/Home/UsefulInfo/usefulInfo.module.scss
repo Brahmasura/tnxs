@@ -1,6 +1,8 @@
 @import "../../../mixins.module.scss";
 
 .faqContainer {
+  //   background: url("../../../Assets/UsefulInfo/usefulInfoBack.png");
+  // @include bg-center;
   @include nopad;
   @include y-center;
   // height: 79vh;
