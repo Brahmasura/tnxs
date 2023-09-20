@@ -11,7 +11,8 @@
   }
 
   h1 {
-    font-size: 30px;
+    
+    font-size: 2.5vw;
   }
 
   .imageCol {
@@ -27,10 +28,12 @@
     @include y-justify-Center;
 
     .titlePara {
+      font-family:"Open Sans";
       font-weight: 600;
     }
 
     p {
+      font-family:"Open Sans";
       margin-bottom: 0.5rem;
     }
     .buttonDiv {

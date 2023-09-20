@@ -197,9 +197,10 @@
 }
 
 @mixin mainHeading {
-  font-family: "Open Sans";
+  font-family: "Playfair Display", serif;
   align-self: center;
   font-size: 3.2vw;
+  font-weight:700;
   margin-bottom: 1.5%;
   text-align: center !important;
 
@@ -210,6 +211,7 @@
 }
 
 @mixin subHeading {
+  font-family:"Inter", sans-serif;
   font-size: 1.8vw;
   font-weight: 700;
   margin-top: 4%;
@@ -220,6 +222,7 @@
 }
 
 @mixin para {
+  font-family:"Open Sans",sans-serif ;
   font-size: 1.3vw;
   text-align: justify;
 
