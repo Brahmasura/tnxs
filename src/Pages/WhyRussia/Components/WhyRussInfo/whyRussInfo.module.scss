@@ -110,7 +110,7 @@
   }
 
   .colFourContainer:hover{
-    background-size:101%;
+    background-size:101%  ;
   }
 
   .hrStyle {
@@ -137,6 +137,10 @@
       }
   }
 
+  .colOneContainer:hover{
+    background-size:121% !important;
+  }
+
   .colTwoContainer{
     height:35vh !important;
    .upeprText{
@@ -147,6 +151,12 @@
         font-size:6vw;
       }
   }
+
+  .colTwoContainer:hover{
+    background-size:130% !important;
+  }
+
+
 
   .colThreeContainer{
     height:35vh !important;
@@ -159,8 +169,13 @@
       }
   }
 
+  .colThreeContainer:hover{
+    background-size:115% !important;
+  }
+
   .colFourContainer{
     height:35vh !important;
+    
    .upeprText{
         font-size:4vw;
       }
@@ -169,7 +184,12 @@
         font-size:6vw;
       }
   }
+  .colFourContainer:hover{
+    background-size:130% !important;
+  }
 }
+
+
 
 
 

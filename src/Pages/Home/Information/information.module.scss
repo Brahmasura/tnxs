@@ -33,7 +33,7 @@
 }
 
 .leftCol:hover {
-  background-size: 160%;
+  background-size: 170%;
 }
 
 .rightCol {
@@ -133,7 +133,7 @@
 }
 
 .rightBotRight:hover {
-  background-size: 102%;
+  background-size: 140%;
 }
 
 .hrStyle {
@@ -147,6 +147,7 @@
 // styling for mobile landscape begins
 @media (max-width: 900px) and (orientation: landscape) {
   .leftCol {
+   
     .upperText {
       font-size: 2vw;
     }
@@ -155,6 +156,14 @@
       font-size: 2.8vw;
     }
   }
+
+  .leftCol:hover{
+    background-size:180%;
+  }
+  
+
+
+
 
   .rightTopCol {
     .upperText {
@@ -176,6 +185,10 @@
     }
   }
 
+  .rightBotLeft:hover{
+    background-size:150%;
+  }
+
   .rightBotRight {
     .upperText {
       font-size: 2vw;
@@ -184,6 +197,10 @@
     h1 {
       font-size: 2.8vw;
     }
+  }
+
+  .rightBotRight:hover{
+     background-size:150%;
   }
 
   .hrStyle{
@@ -199,6 +216,7 @@
   .leftCol {
     height: 43vh;
     padding-left: 3% !important;
+ 
     .upperText {
       font-size: 4vw;
     }
@@ -209,8 +227,11 @@
   }
 
   .leftCol:hover {
-    background-size: 153%;
+    background-size: 160%;
   }
+
+
+
 
   .rightCol {
     height: auto;
@@ -219,6 +240,7 @@
   .rightTopCol {
     height: 27vh;
     padding-left: 3% !important;
+
     .upperText {
       font-size: 4vw;
     }
@@ -235,6 +257,7 @@
   .rightBotLeft {
     height: 30vh;
     padding-left: 3% !important;
+
     .upperText {
       font-size: 4vw;
     }
@@ -251,6 +274,7 @@
   .rightBotRight {
     height: 30vh;
     padding-left: 3% !important;
+
     .upperText {
       font-size: 4vw;
     }
@@ -261,7 +285,7 @@
   }
 
   .rightBotRight:hover {
-    background-size: 120%;
+    background-size: 180%;
   }
 }
 

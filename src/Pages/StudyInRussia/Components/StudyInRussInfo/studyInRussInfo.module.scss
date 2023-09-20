@@ -178,6 +178,20 @@
   }
 }
 
+// styling for mobile landscape begins 
+@media (max-width:900px) and (orientation:landscape){
+  .colTwoContainer:hover{
+    background-size:110% !important;
+  }
+
+  .colThreeContainer:hover{
+    background-size:105% !important;
+  }
+}
+
+
+
+// styling for mobile landscape ends
 
 
 // styling for mobile portrait begins
@@ -193,6 +207,10 @@
     }
   }
 
+  .colOneContainer:hover{
+    background-size:155% !important;
+  }
+
   .colTwoContainer{
  .upperText {
      font-size:4vw;
@@ -201,6 +219,10 @@
     h1 {
      font-size:6vw;
     }
+  }
+
+  .colTwoContainer:hover{
+    background-size:310% !important;
   }
 
   .colThreeContainer{
@@ -213,6 +235,10 @@
     }
   }
 
+  .colThreeContainer:hover{
+    background-size:305% !important;
+  }
+
   .colFourContainer{
  .upperText {
      font-size:4vw;
@@ -221,6 +247,10 @@
     h1 {
      font-size:6vw;
     }
+  }
+
+  .colFourContainer:hover{
+    background-size:210% !important;
   }
 
   .colFiveContainer{
@@ -233,6 +263,10 @@
     }
   }
 
+  .colFiveContainer:hover{
+    background-size:160% !important;
+  }
+
   .colSixContainer{
  .upperText {
      font-size:4vw;
@@ -241,6 +275,10 @@
     h1 {
      font-size:6vw;
     }
+  }
+
+  .colSixContainer:hover{
+    background-size:160% !important;
   }
 }
 
