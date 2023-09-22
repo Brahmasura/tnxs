@@ -234,7 +234,7 @@ const Header = () => {
             <div className="row">
               {/* logo */}
 
-              <div className={`col-md-4 col-md-4 ${header.brandCol}`}>
+              <div className={`col-sm-4 col-md-4 col-md-4 ${header.brandCol}`}>
                 <NavLink
                   to={"/"}
                   onClick={() => {
@@ -253,7 +253,7 @@ const Header = () => {
                 </NavLink>
               </div>
 
-              <div className={`col-md-8 col-lg-8 ${header.headLinkCol}`}>
+              <div className={`col-sm-8 col-md-8 col-lg-8 ${header.headLinkCol}`}>
                 <ul className={header.headLinkUl}>
                   <li>
                     <a
@@ -294,7 +294,7 @@ const Header = () => {
           <div className={`col-md-12 col-lg-12 ${header.headerSecCol}`}>
             <div className="row">
               {/* the links for navigation */}
-              <div className={`col-md-9 col-lg-9 ${header.linksCol}`}>
+              <div className={`col-sm-9 col-md-9 col-lg-9 ${header.linksCol}`}>
                 <ul className={header.linksList}>
                   <li>
                     <NavLink
@@ -376,7 +376,7 @@ const Header = () => {
                 {/* </div> */}
               </div>
 
-              <div className={`col-md-3 col-lg-3 ${header.buttonCol}`}>
+              <div className={`col-sm-3 col-md-3 col-lg-3 ${header.buttonCol}`}>
                 {/* whatsapp icon */}
                 <div class={header.whatsappDiv} onClick={openWhatsapp}>
                   <img src={icon} alt="whatsapp" />
