@@ -7,7 +7,7 @@
 .slideOne {
   background: url("../../../Assets/students/Slider1.webp");
   @include bg-center;
-  background-size:100% 140% !important;
+  background-size: 100% 140% !important;
   height: 81.5vh;
   position: relative;
   z-index: -1;
@@ -46,6 +46,27 @@
 //   position: relative;
 //   z-index: -1;
 // }
+
+// small tab portrait styling begins
+@media (max-width: 768px) and (orientation: portrait) {
+  .studentContainer {
+    height: 33vh;
+  }
+
+  .slideOne {
+    height: 33vh;
+  }
+
+  .slideTwo {
+    height: 33vh;
+  }
+
+  .slideThree {
+    height: 33vh;
+  }
+}
+
+// small tab protrait styling ends
 
 // styling for mobile portrait begins
 

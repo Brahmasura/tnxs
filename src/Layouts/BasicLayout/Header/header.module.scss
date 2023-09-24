@@ -51,18 +51,17 @@
     h1 {
       // font-family: sans-serif;
       // font-family:"playfair display sc";
-      
+
       font-style: normal;
       font-weight: 700;
       font-size: 1.5vw;
       color: #dd3534;
       margin-bottom: 0;
-      
     }
     p {
       // font-family: sans-serif;
-      font-family:"open sans";
-     
+      font-family: "open sans";
+
       font-weight: 600;
       font-size: 1.1vw;
       line-height: 18px;
@@ -113,7 +112,7 @@
 
 ul li {
   text-decoration: none;
-  display:flex;
+  display: flex;
 }
 
 .activeLink {
@@ -308,6 +307,61 @@ ul li {
 
 // modal styling ends
 
+//small tab portrait styling begins
+@media (max-width: 768px) and (orientation: portrait) {
+  .brandCol {
+    .headText {
+      h1 {
+        font-size: 2.5vw;
+      }
+
+      p {
+        font-size: 1.8vw;
+      }
+    }
+  }
+
+  .headLinkCol {
+    .headLinkUl {
+      width: 100%;
+    }
+  }
+
+  .headerContainer {
+    .headerSecCol {
+      padding: 1% 7%;
+    }
+  }
+
+  .linksCol {
+    a {
+      font-size: 1.5vw;
+    }
+  }
+
+  .buttonCol {
+    p {
+      font-size: 1.5vw;
+    }
+  }
+
+  .modelOverlay {
+    overflow: auto;
+  }
+
+  .modalContent {
+    .modalLeftCol {
+      display: none;
+    }
+  }
+
+  .closeButton{
+    width:5vw;
+  }
+}
+
+// small tab portrait styling ends
+
 // mobile landscape styling begins
 
 @media (max-width: 900px) and (orientation: landscape) {
@@ -409,12 +463,11 @@ ul li {
             font-size: 3.8vw;
             color: #dd3534;
             margin-bottom: 0;
-            
           }
 
           p {
             font-size: 2.8vw;
-            line-height:0.9rem;
+            line-height: 0.9rem;
             margin-bottom: 0;
           }
         }

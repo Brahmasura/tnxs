@@ -116,6 +116,46 @@
 
 // the modal styling ends
 
+
+// small tab portrait styling begins 
+@media(max-width:768px) and (orientation:portrait){
+  .testiContainer{
+    height:auto;
+    padding:1% 0 3% 0 !important;
+
+
+    .testiTitle{
+      font-size:5vw;
+    }
+
+    .colsContainer{
+      .rowTesti{
+        height:25vh;
+      }
+
+      .studentCard{
+        width:23%;
+
+        .namePara{
+          font-size:2.5vw;
+        }
+
+        .uniPara{
+          font-size:2vw;
+        }
+
+        .cardQoute{
+          font-size:1.7vw;
+        }
+      }
+    }
+  }
+}
+
+
+
+// small tab portrait styling ends
+
 // mobile landscape styling begins
 @media (max-width: 900px) and (orientation: landscape) {
   .testiContainer {
@@ -128,7 +168,7 @@
 
     .colsContainer {
       .studentCard {
-        .namePara {
+         .namePara {
           font-size: 1.3vw;
           margin-bottom: 5%;
         }

@@ -109,6 +109,31 @@
 
 
 
+
+// small tab portrait styling begins
+@media(max-width:768px) and (orientation:portrait){
+ .uniCompoContainer{
+  height:auto;
+
+  .infoCol{
+    p{
+      margin-bottom:0.2rem;
+    }
+  }
+
+  .logoCol{
+    display:none;
+  }
+ }
+}
+
+
+
+
+// small tab protrait styling ends
+
+
+
 // mobile landscape styling begins 
 @media (max-width:900px) and (orientation:landscape){
   .uniCompoContainer{

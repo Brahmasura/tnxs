@@ -228,13 +228,13 @@ const Header = () => {
       {/* the real web layout */}
       <div className={`container-fluid ${header.headerContainer}`}>
         <div className="row">
-          <div className={`col-md-12 col-lg-12 ${header.headerFirstCol}`}>
+          <div className={`col-sm-12 col-md-12 col-lg-12 ${header.headerFirstCol}`}>
             {/* the first header col */}
 
             <div className="row">
               {/* logo */}
 
-              <div className={`col-sm-4 col-md-4 col-md-4 ${header.brandCol}`}>
+              <div className={`col-sm-6 col-md-4 col-lg-4 ${header.brandCol}`}>
                 <NavLink
                   to={"/"}
                   onClick={() => {
@@ -253,7 +253,7 @@ const Header = () => {
                 </NavLink>
               </div>
 
-              <div className={`col-sm-8 col-md-8 col-lg-8 ${header.headLinkCol}`}>
+              <div className={`col-sm-6 col-md-8 col-lg-8 ${header.headLinkCol}`}>
                 <ul className={header.headLinkUl}>
                   <li>
                     <a

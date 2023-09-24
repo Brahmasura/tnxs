@@ -15,9 +15,9 @@
 }
 .discoverTitle {
   @include heading;
-  font-family:"cinzel decorative";
-  color:#002838;
-   margin-bottom: 3%;
+  font-family: "cinzel decorative";
+  color: #002838;
+  margin-bottom: 3%;
 }
 
 .colsContainer {
@@ -45,7 +45,7 @@
       p {
         // font-family: sans-serif;
         font-family: "croissant one", sans-serif;
-        
+
         font-size: 2vw;
         color: whitesmoke;
         background-color: rgba(0, 0, 0, 0.5);
@@ -89,6 +89,40 @@
     }
   }
 }
+
+// small tab portrait styling begins
+@media (max-width: 768px) and (orientation: portrait) {
+  .discoverContainer {
+    height: auto;
+    padding: 1% 0 3% 0 !important;
+  }
+
+  .discoverTitle{
+    font-size:5vw;
+  }
+
+  .colsContainer{
+    .rowOptions{
+      height:25vh;
+    }
+
+    .optionContainer{
+      width:23%;
+
+      .optionUpper{
+        height:12.5vh;
+      }
+
+      .optionLower{
+        height:8vh;
+      }
+    }
+  }
+
+
+}
+
+// small tab portrait styling ends
 
 // styling for mobile landscape begins
 @media (max-width: 900px) and (orientation: landscape) {
