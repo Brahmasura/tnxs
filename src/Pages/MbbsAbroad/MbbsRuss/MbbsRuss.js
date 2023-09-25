@@ -3,6 +3,7 @@ import style from "./mbbsRuss.module.scss";
 import russiaPic from "../../../Assets/Destination/russia.jpeg";
 import { LinkContext } from "../../../App";
 import { NavLink } from "react-router-dom";
+import Steps from "../../Home/Steps/Steps";
 
 const MbbsRuss = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -286,6 +287,7 @@ const MbbsRuss = () => {
           </p>
         </div>
       </div>
+      <Steps/>
     </>
   );
 };

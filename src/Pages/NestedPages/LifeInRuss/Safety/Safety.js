@@ -3,6 +3,7 @@ import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
 import style from "./safety.module.scss";
 import introOne from "../../../../Assets/students/IntroOne.jpg";
+import Steps from "../../../Home/Steps/Steps";
 
 const Safety = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -197,6 +198,7 @@ const Safety = () => {
           </p>
         </div>
       </div>
+      <Steps/>
     </>
   );
 };

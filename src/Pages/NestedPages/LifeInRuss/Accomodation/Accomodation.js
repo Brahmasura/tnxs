@@ -3,6 +3,7 @@ import style from "./accomodation.module.scss";
 import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
 import studyFour from "../../../../Assets/StudyInRussia//studyFour.jpg";
+import Steps from "../../../Home/Steps/Steps";
 
 const Accomodation = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -205,6 +206,7 @@ const Accomodation = () => {
           </p>
         </div>
       </div>
+     <Steps/>
     </>
   );
 };

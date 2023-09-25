@@ -3,6 +3,7 @@ import style from "./scholarship.module.scss";
 import { NavLink } from "react-router-dom";
 import { LinkContext } from "../../../App";
 import imgSeven from "../../../Assets/Education/imgSeven.webp";
+import Steps from "../../Home/Steps/Steps";
 
 const Scholarship = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -199,6 +200,7 @@ const Scholarship = () => {
           </p>
         </div>
       </div>
+      <Steps/>
     </>
   );
 };

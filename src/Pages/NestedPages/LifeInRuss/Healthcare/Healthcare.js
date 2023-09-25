@@ -3,6 +3,7 @@ import { LinkContext } from "../../../../App";
 import style from "./healthcare.module.scss";
 import { NavLink } from "react-router-dom";
 import healthPic from "../../../../Assets/Nested/HealthcareNested.webp";
+import Steps from "../../../Home/Steps/Steps";
 
 const Healthcare = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -160,6 +161,7 @@ const Healthcare = () => {
           </p>
         </div>
       </div>
+      <Steps/>
     </>
   );
 };

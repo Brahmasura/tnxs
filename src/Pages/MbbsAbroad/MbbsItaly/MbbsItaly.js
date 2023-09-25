@@ -3,6 +3,7 @@ import style from "./mbbsItaly.module.scss";
 import italyPic from "../../../Assets/Destination/italy.webp";
 import { LinkContext } from "../../../App";
 import { NavLink } from "react-router-dom";
+import Steps from "../../Home/Steps/Steps";
 
 const MbbsItaly = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -129,6 +130,7 @@ const MbbsItaly = () => {
           </p>
         </div>
       </div>
+      <Steps/>
     </>
   );
 };

@@ -69,8 +69,6 @@ const Footer = () => {
             <NavLink to={"/tuitionFee"} onClick={() => window.scrollTo(0, 0)}>
               <li>Tuition Fee</li>
             </NavLink>
-
-           
           </ul>
         </div>
         <div className={`col ${footer.linkCol}`}>
@@ -180,6 +178,40 @@ const Footer = () => {
             >
               <li>MBBS in Kazakhstan</li>
             </NavLink>
+
+            <li>
+              <div className={footer.callbackDiv}>
+                <p>Request a Callback</p>
+                <form>
+                  <div className={`container-fluid ${footer.callbackForm} `}>
+                    <div className="row">
+                      {/* <div
+                        className={`col-sm-12 col-md-12 col-lg-12 ${footer.formCols}`}
+                      > */}
+                        <input
+                          type="text"
+                          placeholder="Full name"
+                          name="name"
+                          required
+                        />
+                      {/* </div> */}
+
+                      {/* <div
+                        className={`col-sm-12 col-md-12 col-lg-12 ${footer.formCols}`}
+                      > */}
+                        <input
+                          type="number"
+                          placeholder="Contact No."
+                          name="contact"
+                          required
+                        />
+                      {/* </div> */}
+                      <button type="submit">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
           </ul>
         </div>
       </div>

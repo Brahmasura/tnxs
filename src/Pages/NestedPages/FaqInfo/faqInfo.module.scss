@@ -21,6 +21,10 @@
     }
   }
 
+  ul li{
+    display:block;
+  }
+
   img {
     @include theImage;
   }

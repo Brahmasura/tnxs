@@ -3,6 +3,7 @@ import style from "./mbbsUzbek.module.scss";
 import uzbekPic from "../../../Assets/Destination/uzbekistan.webp";
 import { LinkContext } from "../../../App";
 import { NavLink } from "react-router-dom";
+import Steps from "../../Home/Steps/Steps";
 
 const MbbsUzbek = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -193,6 +194,7 @@ const MbbsUzbek = () => {
           </p>
         </div>
       </div>
+      <Steps/>
     </>
   );
 };

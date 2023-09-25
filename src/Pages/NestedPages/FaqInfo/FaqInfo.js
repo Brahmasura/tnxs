@@ -3,6 +3,7 @@ import style from "./faqInfo.module.scss";
 import faqPic from "../../../Assets/FaqInfo/FaqInfoPic.jpg";
 import { LinkContext } from "../../../App";
 import { NavLink } from "react-router-dom";
+import Steps from "../../Home/Steps/Steps";
 
 const FaqInfo = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -227,7 +228,9 @@ const FaqInfo = () => {
             </li>
           </ul>
         </div>
+
       </div>
+      <Steps/>
     </>
   );
 };

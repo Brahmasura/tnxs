@@ -3,6 +3,7 @@ import style from "./climate.module.scss";
 import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
 import climatePic from "../../../../Assets/LifeInRussia/inClimate.webp";
+import Steps from "../../../Home/Steps/Steps";
 
 const Climate = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -173,6 +174,7 @@ const Climate = () => {
           </p>
         </div>
       </div>
+      <Steps/>
     </>
   );
 };

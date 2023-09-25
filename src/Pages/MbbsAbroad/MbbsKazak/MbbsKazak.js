@@ -3,6 +3,7 @@ import style from "./mbbsKazak.module.scss";
 import kazakPic from "../../../Assets/Destination/kazakhstan.jpg";
 import { LinkContext } from "../../../App";
 import { NavLink } from "react-router-dom";
+import Steps from "../../Home/Steps/Steps";
 
 const MbbsKazak = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -163,6 +164,7 @@ const MbbsKazak = () => {
           </p>
         </div>
       </div>
+      <Steps/>
     </>
   );
 };

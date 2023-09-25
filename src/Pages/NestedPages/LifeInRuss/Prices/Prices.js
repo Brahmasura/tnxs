@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import lifeTwo from "../../../../Assets/LifeInRussia/inPrices.webp";
 import infoThree from "../../../../Assets/Information/infoThree.webp";
 import studyThree from "../../../../Assets/StudyInRussia/studyThree.jpg";
+import Steps from "../../../Home/Steps/Steps";
 
 const Prices = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -224,6 +225,7 @@ const Prices = () => {
           </p>
         </div>
       </div>
+      <Steps/>
     </>
   );
 };
