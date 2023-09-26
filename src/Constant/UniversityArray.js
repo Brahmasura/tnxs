@@ -12,6 +12,20 @@ import kemerovo from "../Assets/University/kemerovo.jpeg";
 import kemerovoLogo from "../Assets/University/kemerovoLogo.png";
 import kursk from "../Assets/University/kursk.jpg";
 import kurskLogo from "../Assets/University/kurskLogo.jpg";
+import kab1 from "../Assets/Gallery/Kabardino/kab1.jpg";
+import kab2 from "../Assets/Gallery/Kabardino/kab2.jpg";
+import kab3 from "../Assets/Gallery/Kabardino/kab3.jpg";
+import kab4 from "../Assets/Gallery/Kabardino/kab4.jpg";
+import kab5 from "../Assets/Gallery/Kabardino/kab5.jpg";
+import kab6 from "../Assets/Gallery/Kabardino/kab6.jpg";
+import kab7 from "../Assets/Gallery/Kabardino/kab7.jpg";
+import kab8 from "../Assets/Gallery/Kabardino/kab8.jpg";
+import kab9 from "../Assets/Gallery/Kabardino/kab9.jpg";
+import kab10 from "../Assets/Gallery/Kabardino/kab10.jpg";
+import kab11 from "../Assets/Gallery/Kabardino/kab11.jpg";
+import kab12 from "../Assets/Gallery/Kabardino/kab12.jpg";
+
+
 
 // *********************pdfs*****************************
 import bashkirPdf from "../Assets/UniPdf/bashkir.pdf";
@@ -56,6 +70,7 @@ const UniArray = [
     distance: "1430",
     logo: kabarLogo,
     pdf: kabardinoPdf,
+    gallery: [kab1, kab2, kab3, kab4, kab5, kab6, kab7, kab8, kab9, kab10, kab11, kab12],
   },
 
   {
