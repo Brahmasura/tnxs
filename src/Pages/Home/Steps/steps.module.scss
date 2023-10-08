@@ -139,8 +139,13 @@
   }
 
   .stepContainer {
+    height:42vh;
     .stepsUpper {
       height: 20vh;
+    }
+
+    .stepLower{
+      height:9vh;
     }
   }
 }

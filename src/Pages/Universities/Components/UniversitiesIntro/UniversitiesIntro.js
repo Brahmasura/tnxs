@@ -12,10 +12,8 @@ const UniversitiesIntro = () => {
           <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
             Home
           </NavLink>
-        
         </div>
 
-        
         <h1>Universities in Russia</h1>
         <p>
           Russian universities have long been a hidden gem on the global
