@@ -12,10 +12,7 @@ const UniversitiesIntro = () => {
           <NavLink to={"/"} onClick={() => handleLinkClick(0)}>
             Home
           </NavLink>
-          <p className={style.slash}> / </p>
-          <NavLink to={"/whyRussia"} onClick={() => handleLinkClick(2)}>
-            Study In Russia
-          </NavLink>
+        
         </div>
 
         
