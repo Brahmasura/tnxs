@@ -84,6 +84,13 @@
   align-items: start;
 }
 
+@mixin y-sa{
+  display:flex !important;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 // for background
 @mixin bg-center {
   background-size: cover;

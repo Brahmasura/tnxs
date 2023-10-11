@@ -8,6 +8,7 @@ import Destinations from "./Destinations/Destinations";
 import UsefulInfo from './UsefulInfo/UsefulInfo';
 import DiscoverRussia from "./Discover-Russia/DiscoverRussia";
 import Testimonial from "./Testimonial/Testimonial";
+import StepsNew from "./StepsNew/StepsNew";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Students />
       <Education />
       <Steps />
+     {/* <StepsNew/> */}
       <Information />
       <DiscoverRussia/>
       <UsefulInfo/>

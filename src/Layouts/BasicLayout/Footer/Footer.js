@@ -200,7 +200,7 @@ const Footer = () => {
                         className={`col-sm-12 col-md-12 col-lg-12 ${footer.formCols}`}
                       > */}
                         <input
-                          type="number"
+                          type="text"
                           placeholder="Contact No."
                           name="contact"
                           required

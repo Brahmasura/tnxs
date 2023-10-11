@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import style from "./studyInEng.module.scss";
 import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
-import studyInEng from "../../../../Assets/StudyInRussia/studyInEng.jpg";
+import studyInEng from "../../../../Assets/StudyInRussia/studyInEngNew.webp";
 import Steps from "../../../Home/Steps/Steps";
 
 const StudyInEng = () => {

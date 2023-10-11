@@ -54,7 +54,7 @@ const Advantages = () => {
               </button>
             </NavLink>
 
-            <NavLink to={"/advantages"}>
+            <NavLink to={"/whyRussTesti"}>
               <button
                 className={
                   activeTab === 3 ? advantage.activeTabs : advantage.tabs

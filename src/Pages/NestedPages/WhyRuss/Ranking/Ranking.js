@@ -48,7 +48,7 @@ const Ranking = () => {
               </button>
             </NavLink>
             
-            <NavLink to={"/advantages"}>
+            <NavLink to={"/whyRussTesti"}>
               <button
                 className={activeTab === 3 ? ranking.activeTabs : ranking.tabs}
                 onClick={() => handleTabClick(3)}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import steps from "./steps.module.scss";
+import steps from "./stepsNew.module.scss";
 import imgOne from "../../../Assets/Steps/steps1.jpg";
 import imgTwo from "../../../Assets/Steps/steps2.jpg";
 import imgThree from "../../../Assets/Steps/steps3.jpg";
@@ -15,7 +15,7 @@ const stepsList = [
   { image: imgFive, text: "Get Invitation to apply for Student Visa" },
 ];
 
-const Steps = () => {
+const StepsNew = () => {
 
     const [hoveredStep, setHoveredStep] = useState(null);
 
@@ -60,4 +60,4 @@ const Steps = () => {
   );
 };
 
-export default Steps;
+export default StepsNew;

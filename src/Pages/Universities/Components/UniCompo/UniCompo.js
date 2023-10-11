@@ -50,7 +50,7 @@ const UniCompo = ({ institution }) => {
             </p>
             <p>
               <span className={style.titlePara}>University Website: </span>
-              <a href={web}>{web}</a>
+              <a href={web} target="_absolute">{web}</a>
             </p>
             <p>
               <span className={style.titlePara}>

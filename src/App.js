@@ -10,6 +10,7 @@ import LifeInRussia from "./Pages/LifeInRussia/LifeInRussia";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Advantages from "./Pages/NestedPages/WhyRuss/Advantages/Advantages";
 import Ranking from "./Pages/NestedPages/WhyRuss/Ranking/Ranking";
+
 import MbbsInRuss from "./Pages/NestedPages/StudyInRuss/MbbsInRuss/MbbsInRuss";
 import Universities from "./Pages/Universities/Universities";
 import Prices from "./Pages/NestedPages/LifeInRuss/Prices/Prices";
@@ -37,6 +38,7 @@ import AboutIntro from "./Pages/AboutUs/AboutIntro/AboutIntro";
 import OurServices from "./Pages/AboutUs/OurServices/OurServices";
 import DirectorDesk from "./Pages/AboutUs/DirectorDesk/DirectorDesk";
 import Sitemap from "./Pages/NestedPages/SiteMap/Sitemap";
+import WhyRussTesti from "./Pages/NestedPages/WhyRuss/whyRussTesti/WhyRussTesti";
 
 export const LinkContext = createContext();
 
@@ -62,6 +64,7 @@ function App() {
             <Route path="/directorDesk" exact element={<DirectorDesk/>}/>
             <Route path="/advantages" exact element={<Advantages />} />
             <Route path="/ranking" exact element={<Ranking />} />
+            <Route path="/whyRussTesti" exact element={<WhyRussTesti/>}/>
             <Route path="/mbbsInRussia" exact element={<MbbsInRuss />} />
             <Route path="/prices" exact element={<Prices />} />
             <Route path="/accomodation" exact element={<Accomodation />} />
