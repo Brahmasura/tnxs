@@ -26,7 +26,9 @@ const WhyRussInfo = () => {
           </div>
 
           <div className={`col-12 col-lg-6 ${whyRussInfo.colThreeContainer}`}>
+          <NavLink to={"/whyRussTesti"} onClick={() => window.scrollTo(0, 0)}>
             <h1 className={whyRussInfo.upperText}>TESTIMONIALS</h1>
+            </NavLink>
             <hr className={whyRussInfo.hrStyle} />
             <h1>Know what it's like to study in Russia</h1>
           </div>
