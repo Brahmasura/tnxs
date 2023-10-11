@@ -44,14 +44,43 @@ export const LinkContext = createContext();
 
 function App() {
   const [activeLink, setActiveLink] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   const handleLinkClick = (index) => {
     setActiveLink(index);
   };
 
+  const [formData, setFormData] = useState({
+    userName: "",
+    userMail: "",
+    userContact: "",
+    userCourse: "",
+    userPassport: "",
+    userMessage: "",
+  });
+
+  const handleFormChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: [e.target.value] });
+  };
+
+  const handleModalClick = () => {
+    setIsModalOpen(!isModalOpen);
+    setFormData({
+      userName: "",
+      userMail: "",
+      userContact: "",
+      userCourse: "",
+      userPassport: "",
+      userMessage: "",
+    });
+  };
+
+
+
   return (
     <div className="App">
-      <LinkContext.Provider value={{ activeLink, handleLinkClick }}>
+      <LinkContext.Provider value={{ activeLink, handleLinkClick, isModalOpen, formData, handleFormChange, handleModalClick }}>
         <BasicLayout>
           <Routes>
             <Route path="/" exact element={<Home />} />

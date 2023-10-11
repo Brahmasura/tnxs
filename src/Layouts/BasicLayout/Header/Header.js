@@ -23,32 +23,32 @@ import leftFive from "../../../Assets/FormLeft/formLeftFive.svg";
 import leftSix from "../../../Assets/FormLeft/formLeftSix.svg";
 
 const Header = () => {
-  const { activeLink, handleLinkClick } = useContext(LinkContext);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    userName: "",
-    userMail: "",
-    userContact: "",
-    userCourse: "",
-    userPassport: "",
-    userMessage: "",
-  });
+  const { activeLink, handleLinkClick, isModalOpen, formData, handleFormChange, handleModalClick } = useContext(LinkContext);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [formData, setFormData] = useState({
+  //   userName: "",
+  //   userMail: "",
+  //   userContact: "",
+  //   userCourse: "",
+  //   userPassport: "",
+  //   userMessage: "",
+  // });
 
-  const handleFormChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: [e.target.value] });
-  };
+  // const handleFormChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: [e.target.value] });
+  // };
 
-  const handleModalClick = () => {
-    setIsModalOpen(!isModalOpen);
-    setFormData({
-      userName: "",
-      userMail: "",
-      userContact: "",
-      userCourse: "",
-      userPassport: "",
-      userMessage: "",
-    });
-  };
+  // const handleModalClick = () => {
+  //   setIsModalOpen(!isModalOpen);
+  //   setFormData({
+  //     userName: "",
+  //     userMail: "",
+  //     userContact: "",
+  //     userCourse: "",
+  //     userPassport: "",
+  //     userMessage: "",
+  //   });
+  // };
 
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 

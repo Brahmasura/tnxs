@@ -42,7 +42,7 @@ const Steps = () => {
                   >
                     <div
                       className={`col-md-12 col-lg-12 ${steps.stepsUpper}`}
-                      style={{ backgroundImage: `url(${item.image})`, border: hoveredStep !== null && hoveredStep >= index ? "1px solid black" : "none" }}
+                      style={{ backgroundImage: `url(${item.image})`, border: hoveredStep !== null && hoveredStep >= index ? "1px solid black" : "none"}}
                     ></div>
                     <div className={`col-md-12 col-lg-12 ${steps.stepsLower}`}
                      style={{background: hoveredStep !==null && hoveredStep >= index ? "#5780c0" : "none", border: hoveredStep !== null && hoveredStep >= index ? "1px solid black" : "none"}}>
