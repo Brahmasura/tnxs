@@ -92,6 +92,7 @@ const UniCompo = ({ institution }) => {
       {isGalModalOpen && (
         <div className={style.modalOverlay} onClick={closeGalModal}>
           <div className={`container-fluid ${style.galModalContent}`}>
+               <h1>{university}</h1>
             <div className="row">
               {gallery.map((pic) => (
                 <div className={`col-3 ${style.galCol}`} onClick={ () => window.open(pic, "_blank") }>

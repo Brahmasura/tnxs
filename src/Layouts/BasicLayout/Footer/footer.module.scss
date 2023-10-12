@@ -7,7 +7,7 @@
   background-position: center 62%;
   @include x-center;
   // @include padTwo;
-  padding-inline:1%;
+  padding-inline: 1%;
   // @include border;
   // height: 80vh;
   height: auto;
@@ -25,25 +25,20 @@
   @include y-start;
   h1 {
     @include footerHead;
-    font-weight:800;
+    font-weight: 800;
     color: #dd3534;
     font-size: 1.3vw;
   }
 
-
-
   p {
     font-size: 1.1vw;
-    font-weight:500;
+    font-weight: 500;
     color: whitesmoke;
-
-    
   }
 
-
-  a{
-    text-decoration:none;
-    cursor:pointer;
+  a {
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .mapPara {
@@ -57,7 +52,11 @@
 }
 
 .linkCol {
+
   @include y-start;
+  a{
+    text-decoration:none;
+  }
   h1 {
     @include footerHead;
     font-size: 1.2vw;
@@ -79,35 +78,29 @@
     font-size: 1.1vw;
     margin-bottom: 6.5%;
     line-height: 1.5rem;
-
   }
 
-  .callbackDiv{
-
-
-
-    p{
+  .callbackDiv {
+    p {
       // color: #dd3534;
       font-size: 1.3vw;
       font-weight: 800;
-      margin-bottom:2%;
-      color:whitesmoke;
+      margin-bottom: 2%;
+      color: whitesmoke;
     }
-    input{
-      padding:1% 3%;
-      margin:1.5% 0;
+    input {
+      padding: 1% 3%;
+      margin: 1.5% 0;
     }
 
-    button{
-      width:40%;
-      margin-top:2%;
+    button {
+      // width:40%;
+      margin-top: 2%;
       background-color: #dd3534;
-      color:whitesmoke;
-      border:1px solid grey;
+      color: whitesmoke;
+      border: 1px solid grey;
     }
   }
-
- 
 }
 
 // mobile landscape styling begins
@@ -115,9 +108,9 @@
   .footerContainer {
     height: auto;
 
-    .footerUl{
-      li{
-        line-height:0.9rem;
+    .footerUl {
+      li {
+        line-height: 0.9rem;
       }
     }
   }
@@ -147,11 +140,17 @@
         font-size: 4vw;
       }
 
-      .footerUl{
-        li{
-          font-size:2.8vw;
-          line-height:0.9rem;
+      .footerUl {
+        li {
+          font-size: 2.8vw;
+          line-height: 0.9rem;
         }
+      }
+    }
+
+    .callbackDiv {
+      p {
+        font-size: 3.3vw;
       }
     }
   }

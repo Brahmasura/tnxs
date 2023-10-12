@@ -67,9 +67,10 @@
 
   .logoCol {
     height: 100%;
+    @include x-center;
     img {
-      width: 100%;
-      height: 100% !important;
+      height: 85%;
+      // height: 100% !important;
       // height: auto;
     }
   }
@@ -112,15 +113,20 @@
   position: relative;
   width: 80%;
   max-width:80%;
-  height: 80%;
+  height: auto;
   max-height:80%;
   background-color: white;
   z-index: 100;
   padding: 20px;
   overflow-y: scroll;
 
+  h1{
+    text-align:center;
+  }
+
   img{
     width:100%;
+    height:100%;
     object-fit:cover !important;
   }
 
@@ -143,7 +149,7 @@
     }
 
     .logoCol {
-      display: none;
+      display: none !important;
     }
   }
 }

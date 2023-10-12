@@ -32,12 +32,32 @@ const Footer = () => {
         {/* the qr col ends */}
 
         <div className={`col ${footer.linkCol}`}>
-          <h1>WHY RUSSIA</h1>
+          <NavLink
+            to={"/whyRussia"}
+            onClick={() => {
+              handleLinkClick(1);
+              window.scrollTo(0, 0);
+            }}
+          >
+            <h1>WHY RUSSIA</h1>
+          </NavLink>
           <ul className={footer.footerUl}>
-            <NavLink to={"/advantages"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/advantages"}
+              onClick={() => {
+                handleLinkClick(1);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Advantages of Higher Education in Russia</li>
             </NavLink>
-            <NavLink to={"/ranking"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/ranking"}
+              onClick={() => {
+                handleLinkClick(1);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Russian Universities in World University Ranking</li>
             </NavLink>
             <li>Russian Higher Education in Figure</li>
@@ -46,50 +66,135 @@ const Footer = () => {
           </ul>
         </div>
         <div className={`col ${footer.linkCol}`}>
-          <h1>STUDY IN RUSSIA</h1>
+          <NavLink
+            to={"/studyInRussia"}
+            onClick={() => {
+              handleLinkClick(2);
+              window.scrollTo(0, 0);
+            }}
+          >
+            <h1>STUDY IN RUSSIA</h1>
+          </NavLink>
           <ul className={footer.footerUl}>
-            <NavLink to={"/preparatory"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/preparatory"}
+              onClick={() => {
+                handleLinkClick(2);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Preparatory Department</li>
             </NavLink>
-            <NavLink to={"/studyInEng"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/studyInEng"}
+              onClick={() => {
+                handleLinkClick(2);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Study in English</li>
             </NavLink>
-            <NavLink to={"/mbbsInRussia"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/mbbsInRussia"}
+              onClick={() => {
+                handleLinkClick(2);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>MBBS in Russia</li>
             </NavLink>
-            <NavLink to={"/universities"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/studyUni"}
+              onClick={() => {
+                handleLinkClick(2);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Top Universities</li>
             </NavLink>
             <NavLink
               to={"/degreeValidation"}
-              onClick={() => window.scrollTo(0, 0)}
+              onClick={() => {
+                handleLinkClick(2);
+                window.scrollTo(0, 0);
+              }}
             >
               <li>Validation Of Degree</li>
             </NavLink>
-            <NavLink to={"/tuitionFee"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/tuitionFee"}
+              onClick={() => {
+                handleLinkClick(2);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Tuition Fee</li>
             </NavLink>
           </ul>
         </div>
         <div className={`col ${footer.linkCol}`}>
-          <h1>LIFE IN RUSSIA</h1>
+          <NavLink
+            to={"/lifeInRussia"}
+            onClick={() => {
+              handleLinkClick(3);
+              window.scrollTo(0, 0);
+            }}
+          >
+            <h1>LIFE IN RUSSIA</h1>
+          </NavLink>
           <ul className={footer.footerUl}>
-            <NavLink to={"/accomodation"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/accomodation"}
+              onClick={() => {
+                handleLinkClick(3);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Accomodation</li>
             </NavLink>
-            <NavLink to={"/prices"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/prices"}
+              onClick={() => {
+                handleLinkClick(3);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Prices</li>
             </NavLink>
-            <NavLink to={"/climate"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/climate"}
+              onClick={() => {
+                handleLinkClick(3);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Climate</li>
             </NavLink>
-            <NavLink to={"/transport"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/transport"}
+              onClick={() => {
+                handleLinkClick(3);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Transport</li>
             </NavLink>
-            <NavLink to={"/safety"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/safety"}
+              onClick={() => {
+                handleLinkClick(3);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Safety</li>
             </NavLink>
-            <NavLink to={"/healthcare"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/healthcare"}
+              onClick={() => {
+                handleLinkClick(3);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Healthcare</li>
             </NavLink>
           </ul>
@@ -130,17 +235,39 @@ const Footer = () => {
           </ul> */}
         {/* </div> */}
         <div className={`col ${footer.linkCol}`}>
-          <h1>ABOUT US</h1>
+          <NavLink
+            to={"/aboutUs"}
+            onClick={() => {
+              handleLinkClick(5);
+              window.scrollTo(0, 0);
+            }}
+          >
+            <h1>ABOUT US</h1>
+          </NavLink>
           <ul className={footer.footerUl}>
-            <NavLink to={"/ourServices"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/ourServices"}
+              onClick={() => {
+                handleLinkClick(5);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Our Services</li>
             </NavLink>
-            <NavLink to={"/directorDesk"} onClick={() => window.scrollTo(0, 0)}>
+            <NavLink
+              to={"/directorDesk"}
+              onClick={() => {
+                handleLinkClick(5);
+                window.scrollTo(0, 0);
+              }}
+            >
               <li>Director's Desk</li>
             </NavLink>
           </ul>
 
-          <h1>MBBS ABROAD</h1>
+          <NavLink to={"/mbbsRuss"} onClick={() => {handleLinkClick(0); window.scrollTo(0, 0)}}>
+            <h1>MBBS ABROAD</h1>
+          </NavLink>
           <ul className={footer.footerUl}>
             <NavLink
               to={"/mbbsRuss"}
@@ -188,23 +315,23 @@ const Footer = () => {
                       {/* <div
                         className={`col-sm-12 col-md-12 col-lg-12 ${footer.formCols}`}
                       > */}
-                        <input
-                          type="text"
-                          placeholder="Full name"
-                          name="name"
-                          required
-                        />
+                      <input
+                        type="text"
+                        placeholder="Full name"
+                        name="name"
+                        required
+                      />
                       {/* </div> */}
 
                       {/* <div
                         className={`col-sm-12 col-md-12 col-lg-12 ${footer.formCols}`}
                       > */}
-                        <input
-                          type="text"
-                          placeholder="Contact No."
-                          name="contact"
-                          required
-                        />
+                      <input
+                        type="text"
+                        placeholder="Contact No."
+                        name="contact"
+                        required
+                      />
                       {/* </div> */}
                       <button type="submit">Submit</button>
                     </div>
