@@ -255,7 +255,7 @@ const Header = () => {
 
               <div className={`col-sm-6 col-md-8 col-lg-8 ${header.headLinkCol}`}>
                 <ul className={header.headLinkUl}>
-                  <li>
+                  <li className={header.fb}>
                     <a
                       href="https://www.facebook.com/GraduationAbroad"
                       target="_absolute"
@@ -263,7 +263,7 @@ const Header = () => {
                       <img src={fb} alt="the link pic" />
                     </a>
                   </li>
-                  <li>
+                  <li className={header.insta}>
                     <a
                       href="https://www.instagram.com/graduationabroad/"
                       target="_absolute"
@@ -271,7 +271,7 @@ const Header = () => {
                       <img src={insta} alt="the link pic" />
                     </a>
                   </li>
-                  <li>
+                  <li className={header.linke}>
                     <a
                       href="https://www.linkedin.com/in/siddharth-negi-03285969/"
                       target="_absolute"
@@ -279,10 +279,10 @@ const Header = () => {
                       <img src={linke} alt="the link pic" />
                     </a>
                   </li>
-                  <li>
+                  <li className={header.tweet}>
                     <img src={tweet} alt="the link pic" />
                   </li>
-                  <li>
+                  <li className={header.youtube}>
                     <img src={youtube} alt="the link pic" />
                   </li>
                 </ul>
