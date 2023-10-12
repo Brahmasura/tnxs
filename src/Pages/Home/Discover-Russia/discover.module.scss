@@ -15,9 +15,20 @@
 }
 .discoverTitle {
   @include heading;
-  font-family: "cinzel decorative";
+  // font-family: "cinzel decorative";
   color: #002838;
   margin-bottom: 3%;
+
+  // font-family: 'Caveat', cursive;
+  // font-family: 'Cinzel Decorative', serif;
+  // font-family: 'Croissant One', serif;
+  // font-family: 'Fuggles', cursive;
+  font-family: 'Gloock', serif;
+  // font-family: 'Inter', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  // font-family: "Open Sans", sans-serif;
+  // font-family: 'Permanent Marker', cursive;
+  // font-family: 'Playfair Display SC', serif;
 }
 
 .colsContainer {
@@ -97,29 +108,27 @@
     padding: 1% 0 3% 0 !important;
   }
 
-  .discoverTitle{
-    font-size:5vw;
+  .discoverTitle {
+    font-size: 5vw;
   }
 
-  .colsContainer{
-    .rowOptions{
-      height:25vh;
+  .colsContainer {
+    .rowOptions {
+      height: 25vh;
     }
 
-    .optionContainer{
-      width:23%;
+    .optionContainer {
+      width: 23%;
 
-      .optionUpper{
-        height:12.5vh;
+      .optionUpper {
+        height: 12.5vh;
       }
 
-      .optionLower{
-        height:8vh;
+      .optionLower {
+        height: 8vh;
       }
     }
   }
-
-
 }
 
 // small tab portrait styling ends
@@ -193,7 +202,7 @@
       margin: 2% 0;
 
       .optionUpper {
-        height:36vh;
+        height: 36vh;
         p {
           padding-inline: 2%;
           margin-left: 3%;

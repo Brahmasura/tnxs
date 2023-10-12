@@ -4,30 +4,37 @@
   @include x-center;
 }
 
-.stepsDiv{
-    width: 80%;
-    @include verticalPad;
-    @include y-start;
+.stepsDiv {
+  width: 80%;
+  @include verticalPad;
+  @include y-start;
 
-    .linkDiv {
-        align-self: center;
-        margin-bottom: 4%;
-    
-        a {
-          @include theLink;
-        }
-        p {
-          display: inline;
-        }
-      }
+  .linkDiv {
+    align-self: center;
+    margin-bottom: 4%;
 
-      h1 {
-        @include mainHeading;
-      }
+    a {
+      @include theLink;
+    }
+    p {
+      display: inline;
+    }
+  }
 
-      p {
-        @include para;
+    .stepsUl{
+      li{
+        display:list-item;
       }
+    }
+
+
+  h1 {
+    @include mainHeading;
+  }
+
+  p {
+    @include para;
+  }
 }
 
 // styling for mobile portrait begins
@@ -36,15 +43,15 @@
   .stepsDiv {
     width: 90%;
 
-    .linkDiv{
-      margin-bottom:5%;
+    .linkDiv {
+      margin-bottom: 5%;
     }
 
     .tabsDiv {
-      margin-bottom:7%;
+      margin-bottom: 7%;
       overflow-x: auto;
       justify-content: start;
-      padding-inline:unset;
+      padding-inline: unset;
     }
   }
 }

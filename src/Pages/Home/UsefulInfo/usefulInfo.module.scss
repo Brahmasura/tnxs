@@ -14,8 +14,19 @@
 }
 .faqTitle {
   @include heading;
-  font-family: "croissant One";
+  // font-family: "croissant One";
   margin-bottom: 3%;
+
+    // font-family: 'Caveat', cursive;
+  // font-family: 'Cinzel Decorative', serif;
+  // font-family: 'Croissant One', serif;
+  // font-family: 'Fuggles', cursive;
+  font-family: 'Gloock', serif;
+  // font-family: 'Inter', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+  // font-family: 'Permanent Marker', cursive;
+  // font-family: 'Playfair Display SC', serif;
 }
 
 .colsContainer {

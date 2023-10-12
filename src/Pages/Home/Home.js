@@ -5,10 +5,9 @@ import Students from "./Students/Students";
 import Steps from "./Steps/Steps";
 import Information from "./Information/Information";
 import Destinations from "./Destinations/Destinations";
-import UsefulInfo from './UsefulInfo/UsefulInfo';
+import UsefulInfo from "./UsefulInfo/UsefulInfo";
 import DiscoverRussia from "./Discover-Russia/DiscoverRussia";
 import Testimonial from "./Testimonial/Testimonial";
-import StepsNew from "./StepsNew/StepsNew";
 
 const Home = () => {
   return (
@@ -16,12 +15,11 @@ const Home = () => {
       <Students />
       <Education />
       <Steps />
-     {/* <StepsNew/> */}
       <Information />
-      <DiscoverRussia/>
-      <UsefulInfo/>
+      <DiscoverRussia />
+      <UsefulInfo />
       {/* <Destinations /> */}
-      <Testimonial/>
+      <Testimonial />
     </>
   );
 };

@@ -12,7 +12,7 @@
 
   .testiTitle {
     @include heading;
-    font-family: 'Playfair Display SC', serif;
+    font-family: "Playfair Display SC", serif;
     margin-bottom: 3%;
     color: #dde6ed;
   }
@@ -35,30 +35,30 @@
       // background-color: grey;
       background-color: #9db2bf;
       border-radius: 4%;
-     
 
       hr {
         margin: 0.5rem 0;
       }
 
       .namePara {
-        font-family:"permanent marker";
         text-align: center;
         font-size: 1.5vw;
+        font-weight:600;
         margin-top: 5%;
-        margin-bottom: 0;;
+        margin-bottom: 0;
+
+        font-family: "Open Sans", sans-serif;
       }
 
       .uniPara {
         font-family: "montserrat";
         text-align: center;
         font-size: 1.1vw;
-        margin-bottom:0;
-        
+        margin-bottom: 0;
       }
 
       .cardQoute {
-        font-family:"open sans";
+        font-family: "open sans";
         display: inline;
         text-align: center;
         font-size: 1.2vw;
@@ -116,43 +116,39 @@
 
 // the modal styling ends
 
+// small tab portrait styling begins
+@media (max-width: 768px) and (orientation: portrait) {
+  .testiContainer {
+    height: auto;
+    padding: 1% 0 3% 0 !important;
 
-// small tab portrait styling begins 
-@media(max-width:768px) and (orientation:portrait){
-  .testiContainer{
-    height:auto;
-    padding:1% 0 3% 0 !important;
-
-
-    .testiTitle{
-      font-size:5vw;
+    .testiTitle {
+      font-size: 5vw;
     }
 
-    .colsContainer{
-      .rowTesti{
-        height:25vh;
+    .colsContainer {
+      .rowTesti {
+        height: 25vh;
       }
 
-      .studentCard{
-        width:23%;
+      .studentCard {
+        width: 23%;
 
-        .namePara{
-          font-size:2.5vw;
+        .namePara {
+          font-size: 2.5vw;
         }
 
-        .uniPara{
-          font-size:2vw;
+        .uniPara {
+          font-size: 2vw;
         }
 
-        .cardQoute{
-          font-size:1.7vw;
+        .cardQoute {
+          font-size: 1.7vw;
         }
       }
     }
   }
 }
-
-
 
 // small tab portrait styling ends
 
@@ -168,7 +164,7 @@
 
     .colsContainer {
       .studentCard {
-         .namePara {
+        .namePara {
           font-size: 1.3vw;
           margin-bottom: 5%;
         }
@@ -212,7 +208,7 @@
     .colsContainer {
       .rowTesti {
         height: auto;
-        padding-inline:3%;
+        padding-inline: 3%;
       }
 
       .studentCard {

@@ -36,51 +36,61 @@ const FiveSteps = () => {
             follows:
           </p>
 
-          <p>
-            <ul>
+          {/* <p> */}
+            <ul className={style.stepsUl}>
               <li>
                 <strong>Choose a program and university</strong>
                 <br />
+                <p>
                 We have a wide range of top university programs which you can
                 choose from. As the first step, you must go through them and see
                 which fits your expectations and career requirements. Next, you
                 must look for several aspects like curriculum, course duration,
                 fees, etc.
+                </p>
               </li>
               <li>
                 <strong>Financing and scholarship strategies</strong>
                 <br />
+                <p>
                 When you have selected the course you want, the next step is
                 understanding your financing and scholarship strategy. Our
                 counselors will help you discover several scopes and
                 opportunities for scholarship while suggesting suitable means of
                 financing.
+                </p>
               </li>
               <li>
                 <strong>Documentation</strong>
                 <br />
+                <p>
                 In the next step, we offer complete support for preparing your
                 document packaging. Our experts help you prepare all your
                 correct and required documents per the universities&#39;
                 instructions and guidelines.
+                </p>
               </li>
               <li>
                 <strong>Selection process</strong>
                 <br />
+                <p>
                 The student needs to appear for the competitive selection
                 process of the universities as per their guidelines.
+                </p>
               </li>
               <li>
                 <strong>Application confirmation and student visa</strong>
                 <br />
+                <p>
                 After clearing out the selection process, you will get a
                 confirmation from the university. Then you should apply for the
                 student visa.
+                </p>
               </li>
               Explore different MBBS courses with us. Contact us now for mores
               information.
             </ul>
-          </p>
+          {/* </p> */}
         </div>
       </div>
     </>

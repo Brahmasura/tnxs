@@ -54,7 +54,8 @@ const UniCompo = ({ institution }) => {
             </p>
             <p>
               <span className={style.titlePara}>
-                {uniDist} distance from Moscow:
+                {/* {uniDist}  */}
+                Distance from Moscow:
               </span>{" "}
               {distance} kilometers
             </p>
