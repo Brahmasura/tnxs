@@ -105,31 +105,31 @@
      // fb
      .fb {
       transform: translateX(2000%) scale(1);
-      animation: iconAni 2s ease-out forwards;
+      animation: iconAni 2.4s ease-out forwards;
     }
 
     //  insta
     .insta {
       transform: translateX(2000%) scale(1);
-      animation: iconAni 2s ease-out 200ms forwards;
+      animation: iconAni 2.4s ease-out 200ms forwards;
     }
 
     // linke
     .linke {
       transform: translateX(2000%) scale(1);
-      animation: iconAni 2s ease-out 400ms forwards;
+      animation: iconAni 2.4s ease-out 400ms forwards;
     }
 
     // tweet
     .tweet {
       transform: translateX(2000%) scale(1);
-      animation: iconAni 2s ease-out 600ms forwards;
+      animation: iconAni 2.4s ease-out 600ms forwards;
     }
 
     // youtube
     .youtube {
       transform: translateX(2000%) scale(1);
-      animation: iconAni 2s ease-out 800ms forwards;
+      animation: iconAni 2.4s ease-out 800ms forwards;
     }
 
     @keyframes iconAni {
