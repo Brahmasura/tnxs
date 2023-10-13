@@ -1,7 +1,6 @@
 * {
   margin: 0;
   box-sizing: border-box;
- 
 }
 
 ::-webkit-scrollbar {
@@ -87,20 +86,19 @@
     box-shadow: unset;
   }
 
-  .slick-prev{
-    left:2.2% !important;
+  .slick-prev {
+    left: 2.2% !important;
   }
 
-  .slick-prev:before{
-    font-size:12vw !important;
+  .slick-prev:before {
+    font-size: 12vw !important;
   }
 
-
-  .slick-next{
-    right:9.2% !important;
+  .slick-next {
+    right: 9.2% !important;
   }
 
-  .slick-next:before{
-    font-size:12vw !important;
+  .slick-next:before {
+    font-size: 12vw !important;
   }
 }

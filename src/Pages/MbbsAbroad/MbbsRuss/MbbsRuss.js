@@ -253,11 +253,12 @@ const MbbsRuss = () => {
 
               <li>
                 <strong>
-                  No, the universities don’t demand these certifications.
-                  However, if you want to study in English medium, you have to
-                  pursue an English course before your MBBS program starts.
+                Is TOEFL or IELTS is mandatory for admission in Russia?
                 </strong>
                 <br />
+                No, the universities don’t demand these certifications.
+                  However, if you want to study in English medium, you have to
+                  pursue an English course before your MBBS program starts.
               </li>
 
               <li>
