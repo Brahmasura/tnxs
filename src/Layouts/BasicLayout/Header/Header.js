@@ -296,7 +296,7 @@ const Header = () => {
               {/* the links for navigation */}
               <div className={`col-sm-9 col-md-9 col-lg-9 ${header.linksCol}`}>
                 <ul className={header.linksList}>
-                  <li>
+                  <li className={header.leftLi}>
                     <NavLink
                       to={"/"}
                       className={activeLink === 0 ? header.activeLink : null}
@@ -308,7 +308,7 @@ const Header = () => {
                       HOME
                     </NavLink>
                   </li>
-                  <li>
+                  <li className={header.leftLi}>
                     <NavLink
                       to={"/whyRussia"}
                       className={activeLink === 1 ? header.activeLink : null}
@@ -320,7 +320,7 @@ const Header = () => {
                       WHY RUSSIA
                     </NavLink>
                   </li>
-                  <li>
+                  <li className={header.leftLi}>
                     <NavLink
                       to={"/studyInRussia"}
                       className={activeLink === 2 ? header.activeLink : null}
@@ -332,7 +332,7 @@ const Header = () => {
                       STUDY IN RUSSIA
                     </NavLink>
                   </li>
-                  <li>
+                  <li className={header.leftLi}>
                     <NavLink
                       to={"/lifeInRussia"}
                       className={activeLink === 3 ? header.activeLink : null}
@@ -344,7 +344,7 @@ const Header = () => {
                       LIFE IN RUSSIA
                     </NavLink>
                   </li>
-                  <li>
+                  <li className={header.rightLi}>
                     <NavLink
                       to={"/universities"}
                       className={activeLink === 4 ? header.activeLink : null}
@@ -356,7 +356,7 @@ const Header = () => {
                       UNIVERSITIES
                     </NavLink>
                   </li>
-                  <li>
+                  <li className={header.rightLi}>
                     <NavLink
                       to={"/aboutUs"}
                       className={activeLink === 5 ? header.activeLink : null}
@@ -378,7 +378,7 @@ const Header = () => {
 
               <div className={`col-sm-3 col-md-3 col-lg-3 ${header.buttonCol}`}>
                 {/* whatsapp icon */}
-                <div class={header.whatsappDiv} onClick={openWhatsapp}>
+                <div className={header.whatsappDiv} onClick={openWhatsapp}>
                   <img src={icon} alt="whatsapp" />
                   <p>Chat</p>
                 </div>
