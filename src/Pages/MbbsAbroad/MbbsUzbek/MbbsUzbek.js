@@ -85,10 +85,7 @@ const MbbsUzbek = () => {
 
           <h2>Why Study MBBS in Uzbekistan?</h2>
           <p>
-            <strong>Affordable Education:</strong>
-          </p>
-          <br />
-          <p>
+            <strong>Affordable Education:</strong> <br />
             Education: Choosing to study MBBS in Uzbekistan comes with a
             plethora of benefits. First and foremost, the cost of education is
             significantly lower compared to many Western countries, making it an
@@ -98,10 +95,7 @@ const MbbsUzbek = () => {
           </p>
 
           <p>
-            <strong>Quality Medical Institutions:</strong>
-          </p>
-          <br />
-          <p>
+            <strong>Quality Medical Institutions:</strong> <br />
             The country boasts several prestigious medical universities that are
             recognized globally for their high academic standards and modern
             facilities. These institutions are known for their commitment to
@@ -109,10 +103,7 @@ const MbbsUzbek = () => {
           </p>
 
           <p>
-            <strong>International Recognition:</strong>
-          </p>
-          <br />
-          <p>
+            <strong>International Recognition:</strong> <br />
             Many medical universities in Uzbekistan are accredited by
             international bodies such as the World Health Organization (WHO) and
             the Medical Council of India (MCI). This recognition ensures that
@@ -120,24 +111,15 @@ const MbbsUzbek = () => {
           </p>
 
           <p>
-            <strong>Multilingual Programs:</strong>
-          </p>
-          <br />
-          <p>
+            <strong>Multilingual Programs:</strong> <br />
             Most medical programs in Uzbekistan are offered in English, which
             facilitates easy comprehension for international students. This
             language advantage eliminates the need for learning a new language
             before embarking on your medical journey.
           </p>
 
-          <h2></h2>
-
           <p>
-            <strong>Rich Cultural Heritage:</strong>
-          </p>
-          <br />
-          <p>
-            {" "}
+            <strong>Rich Cultural Heritage:</strong> <br />
             Uzbekistan is home to a wealth of historical and cultural sites,
             including the ancient Silk Road cities of Samarkand, Bukhara, and
             Khiva. Studying in Uzbekistan offers students the opportunity to
@@ -146,21 +128,14 @@ const MbbsUzbek = () => {
           </p>
 
           <p>
-            <strong>Warm Hospitality:</strong>
-          </p>
-          <br />
-          <p>
-            {" "}
+            <strong>Warm Hospitality:</strong> <br />
             Uzbek people are known for their warm hospitality and friendliness.
             International students are welcomed with open arms and often find it
             easy to integrate into the local culture.
           </p>
 
           <p>
-            <strong>Safe Environment:</strong>
-          </p>
-          <br />
-          <p>
+            <strong>Safe Environment:</strong> <br />
             Uzbekistan is considered one of the safest countries in Central
             Asia, ensuring a secure and peaceful environment for international
             students.
@@ -194,7 +169,7 @@ const MbbsUzbek = () => {
           </p>
         </div>
       </div>
-      <Steps/>
+      <Steps />
     </>
   );
 };
