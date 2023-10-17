@@ -21,8 +21,11 @@
     }
   }
 
-  ul li{
-    display:block;
+  ul{
+    padding-left:0;
+    li{
+      display:block;
+    }
   }
 
   img {

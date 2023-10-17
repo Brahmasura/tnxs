@@ -55,6 +55,10 @@
     @include theImage;
   }
 
+  li{
+    display:list-item;
+  }
+
   h1 {
     @include mainHeading;
   }

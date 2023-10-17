@@ -24,7 +24,7 @@ const FaqInfo = () => {
           <ul>
             <li>
               <h2>What is Graduation Abroad?</h2>
-              <br />
+
               <p>
                 Graduation Abroad serves as a recognized international
                 educational consultancy dedicated to assisting students
@@ -38,7 +38,7 @@ const FaqInfo = () => {
                 What is the minimum eligibility to get admission in any of the
                 colleges of Russia?
               </h2>
-              <br />
+
               <p>
                 Eligible NEET score card as per the current year. Passed
                 intermediate with minimum 50% marks in Physics, Chemistry and
@@ -50,7 +50,7 @@ const FaqInfo = () => {
               <h2>
                 When does the academic year starts in universities of Russia?
               </h2>
-              <br />
+
               <p>
                 The academic year in nearly all the universities of Russia
                 happen to begin in the month of September.
@@ -59,7 +59,7 @@ const FaqInfo = () => {
 
             <li>
               <h2>Are Russian degrees recognized and valued worldwide?</h2>
-              <br />
+
               <p>Yes, they are recognized and valued worldwide.</p>
             </li>
 
@@ -68,7 +68,7 @@ const FaqInfo = () => {
                 Can I apply for the work permit in Russia after completion of my
                 program?
               </h2>
-              <br />
+
               <p>
                 Yes, Universities itself offer job placements in Russia and
                 various other western countries.
@@ -77,11 +77,10 @@ const FaqInfo = () => {
 
             <li>
               <h2>
-               
                 Is there a compulsion of entrance test for admission in Russian
                 universities?
               </h2>
-              <br />
+
               <p>
                 There is no need for entrance examinations such as TOEFL or
                 IELTS to secure admission to Russian universities. Admission is
@@ -93,7 +92,7 @@ const FaqInfo = () => {
 
             <li>
               <h2>Courses are taught in which language ?</h2>
-              <br />
+
               <p>
                 The majority of medical programs are conducted in the English
                 language at Russian universities. Additionally, Russian
@@ -108,7 +107,7 @@ const FaqInfo = () => {
                 Can education loan be availed for the courses in Russian
                 universities and how ?
               </h2>
-              <br />
+
               <p>
                 Graduation Abroad assists the students to pull together all the
                 required documents to avail an education loan and the process
@@ -118,7 +117,7 @@ const FaqInfo = () => {
 
             <li>
               <h2>What is the duration of the courses ?</h2>
-              <br />
+
               <p>
                 <strong>Medical courses:-</strong>
               </p>
@@ -144,7 +143,7 @@ const FaqInfo = () => {
                 Is it likely that I will encounter hazing or ragging at the
                 college?
               </h2>
-              <br />
+
               <p>
                 Ragging and hazing are unequivocally forbidden and illegal
                 within all colleges of Russian universities. Nevertheless,
@@ -158,7 +157,7 @@ const FaqInfo = () => {
                 Are there dining establishments that offer cuisine from my home
                 country?
               </h2>
-              <br />
+
               <p>
                 There are numerous dining options available to students.
                 Locating a Tiffin service in Russia that offers food tailored to
@@ -171,7 +170,7 @@ const FaqInfo = () => {
 
             <li>
               <h2>Can I work in Russia whilst studying there ?</h2>
-              <br />
+
               <p>
                 No, students are abstained from working while studying in
                 Russia, because they were granted a student visa and not a work
@@ -182,7 +181,7 @@ const FaqInfo = () => {
 
             <li>
               <h2>What is the standard monthly expense in Russia ?</h2>
-              <br />
+
               <p>
                 The typical monthly expenses for international students in
                 Russia average around 6000 INR to 9000 INR per month, allowing
@@ -192,7 +191,7 @@ const FaqInfo = () => {
 
             <li>
               <h2>What languages are commonly spoken in Russia?</h2>
-              <br />
+
               <p>
                 The official language of Russia is Russia. However, languages
                 like English, French, German, Polish and Hungarian are also
@@ -206,7 +205,7 @@ const FaqInfo = () => {
                 provide with facilities and resources to support the living in
                 such severely cold weather ?
               </h2>
-              <br />
+
               <p>
                 To ensure maximum comfort, all buildings, hostels, and
                 classrooms are equipped with central heating systems. Students
@@ -219,7 +218,7 @@ const FaqInfo = () => {
 
             <li>
               <h2>What is the currency of Russia ?</h2>
-              <br />
+
               <p>
                 The currency used in Russia is Ruble and the coins are known as
                 Kopiyka. 1 INR is equivalent to 1.10 Ruble (approximately), as
@@ -228,9 +227,8 @@ const FaqInfo = () => {
             </li>
           </ul>
         </div>
-
       </div>
-      <Steps/>
+      <Steps />
     </>
   );
 };

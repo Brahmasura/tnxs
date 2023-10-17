@@ -54,10 +54,11 @@ const Scholarship = () => {
             scholarships can cover tuition fees, living expenses, and more.
           </p>
           <p>
-            <strong>Government Scholarships:</strong> Various Italian government
-            agencies, such as the Ministry of Foreign Affairs and the Ministry
-            of Education, offer scholarships to international students based on
-            diplomatic agreements.
+            <strong>Government Scholarships:</strong>
+            <br />
+            Various Italian government agencies, such as the Ministry of Foreign
+            Affairs and the Ministry of Education, offer scholarships to
+            international students based on diplomatic agreements.
           </p>
           <p>
             <strong>University Scholarships: </strong>
@@ -85,11 +86,12 @@ const Scholarship = () => {
           </p>
 
           <p>
-            <strong> Scholarship Matching:</strong>With numerous scholarship
-            opportunities available worldwide, finding the perfect fit can be
-            overwhelming. Graduation Abroad simplifies this process by matching
-            you with scholarships that suit your profile, ensuring you apply for
-            those most likely to yield results.
+            <strong> Scholarship Matching:</strong>
+            <br />
+            With numerous scholarship opportunities available worldwide, finding
+            the perfect fit can be overwhelming. Graduation Abroad simplifies
+            this process by matching you with scholarships that suit your
+            profile, ensuring you apply for those most likely to yield results.
             <br />{" "}
           </p>
           <p>
@@ -200,7 +202,7 @@ const Scholarship = () => {
           </p>
         </div>
       </div>
-      <Steps/>
+      <Steps />
     </>
   );
 };

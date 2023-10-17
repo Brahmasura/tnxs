@@ -95,7 +95,7 @@ const Validation = () => {
           </p>
 
           <p>
-            <strong>Complete your MBBS Degree: </strong> First and foremost, you
+            <strong>Complete your MBBS Degree: </strong> <br/> First and foremost, you
             need to successfully complete your MBBS degree program from a
             recognized medical university in Russia. Ensure that you maintain
             all necessary documentation, including your degree certificate and
@@ -105,7 +105,7 @@ const Validation = () => {
           <p>
             <strong>
               Clear the Foreign Medical Graduate Examination (FMGE):
-            </strong>
+            </strong> <br/>
             To practice medicine in India, Indian citizens who hold foreign
             medical qualifications must pass the FMGE, a screening test
             conducted by the NMC. This exam assesses your knowledge of medical
@@ -113,20 +113,22 @@ const Validation = () => {
           </p>
 
           <p>
-            <strong>Apply for Registration:</strong> After passing the FMGE, you
+            <strong>Apply for Registration:</strong> <br/>
+             After passing the FMGE, you
             can apply for provisional registration with the NMC. This
             registration is a prerequisite for undergoing a compulsory one-year
             internship in India
           </p>
 
           <p>
-            <strong>Internship in India:</strong>Complete a one-year internship
+            <strong>Internship in India:</strong> <br/> Complete a one-year internship
             at a recognized medical institution in India. This is a mandatory
             step for foreign medical graduates.
           </p>
 
           <p>
-            <strong>Permanent Registration: </strong>Upon successful completion
+            <strong>Permanent Registration: </strong> <br/>
+            Upon successful completion
             of your internship, you can apply for permanent registration with
             the NMC, which allows you to practice medicine in India without
             restrictions.
