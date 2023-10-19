@@ -172,7 +172,7 @@
     animation: linksleftAni 2s ease-out forwards;
   }
 
-  .rightLi{
+  .rightLi {
     animation: linksRightAni 2s ease-out forwards;
   }
   @keyframes linksleftAni {
@@ -256,15 +256,15 @@ ul li {
       color: white;
     }
 
-    @keyframes applyAni{
-      0%{
+    @keyframes applyAni {
+      0% {
         transform: scale(1);
       }
-      50%{
-        transform:scale(1.5);
+      50% {
+        transform: scale(1.5);
       }
-      100%{
-        transform:scale(1);
+      100% {
+        transform: scale(1);
       }
     }
   }
@@ -413,6 +413,26 @@ ul li {
 }
 
 // modal styling ends
+
+// tab landscape specially for the apply now form
+@media (max-width: 1200px) and (orientation: landscape) {
+  .modalContent {
+    .modalLeftCol {
+      padding-inline: 2px;
+
+      .leftDivs {
+        .leftImageTextDiv {
+          width: 9.7vw;
+          height: 13.7vh;
+        }
+      }
+    }
+
+    .modalRightCol {
+      padding-left: 1vw;
+    }
+  }
+}
 
 //small tab portrait styling begins
 @media (max-width: 850px) and (orientation: portrait) {
