@@ -8,13 +8,13 @@
   height: 81.5vh;
   padding-inline: 4% !important;
   border: 1px 0 solid black;
-  background-color: #27374d;
+  // background-color: #27374d;
 
   .testiTitle {
     @include heading;
     font-family: "Playfair Display SC", serif;
     margin-bottom: 3%;
-    color: #dde6ed;
+    // color: #dde6ed;
   }
 
   .colsContainer {
@@ -33,7 +33,7 @@
       margin-inline: 1%;
       padding: 1%;
       // background-color: grey;
-      background-color: #9db2bf;
+      // background-color: #9db2bf;
       border-radius: 4%;
 
       hr {
@@ -43,10 +43,10 @@
       .namePara {
         text-align: center;
         font-size: 1.5vw;
-        font-weight:600;
+        font-weight: 600;
         margin-top: 5%;
         margin-bottom: 0;
-
+        color: whitesmoke;
         font-family: "Open Sans", sans-serif;
       }
 
@@ -55,12 +55,14 @@
         text-align: center;
         font-size: 1.1vw;
         margin-bottom: 0;
+        color: whitesmoke;
       }
 
       .cardQoute {
         font-family: "open sans";
         display: inline;
         text-align: center;
+        color: whitesmoke;
         font-size: 1.2vw;
         cursor: pointer;
       }
