@@ -59,8 +59,8 @@ const DiscoverRussia = () => {
       <h1 className={discover.discoverTitle}>Destinations to Study Abroad</h1>
       <div className={`container-fluid ${discover.colsContainer}`}>
         <div className={`row ${discover.rowOptions}`}>
-          {eduList.map((option) => (
-            <div className={` col-12 col-sm-12 col-md-3 col-lg-3 ${discover.optionContainer}`}>
+          {eduList.map((option, index) => (
+            <div key={index} className={` col-12 col-sm-12 col-md-3 col-lg-3 ${discover.optionContainer}`}>
               <div className="row">
                 <NavLink to={option.link} onClick={() => window.scrollTo(0, 0)}>
                   <div

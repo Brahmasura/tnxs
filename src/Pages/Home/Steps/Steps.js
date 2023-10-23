@@ -32,7 +32,7 @@ const Steps = () => {
         <div className={`container-fluid ${steps.colContainer}`}>
           <div className={`row ${steps.rowContainer}`}>
             {stepsList.map((item, index) => (
-              <div className={`col ${steps.stepContainer}`} 
+              <div key={index} className={`col ${steps.stepContainer}`} 
                 onMouseEnter={() => handleStepHover(index)}
                 onMouseLeave={() => handleStepHover(null)} >
                 <div className={`row ${steps.stepsRow}`}>

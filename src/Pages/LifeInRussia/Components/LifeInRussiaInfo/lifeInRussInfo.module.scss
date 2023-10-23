@@ -40,7 +40,6 @@
     @include colStyles;
     transition: background-size 0.3s ease-in-out;
 
-
     .upperText {
       @include infoText;
       font-size: 20px;
@@ -56,8 +55,8 @@
     @include afterContent;
   }
 
-  .colTwoContainer:hover{
-    background-size:190%;
+  .colTwoContainer:hover {
+    background-size: 190%;
   }
 
   .colThreeContainer {
@@ -67,7 +66,6 @@
     @include y-bot-left;
     @include colStyles;
     transition: background-size 0.3s ease-in-out;
-
 
     .upperText {
       @include infoText;
@@ -84,7 +82,7 @@
     @include afterContent;
   }
 
-  .colThreeContainer:hover{
+  .colThreeContainer:hover {
     background-size: 165%;
   }
 
@@ -95,7 +93,6 @@
     @include y-bot-left;
     @include colStyles;
     transition: background-size 0.3s ease-in-out;
-
 
     .upperText {
       @include infoText;
@@ -112,8 +109,8 @@
     @include afterContent;
   }
 
-  .colFourContainer:hover{
-    background-size:160%;
+  .colFourContainer:hover {
+    background-size: 160%;
   }
 
   .colFiveContainer {
@@ -123,7 +120,6 @@
     @include y-bot-left;
     @include colStyles;
     transition: background-size 0.3s ease-in-out;
-
 
     .upperText {
       @include infoText;
@@ -140,8 +136,8 @@
     @include afterContent;
   }
 
-  .colFiveContainer:hover{
-    background-size:130%;
+  .colFiveContainer:hover {
+    background-size: 130%;
   }
 
   .colSixContainer {
@@ -182,125 +178,149 @@
   }
 }
 
+// // styling for mobile landscape begins
+// @media (max-width:900px) and (orientation:landscape){
+//   .colTwoContainer:hover{
+//     background-size:110% !important;
+//   }
 
-// styling for mobile landscape begins 
-@media (max-width:900px) and (orientation:landscape){
-  .colTwoContainer:hover{
-    background-size:110% !important;
-  }
+//   .colThreeContainer:hover{
+//     background-size:110% !important;
+//   }
 
-  .colThreeContainer:hover{
-    background-size:110% !important;
-  }
+//   .colFourContainer:hover{
+//     background-size:110% !important;
+//   }
 
-  .colFourContainer:hover{
-    background-size:110% !important;
-  }
+//   .colFiveContainer:hover{
+//     background-size:110% !important;
+//   }
+// }
 
-  .colFiveContainer:hover{
-    background-size:110% !important;
+// // styling for mobile lnadscape ends
+
+// styling for the info image hover begins
+@media (max-width: 1200px) {
+  .lifeInfoContainer {
+    .colOneContainer:hover {
+      background-size: cover;
+    }
+
+    .colTwoContainer:hover {
+      background-size: cover;
+    }
+
+    .colThreeContainer:hover {
+      background-size: cover;
+    }
+
+    .colFourContainer:hover {
+      background-size: cover;
+    }
+
+    .colFiveContainer:hover {
+      background-size: cover;
+    }
+
+    .colSixContainer:hover {
+      background-size: cover;
+    }
   }
 }
-
-
-
-// styling for mobile lnadscape ends 
 
 // styling for mobile portrait begins
+@media (max-width: 576px) and (orientation: portrait) {
+  .lifeInfoContainer {
+    .colOneContainer {
+      height: 35vh;
+      .upperText {
+        font-size: 4vw;
+      }
 
-@media (max-width:576px) and (orientation:portrait){
-  .colOneContainer{
-    height:35vh !important;
-    .upperText {
-     font-size:4vw;
+      h1 {
+        font-size: 6vw;
+      }
     }
 
-    h1 {
-     font-size:6vw;
-    }
-  }
-
-  .colOneContainer:hover{
-    background-size:130% !important;
-  }
-
-  .colTwoContainer{
-    height:35vh !important;
- .upperText {
-     font-size:4vw;
+    .colOneContainer:hover {
+      background-size: cover;
     }
 
-    h1 {
-     font-size:6vw;
-    }
-  }
+    .colTwoContainer {
+      height: 35vh;
+      .upperText {
+        font-size: 4vw;
+      }
 
-  .colTwoContainer:hover{
-    background-size:130% !important;
-  }
-
-  .colThreeContainer{
-    height:35vh !important;
- .upperText {
-     font-size:4vw;
+      h1 {
+        font-size: 6vw;
+      }
     }
 
-    h1 {
-     font-size:6vw;
-    }
-  }
-
-  .colThreeContainer:hover{
-    background-size:110% !important;
-  }
-
-  .colFourContainer{
-    height:35vh !important;
- .upperText {
-     font-size:4vw;
+    .colTwoContainer:hover {
+      background-size: cover;
     }
 
-    h1 {
-     font-size:6vw;
-    }
-  }
+    .colThreeContainer {
+      height: 35vh;
+      .upperText {
+        font-size: 4vw;
+      }
 
-  .colFourContainer:hover{
-    background-size:115% !important;
-  }
-
-  .colFiveContainer{
-    height:35vh !important;
- .upperText {
-     font-size:4vw;
+      h1 {
+        font-size: 6vw;
+      }
     }
 
-    h1 {
-     font-size:6vw;
-    }
-  }
-
-  .colFiveContainer:hover{
-    background-size:110% !important;
-  }
-
-  .colSixContainer{
-    height:35vh !important;
- .upperText {
-     font-size:4vw;
+    .colThreeContainer:hover {
+      background-size: cover;
     }
 
-    h1 {
-     font-size:6vw;
-    }
-  }
+    .colFourContainer {
+      height: 35vh;
+      .upperText {
+        font-size: 4vw;
+      }
 
-  .colSixContainer:hover{
-    background-size:110% !important;
+      h1 {
+        font-size: 6vw;
+      }
+    }
+
+    .colFourContainer:hover {
+      background-size: cover;
+    }
+
+    .colFiveContainer {
+      height: 35vh;
+      .upperText {
+        font-size: 4vw;
+      }
+
+      h1 {
+        font-size: 6vw;
+      }
+    }
+
+    .colFiveContainer:hover {
+      background-size: cover;
+    }
+
+    .colSixContainer {
+      height: 35vh;
+      .upperText {
+        font-size: 4vw;
+      }
+
+      h1 {
+        font-size: 6vw;
+      }
+    }
+
+    .colSixContainer:hover {
+      background-size: cover;
+    }
   }
 }
 
-
-
-
-// styling for mobile portrait ends 
+// styling for mobile portrait ends

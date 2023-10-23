@@ -1,20 +1,26 @@
-import React, { useContext } from 'react'
-import StudyInRussIntro from './Components/StudyInRussIntro/StudyInRussIntro';
-import StudyInRussInfo from './Components/StudyInRussInfo/StudyInRussInfo';
-import Steps from '../Home/Steps/Steps';
-import { LinkContext } from '../../App';
+import React, { useContext, useEffect } from "react";
+import StudyInRussIntro from "./Components/StudyInRussIntro/StudyInRussIntro";
+import StudyInRussInfo from "./Components/StudyInRussInfo/StudyInRussInfo";
+import Steps from "../Home/Steps/Steps";
+import { LinkContext } from "../../App";
 
 const StudyInRussia = () => {
-  const {handleLinkClick} = useContext(LinkContext);
+  const { handleLinkClick } = useContext(LinkContext);
+
+  useEffect(() => {
+    handleLinkClick(2);
+  }, [handleLinkClick]);
+  
   return (
     <>
-    <div onLoad={handleLinkClick(2)}>
-        <StudyInRussIntro/>
-        <StudyInRussInfo/>
-        <Steps/>
-        </div>
+      {/* <div onLoad={handleLinkClick(2)}> */}
+      <div>
+        <StudyInRussIntro />
+        <StudyInRussInfo />
+        <Steps />
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default StudyInRussia;

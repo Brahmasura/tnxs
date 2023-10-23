@@ -8,9 +8,9 @@ const UniList = () => {
     <>
        <div className={style.uniListContainer}>
 
-       {UniArray.map((university, id) => {
+       {UniArray.map((university, index) => {
         return(
-            <UniCompo institution={university}/>
+            <UniCompo key={index} institution={university}/>
         )
        })}
 

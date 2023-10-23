@@ -144,37 +144,49 @@
   margin: 0;
 }
 
-
-// small tab portrait styling begins 
-@media(max-width:850px) and (orientation:portrait){
-  .leftCol{
-    height:40vh;
+// small tab portrait styling begins
+@media (max-width: 850px) and (orientation: portrait) {
+  .leftCol {
+    height: 40vh;
   }
 
-  .rightCol{
-    height:50vh;
+  .leftCol:hover {
+    background-size: cover;
   }
 
-  .rightTopCol{
-    height:25vh;
+  .rightCol {
+    height: 50vh;
   }
 
-  .rightBotLeft{
-    height:25vh;
+  .rightTopCol {
+    height: 25vh;
   }
 
-  .rightBotRight{
-    height:25vh;
+  .rightTopCol:hover {
+    background-size: cover;
+  }
+
+  .rightBotLeft {
+    height: 25vh;
+  }
+
+  .rightBotLeft:hover {
+    background-size: cover;
+  }
+
+  .rightBotRight {
+    height: 25vh;
+  }
+  .rightBotRight:hover {
+    background-size: cover;
   }
 }
-
 
 // small tab portrait styling ends
 
 // styling for mobile landscape begins
 @media (max-width: 900px) and (orientation: landscape) {
   .leftCol {
-   
     .upperText {
       font-size: 2vw;
     }
@@ -184,13 +196,10 @@
     }
   }
 
-  .leftCol:hover{
-    background-size:180%;
+  .leftCol:hover {
+    // background-size:180%;
+    background-size: cover;
   }
-  
-
-
-
 
   .rightTopCol {
     .upperText {
@@ -198,8 +207,12 @@
     }
 
     h1 {
-      font-size:2.8vw;
+      font-size: 2.8vw;
     }
+  }
+
+  .rightTopCol:hover {
+    background-size: cover;
   }
 
   .rightBotLeft {
@@ -212,8 +225,9 @@
     }
   }
 
-  .rightBotLeft:hover{
-    background-size:150%;
+  .rightBotLeft:hover {
+    // background-size:150%;
+    background-size: cover;
   }
 
   .rightBotRight {
@@ -226,13 +240,13 @@
     }
   }
 
-  .rightBotRight:hover{
-     background-size:150%;
+  .rightBotRight:hover {
+    //  background-size:150%;
+    background-size: cover;
   }
 
-  .hrStyle{
+  .hrStyle {
     border: 3px solid #fe2216;
-
   }
 }
 
@@ -243,7 +257,7 @@
   .leftCol {
     height: 43vh;
     padding-left: 3% !important;
- 
+
     .upperText {
       font-size: 4vw;
     }
@@ -254,11 +268,9 @@
   }
 
   .leftCol:hover {
-    background-size: 160%;
+    // background-size: 160%;
+    background-size: cover;
   }
-
-
-
 
   .rightCol {
     height: auto;
@@ -275,6 +287,10 @@
     h1 {
       font-size: 6vw;
     }
+  }
+
+  .rightTopCol:hover {
+    background-size: cover;
   }
 
   .rightBotCol {
@@ -295,7 +311,8 @@
   }
 
   .rightBotLeft:hover {
-    background-size: 180%;
+    // background-size: 180%;
+    background-size: cover;
   }
 
   .rightBotRight {
@@ -312,7 +329,8 @@
   }
 
   .rightBotRight:hover {
-    background-size: 180%;
+    // background-size: 180%;
+    background-size: cover;
   }
 }
 

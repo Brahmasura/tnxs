@@ -66,7 +66,7 @@ const Header = () => {
       {/* the mobile header layout begins  */}
 
       <>
-        <div class={`container-fluid ${header.mobHeaderContainer}`}>
+        <div className={`container-fluid ${header.mobHeaderContainer}`}>
           <nav
             className={`navbar navbar-expand-lg navbar-light ${header.mobHeaderLogo}`}
           >
@@ -82,7 +82,7 @@ const Header = () => {
             </NavLink>
 
             {/* whatsapp icon */}
-            <div class={header.whatsappDiv} onClick={openWhatsapp}>
+            <div className={header.whatsappDiv} onClick={openWhatsapp}>
               <img src={icon} alt="whatsapp" />
               {/* <p>Chat</p> */}
             </div>
