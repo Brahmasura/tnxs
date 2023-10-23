@@ -144,6 +144,25 @@
   margin: 0;
 }
 
+// the image hovering styling specially for the device upto 1200px begins
+@media (max-width: 1200px) {
+  .leftCol:hover {
+    background-size: cover;
+  }
+
+  .rightTopCol:hover {
+    background-size: cover;
+  }
+
+  .rightBotLeft:hover {
+    background-size: cover;
+  }
+
+  .rightBotRight:hover {
+    background-size: cover;
+  }
+}
+
 // small tab portrait styling begins
 @media (max-width: 850px) and (orientation: portrait) {
   .leftCol {
