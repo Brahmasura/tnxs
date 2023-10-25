@@ -680,6 +680,27 @@ ul li {
         font-size: 3vw;
         text-align: center;
       }
+
+      button{
+        width:auto;
+      }
+
+      .formContainer{
+        .passportField{
+          padding-left:16%;
+        }
+
+        .formIconPassport{
+          width: 6.3%;
+          left: 9.5%;
+        }
+
+        .formCols{
+          .formIcon{
+            width:5.5%;
+          }
+        }
+      }
     }
   }
 
