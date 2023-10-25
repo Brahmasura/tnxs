@@ -151,7 +151,7 @@
   .stepsContainer {
     height: auto;
     // padding-inline:unset;
-    padding: 12% 2% !important;
+    padding: 6% 2% !important;
 
     h1 {
       font-size: 7vw;
@@ -160,13 +160,19 @@
   }
 
   .stepContainer {
-    height: 42vh;
+    height:20vh;
+
+    .stepsRow{
+      a{
+        padding-inline:0.5%;
+      }
+    }
     .stepsUpper {
-      height: 20vh;
+      height: 6vh;
     }
 
     .stepLower {
-      height: 9vh;
+      height: 6vh;
     }
   }
 }
