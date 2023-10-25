@@ -52,10 +52,9 @@
 }
 
 .linkCol {
-
   @include y-start;
-  a{
-    text-decoration:none;
+  a {
+    text-decoration: none;
   }
   h1 {
     @include footerHead;
@@ -81,9 +80,8 @@
   }
 
   .callbackDiv {
-
-    p:first-child{
-      color:#dd3534;
+    p:first-child {
+      color: #dd3534;
     }
     p {
       // color: #dd3534;
@@ -121,6 +119,27 @@
 }
 
 // mobile landscape styling ends
+
+// tab portrait styling begins
+@media (max-width: 850px) and (orientation: portrait) {
+  .footerUl {
+    .callbackDiv {
+      p {
+        line-height: normal;
+      }
+
+      input {
+        height: 1.5vh;
+      }
+
+      button {
+        height: auto;
+      }
+    }
+  }
+}
+
+// tab portrait styling ends
 
 // styling for mobile portrait begins
 

@@ -23,7 +23,7 @@
   // font-family: 'Cinzel Decorative', serif;
   // font-family: 'Croissant One', serif;
   // font-family: 'Fuggles', cursive;
-  font-family: 'Gloock', serif;
+  font-family: "Gloock", serif;
   // font-family: 'Inter', sans-serif;
   // font-family: 'Montserrat', sans-serif;
   // font-family: "Open Sans", sans-serif;
@@ -101,6 +101,18 @@
   }
 }
 
+// tab landscape styling begins
+@media (max-width: 1200px) and (orientation: landscape) {
+  .colsContainer {
+    .optionContainer {
+      .optionUpper {
+        height: 25vh;
+      }
+    }
+  }
+}
+// tab landscape styling ends
+
 // small tab portrait styling begins
 @media (max-width: 850px) and (orientation: portrait) {
   .discoverContainer {
@@ -121,7 +133,7 @@
       width: 23%;
 
       .optionUpper {
-        height: 12.5vh;
+        height: 12vh;
       }
 
       .optionLower {

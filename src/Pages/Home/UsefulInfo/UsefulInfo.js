@@ -18,7 +18,7 @@ const eduList = [
   },
   {
     image: courseOffered,
-    text: "COURSES OFFERED IN ITALIAN UNIVERSITIES",
+    text: "COURSES IN ITALIAN UNIVERSITIES",
     para: "Learn about courses, eligibility, intake, and deadlines",
   },
   // { image: applyImg, text: "Study MBBS in Abroad" },

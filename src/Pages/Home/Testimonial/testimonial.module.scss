@@ -118,6 +118,19 @@
 
 // the modal styling ends
 
+// tab landscape styling begins
+@media (max-width: 1200px) and (orientation: landscape) {
+  .testiContainer {
+    .colsContainer {
+      .studentCard {
+        height: 40.5vh;
+      }
+    }
+  }
+}
+
+// tab landscape styling ends
+
 // small tab portrait styling begins
 @media (max-width: 850px) and (orientation: portrait) {
   .testiContainer {
@@ -137,15 +150,15 @@
         width: 23%;
 
         .namePara {
-          font-size: 2.5vw;
+          font-size: 1.8vw;
         }
 
         .uniPara {
-          font-size: 2vw;
+          font-size: 1.6vw;
         }
 
         .cardQoute {
-          font-size: 1.7vw;
+          font-size: 1.4vw;
         }
       }
     }

@@ -75,27 +75,47 @@
   }
 }
 
-//small tab portrait styling begins
-@media(max-width:850px) and (orientation:portrait){
-  .stepsContainer{
-    height: auto;
-    padding:1% 0 3% 0 !important;
+// tab landscpae styling begins
+@media (max-width: 1200px) and (orientation: landscape) {
+  .stepContainer {
+    .stepsUpper {
+      height: 15vh;
+    }
 
-    h1{
-      font-size:5vw;
+    .stepsLower {
+      height: 15vh;
+    }
+  }
+}
+
+// tab landscape styling ends
+
+//small tab portrait styling begins
+@media (max-width: 850px) and (orientation: portrait) {
+  .stepsContainer {
+    height: auto;
+    padding: 1% 0 3% 0 !important;
+
+    h1 {
+      font-size: 5vw;
       line-height: normal;
     }
   }
 
-  .stepContainer{
-    height:25vh;
+  .stepContainer {
+    height: 25vh;
 
-    .stepsUpper{
-      height:10vh;
+    .stepsUpper {
+      height: 8vh;
     }
 
-    .stepsLower{
-      height:15vh;
+    .stepsLower {
+      height: 9vh;
+
+      p {
+        font-size: 1.6vw;
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }
@@ -140,13 +160,13 @@
   }
 
   .stepContainer {
-    height:42vh;
+    height: 42vh;
     .stepsUpper {
       height: 20vh;
     }
 
-    .stepLower{
-      height:9vh;
+    .stepLower {
+      height: 9vh;
     }
   }
 }

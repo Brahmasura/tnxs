@@ -18,10 +18,10 @@
   // font-family: 'Gloock', serif;
   // font-family: 'Inter', sans-serif;
   // font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   // font-family: 'Permanent Marker', cursive;
   // font-family: 'Playfair Display SC', serif;
-  
+
   margin-bottom: 3%;
 }
 
@@ -84,36 +84,65 @@
   }
 }
 
-// small tab portrait styling begins 
-@media(max-width:850px) and (orientation:portrait){
-  .eduContainer{
-    height:auto;
-    // padding-inline:0 !important;
-    padding:1% 0 3% 0 !important;
-  }
-
-  .eduTitle{
-    font-size:5vw;
-  }
-
-  .colsContainer{
-    .rowOptions{
-      height:25vh;
-    }
-
-    .optionContainer{
-      width:23%;
-      .optionUpper{
-        height:10vh;
+// tab landscape styling begins
+@media (max-width: 1200px) and (orientation: landscape) {
+  .colsContainer {
+    .optionContainer {
+      height: 40vh;
+      .optionUpper {
+        height: 20vh;
       }
 
-      .optionLower{
-        height:15vh;
+      .optionLower {
+        height: 20vh;
       }
     }
   }
 }
+// tab landscape styling ends
 
+// small tab portrait styling begins
+@media (max-width: 850px) and (orientation: portrait) {
+  .eduContainer {
+    height: auto;
+    // padding-inline:0 !important;
+    padding: 1% 0 3% 0 !important;
+  }
+
+  .eduTitle {
+    font-size: 5vw;
+  }
+
+  .colsContainer {
+    .rowOptions {
+      height: 25vh;
+    }
+
+    .optionContainer {
+      width: 23%;
+      .optionUpper {
+        height: 10vh;
+      }
+
+      .optionLower {
+        height: 10vh;
+        padding-inline: 1%;
+        p {
+          font-size: 1.6vw;
+          margin-bottom: 0.5rem;
+        }
+
+        .subText {
+          font-size: 1.2vw;
+        }
+      }
+
+      .applyDiv {
+        height: 20vh;
+      }
+    }
+  }
+}
 
 // small tab portrait styling ends
 
@@ -133,12 +162,12 @@
       .optionLower {
         p {
           font-size: 1.3vw;
-          margin-bottom:0;
+          margin-bottom: 0;
         }
 
         .subText {
           font-size: 1.1vw;
-          margin-bottom:0;
+          margin-bottom: 0;
         }
       }
     }
@@ -176,7 +205,7 @@
       margin: 4% 0;
 
       .innerContainer {
-        padding-inline:3%;
+        padding-inline: 3%;
       }
 
       .applyDiv {
@@ -184,8 +213,8 @@
         width: auto;
       }
 
-      .optionUpper{
-        height:36vh;
+      .optionUpper {
+        height: 36vh;
       }
 
       .optionLower {
