@@ -8,7 +8,7 @@ import imgFive from "../../../Assets/Steps/steps5.jpg";
 import { NavLink } from "react-router-dom";
 
 const stepsList = [
-  { image: imgOne, text: "Choose Program and University" },
+  { image: imgOne, text: "Choose Course and University" },
   { image: imgTwo, text: "Prepare your Documents" },
   { image: imgThree, text: "Learn about Financing and Scholarship" },
   { image: imgFour, text: "Apply for Admission to a university" },

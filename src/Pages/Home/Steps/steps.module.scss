@@ -171,8 +171,11 @@
       height: 6vh;
     }
 
-    .stepLower {
-      height: 6vh;
+    .stepsLower {
+      // height: 6vh;
+      p{
+        font-size:1.9vw;
+      }
     }
   }
 }
