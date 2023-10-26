@@ -79,6 +79,19 @@
 
 // mobile landscape styling ends
 
+// tab portrait styling begins
+@media (max-width: 850px) and (orientation: portrait) {
+  .studyUniContainer {
+    .tabsDiv {
+      justify-content: start;
+      padding-inline: unset;
+      overflow-x: auto;
+    }
+  }
+}
+
+// tab protrait styling ends
+
 
 
 

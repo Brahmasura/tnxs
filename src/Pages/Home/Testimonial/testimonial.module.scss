@@ -178,7 +178,13 @@
     }
 
     .colsContainer {
+
+      .rowTesti{
+        height:auto;
+      }
       .studentCard {
+        height:auto;
+        min-height:60vh;
         .namePara {
           font-size: 1.3vw;
           margin-bottom: 5%;
