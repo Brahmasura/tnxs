@@ -202,7 +202,13 @@
   width: 70%;
   margin-bottom: 3%;
   align-self:center;
+
+  @media(max-width:576px) and (orientation:portrait){
+    width:100%;
+  }
 }
+
+
 
 @mixin mainHeading {
   font-family: "Open Sans", sans-serif;

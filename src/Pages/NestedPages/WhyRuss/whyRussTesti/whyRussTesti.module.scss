@@ -7,6 +7,7 @@
 .advContainer {
   width: 80%;
   @include verticalPad;
+  padding-bottom:0;
   @include y-start;
 
   .linkDiv {
