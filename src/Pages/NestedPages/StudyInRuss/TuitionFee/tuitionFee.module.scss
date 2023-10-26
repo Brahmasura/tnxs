@@ -71,7 +71,8 @@
 @media (max-width: 900px) and (orientation: landscape) {
   .feeDiv {
     .tabsDiv {
-      @include x-end;
+      // @include x-end;
+      justify-content: start;
       padding-inline: unset;
       overflow-x: auto;
     }
