@@ -70,7 +70,7 @@ const Header = () => {
           <nav
             className={`navbar navbar-expand-lg navbar-light ${header.mobHeaderLogo}`}
           >
-            <NavLink className="navbar-brand" to={"/"}>
+            <NavLink class="navbar-brand" to={"/"}>
               <img src={gradLogo} alt="brand logo" />
               <div className={header.mobileHeadText}>
                 <h1>GRADUATION ABROAD</h1>

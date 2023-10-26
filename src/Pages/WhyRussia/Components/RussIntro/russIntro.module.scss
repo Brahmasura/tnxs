@@ -20,10 +20,12 @@
 
   h1 {
     @include mainHeading;
+  
   }
 
   p {
     @include para;
+    line-height:normal;
   }
 }
 

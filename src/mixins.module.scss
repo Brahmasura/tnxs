@@ -193,8 +193,9 @@
 
 @mixin theLink {
   color: red;
-  font-size: 20px;
+  font-size: 24px;
   padding-bottom: 5%;
+  font-weight:700;
   cursor: pointer;
 }
 
@@ -208,7 +209,20 @@
   }
 }
 
+@mixin levTwoMainHeading{
+  font-family: "Open Sans", sans-serif;
+  align-self: center;
+  font-size: 3.2vw;
+  font-weight: 700;
+  margin-bottom: 1.5%;
+  text-align: center !important;
+  color: #002838;
 
+  @media (max-width: 576px) and (orientation: portrait) {
+    font-size: 7vw;
+    margin-bottom: 2.5%;
+  }
+}
 
 @mixin mainHeading {
   font-family: "Open Sans", sans-serif;
@@ -240,6 +254,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 1.3vw;
   text-align: justify;
+ 
 
   @media (max-width: 576px) and (orientation: portrait) {
     font-size: 3.8vw;

@@ -45,9 +45,9 @@ const Steps = () => {
                       style={{ backgroundImage: `url(${item.image})`}}
                     ></div>
                     <div className={`col-md-12 col-lg-12 ${steps.stepsLower}`}
-                     style={{background: hoveredStep !==null && hoveredStep >= index ? "#5780c0" : "none"}}>
-                      <p style={{ color: hoveredStep !== null && hoveredStep >= index ? "#fff" : "#dd3534"}}>{item.text}</p>
-                      <p style={{ color: hoveredStep !== null && hoveredStep >= index ? "#fff" : "#dd3534"}}>{index + 1}</p>
+                     >
+                      <p >{item.text}</p>
+                    <div className={steps.circle} style={{borderColor: hoveredStep !==null && hoveredStep >= index ? "#5780c0" : "#dd3534", backgroundColor: hoveredStep !==null && hoveredStep >= index ? "#5780c0" : "#fff"}}> <p style={{ color: hoveredStep !== null && hoveredStep >= index ? "#fff" : "#dd3534"}}>{index + 1}</p></div>
                     </div>
                   </NavLink>
                 </div>
