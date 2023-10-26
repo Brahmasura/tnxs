@@ -199,8 +199,9 @@
 }
 
 @mixin theImage {
-  width: 100%;
+  width: 70%;
   margin-bottom: 3%;
+  align-self:center;
 }
 
 @mixin mainHeading {
