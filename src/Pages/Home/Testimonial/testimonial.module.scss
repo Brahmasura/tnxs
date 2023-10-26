@@ -12,7 +12,8 @@
 
   .testiTitle {
     @include heading;
-    font-family: "Playfair Display SC", serif;
+    // font-family: "Playfair Display SC", serif;
+    font-family: "Open Sans", sans-serif;
     margin-bottom: 3%;
     // color: #dde6ed;
   }

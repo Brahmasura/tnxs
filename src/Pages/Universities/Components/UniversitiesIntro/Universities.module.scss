@@ -1,6 +1,6 @@
-@import '../../../../mixins.module.scss';
+@import "../../../../mixins.module.scss";
 
-.uniIntroContainer{
+.uniIntroContainer {
   height: auto;
   @include y-top-center;
   @include padThree;

@@ -83,7 +83,7 @@ const Prices = () => {
           </div>
 
           {/* the tab div ends  */}
-          <h1>PRICES IN RUSSIA</h1>
+          <h1>Prices In Russia</h1>
           <img src={lifeTwo} alt="the advantages" />
 
           <p className={style.paraBold}>

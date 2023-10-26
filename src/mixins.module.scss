@@ -84,9 +84,9 @@
   align-items: start;
 }
 
-@mixin y-sa{
-  display:flex !important;
-  flex-direction:column;
+@mixin y-sa {
+  display: flex !important;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -204,13 +204,13 @@
 }
 
 @mixin mainHeading {
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
   align-self: center;
   font-size: 3.2vw;
-  font-weight:700;
+  font-weight: 700;
   margin-bottom: 1.5%;
   text-align: center !important;
-  color:#002838;
+  color: #002838;
 
   @media (max-width: 576px) and (orientation: portrait) {
     font-size: 7vw;
@@ -219,7 +219,7 @@
 }
 
 @mixin subHeading {
-  font-family:"Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.8vw;
   font-weight: 700;
   margin-top: 4%;
@@ -230,7 +230,7 @@
 }
 
 @mixin para {
-  font-family:"Open Sans",sans-serif ;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.3vw;
   text-align: justify;
 
@@ -264,7 +264,7 @@
 
     @media (max-width: 576px) and (orientation: portrait) {
       font-size: 3.8vw;
-      margin-bottom:0;
+      margin-bottom: 0;
     }
   }
 }

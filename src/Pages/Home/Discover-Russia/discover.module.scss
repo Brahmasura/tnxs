@@ -23,10 +23,10 @@
   // font-family: 'Cinzel Decorative', serif;
   // font-family: 'Croissant One', serif;
   // font-family: 'Fuggles', cursive;
-  font-family: "Gloock", serif;
+  // font-family: "Gloock", serif;
   // font-family: 'Inter', sans-serif;
   // font-family: 'Montserrat', sans-serif;
-  // font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   // font-family: 'Permanent Marker', cursive;
   // font-family: 'Playfair Display SC', serif;
 }
@@ -55,11 +55,13 @@
       height: 34vh;
       p {
         // font-family: sans-serif;
-        font-family: "croissant one", sans-serif;
+        // font-family: "croissant one", sans-serif;
+        font-family: "Open Sans", sans-serif;
 
         font-size: 2vw;
         color: whitesmoke;
         background-color: rgba(0, 0, 0, 0.5);
+        padding-left:2%;
       }
     }
 
