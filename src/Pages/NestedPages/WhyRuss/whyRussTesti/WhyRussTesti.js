@@ -4,6 +4,7 @@ import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
 import Testimonial from "../../../Home/Testimonial/Testimonial";
 import Steps from "../../../Home/Steps/Steps";
+import Testitrial from "../../../Home/Testitrial/Testitrial";
 
 const WhyRussTesti = () => {
   const { handleLinkClick } = useContext(LinkContext);
@@ -70,7 +71,8 @@ const WhyRussTesti = () => {
           {/* the tab div ends */}
         </div>
       </div>
-      <Testimonial />
+      {/* <Testimonial /> */}
+      <Testitrial/>
       <Steps/>
     </>
   );
