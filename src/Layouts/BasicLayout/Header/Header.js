@@ -238,7 +238,7 @@ const Header = () => {
         <div className={`container-fluid ${header.customHeadDiv}`}>
           <div className="row">
             <div className={`col-7 ${header.logoDiv}`}>
-              <NavLink to={"/"}>
+              <NavLink to={"/"} onClick={handleHamClick}>
                 <img src={gradLogo} alt="gradLogo" />
                 <div className={header.mobileHeadText}>
                   <h1>GRADUATION ABROAD</h1>
@@ -265,11 +265,7 @@ const Header = () => {
           <div style={{ display: isHamOpen ? "block" : "none" }}>
             <ul className={header.textLinkUl}>
               <li className={header.customHeadLi}>
-                <NavLink
-                  className="nav-link"
-                  to={"/"}
-                  onClick={handleNavCollapse}
-                >
+                <NavLink className="nav-link" to={"/"} onClick={handleHamClick}>
                   HOME
                 </NavLink>
               </li>
@@ -278,7 +274,7 @@ const Header = () => {
                 <NavLink
                   className="nav-link"
                   to={"/whyRussia"}
-                  onClick={handleNavCollapse}
+                  onClick={handleHamClick}
                 >
                   Why Russia
                 </NavLink>
@@ -287,7 +283,7 @@ const Header = () => {
                 <NavLink
                   className="nav-link"
                   to={"/studyInRussia"}
-                  onClick={handleNavCollapse}
+                  onClick={handleHamClick}
                 >
                   Study In Russia
                 </NavLink>
@@ -296,7 +292,7 @@ const Header = () => {
                 <NavLink
                   className="nav-link"
                   to={"/lifeInRussia"}
-                  onClick={handleNavCollapse}
+                  onClick={handleHamClick}
                 >
                   Life In Russia
                 </NavLink>
@@ -305,7 +301,7 @@ const Header = () => {
                 <NavLink
                   className="nav-link"
                   to={"/universities"}
-                  onClick={handleNavCollapse}
+                  onClick={handleHamClick}
                 >
                   Universities
                 </NavLink>
@@ -314,7 +310,7 @@ const Header = () => {
                 <NavLink
                   className="nav-link"
                   to={"/aboutUs"}
-                  onClick={handleNavCollapse}
+                  onClick={handleHamClick}
                 >
                   About Us
                 </NavLink>
@@ -323,7 +319,7 @@ const Header = () => {
                 <button
                   className={header.joinUsBtn}
                   onClick={() => {
-                    handleNavCollapse();
+                    handleHamClick();
                     handleModalClick();
                   }}
                 >
