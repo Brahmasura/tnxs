@@ -740,7 +740,8 @@ ul li {
 
     .mobileHeadLinksCol {
       .mobileHeadLinkUl {
-        @include x-sb;
+        @include x-sa;
+        padding:0;
 
         img {
           border-radius: 50%;

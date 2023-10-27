@@ -64,15 +64,13 @@
     // @include border;
     @include y-sa;
     background-color: white;
-    
-    .circle{
-      border:2px solid #dd3534;
-      border-radius:50%;
-      padding:3%;
-      width:24%;
+
+    .circle {
+      border: 2px solid #dd3534;
+      border-radius: 50%;
+      padding: 3%;
+      width: 24%;
     }
-
-
 
     p {
       font-family: sans-serif;
@@ -80,10 +78,23 @@
       font-size: 15px;
       color: red;
       text-align: center;
-      margin-bottom:0;
+      margin-bottom: 0;
     }
   }
 }
+
+// xxl laptops styling begins
+@media (min-width: 1400px) {
+  .stepContainer {
+    .stepsLower {
+      .circle {
+        width: 21%;
+      }
+    }
+  }
+}
+
+// xxl laptops styling ends
 
 // tab landscpae styling begins
 @media (max-width: 1200px) and (orientation: landscape) {
@@ -122,8 +133,8 @@
     .stepsLower {
       height: 9vh;
 
-      .circle{
-        width:30%;
+      .circle {
+        width: 30%;
       }
 
       p {
@@ -150,9 +161,8 @@
 
   .stepContainer {
     .stepsLower {
-
-      .circle{
-        width:30%;
+      .circle {
+        width: 30%;
       }
       p {
         font-size: 1.3vw;
@@ -179,11 +189,11 @@
   }
 
   .stepContainer {
-    height:20vh;
+    height: 20vh;
 
-    .stepsRow{
-      a{
-        padding-inline:0.5%;
+    .stepsRow {
+      a {
+        padding-inline: 0.5%;
       }
     }
     .stepsUpper {
@@ -193,12 +203,12 @@
     .stepsLower {
       // height: 6vh;
 
-      .circle{
-        width:36%;
+      .circle {
+        width: 36%;
       }
-      p{
-        font-size:1.9vw;
-        margin-bottom:0;
+      p {
+        font-size: 1.9vw;
+        margin-bottom: 0;
       }
     }
   }
