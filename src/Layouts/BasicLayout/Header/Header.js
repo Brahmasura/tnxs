@@ -252,7 +252,7 @@ const Header = () => {
 
             <div
               className={`col-2 ${header.whatsappDiv}`}
-              onClick={openWhatsapp}
+              onClick={() => {openWhatsapp(); handleHamClick();}} onClick={handleHamClick}
             >
               <img src={icon} alt="whatsapp" />
             </div>
@@ -337,7 +337,7 @@ const Header = () => {
                     href="https://www.facebook.com/GraduationAbroad"
                     target="_absolute"
                   >
-                    <img src={fb} alt="the link pic" />
+                    <img src={fb} alt="the link pic" onClick={handleHamClick} />
                   </a>
                 </li>
                 <li>
@@ -345,7 +345,7 @@ const Header = () => {
                     href="https://www.instagram.com/graduationabroad/"
                     target="_absolute"
                   >
-                    <img src={insta} alt="the link pic" />
+                    <img src={insta} alt="the link pic" onClick={handleHamClick} />
                   </a>
                 </li>
                 <li>
@@ -353,17 +353,17 @@ const Header = () => {
                     href="https://www.linkedin.com/in/siddharth-negi-03285969/"
                     target="_absolute"
                   >
-                    <img src={linke} alt="the link pic" />
+                    <img src={linke} alt="the link pic" onClick={handleHamClick} />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.twitter.com" target="_absolute">
-                    <img src={tweet} alt="the link pic" />
+                    <img src={tweet} alt="the link pic" onClick={handleHamClick} />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.youtube.com" target="_absolute">
-                    <img src={youtube} alt="the link pic" />
+                    <img src={youtube} alt="the link pic" onClick={handleHamClick} />
                   </a>
                 </li>
               </ul>
