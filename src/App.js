@@ -45,7 +45,7 @@ export const LinkContext = createContext();
 function App() {
   const [activeLink, setActiveLink] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const [isHamOpen, setIsHamOpen] = useState(false);
 
   const handleLinkClick = (index) => {
     setActiveLink(index);
@@ -76,11 +76,15 @@ function App() {
     });
   };
 
+  const handleHamClick = () => {
+    setIsHamOpen(!isHamOpen);
+  }
+
 
 
   return (
     <div className="App">
-      <LinkContext.Provider value={{ activeLink, handleLinkClick, isModalOpen, formData, handleFormChange, handleModalClick }}>
+      <LinkContext.Provider value={{ activeLink, handleLinkClick, isModalOpen, formData, handleFormChange, handleModalClick, isHamOpen, handleHamClick }}>
         <BasicLayout>
           <Routes>
             <Route path="/" exact element={<Home />} />

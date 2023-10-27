@@ -4,6 +4,10 @@
   display: none;
 }
 
+.customHeadDiv{
+  display:none;
+}
+
 // element styling
 .headerContainer {
   @include x-center;
@@ -414,6 +418,9 @@ ul li {
 
 // modal styling ends
 
+
+
+
 // tab landscape specially for the apply now form
 @media (max-width: 1200px) and (orientation: landscape) {
   .modalContent {
@@ -559,7 +566,8 @@ ul li {
 
 @media (max-width: 576px) and (orientation: portrait) {
   .mobHeaderContainer {
-    display: block;
+    // display: block;
+    display:none;
     padding: 3%;
 
     .mobHeaderLogo {
@@ -651,6 +659,91 @@ ul li {
   .headerContainer {
     display: none !important;
   }
+
+  // custom head styling begins
+.customHeadDiv{
+  display:block;
+  padding:3%;
+  .logoDiv{
+   padding-right:0;
+    a{
+      text-decoration:none;
+      display:inline;
+      @include x-sb;
+
+      img{
+        width: 25%;
+        height: auto;
+        max-height: 13.5vw;
+        border-radius: 100%;
+      }
+
+      .mobileHeadText{
+        // margin-left:2%;
+
+        h1{
+          font-size: 3.8vw;
+          color: #dd3534;
+          margin-bottom: 0;
+        }
+
+        p{
+          color:#000;
+          font-size: 2.8vw;
+          line-height: 0.9rem;
+          margin-bottom: 0;
+        }
+      }
+      
+    }
+  }
+
+  .whatsappDiv{
+    padding-right:1%;
+    @include x-end;
+    img {
+      width: 9.5vw;
+      height: auto;
+    }
+  }
+
+  .hamDiv{
+    padding-left:6%;
+    @include x-center;
+  }
+
+  .textLinkUl{
+    @include y-center;
+    padding:0;
+
+    .customHeadLi{
+      padding:1% 0;
+    }
+
+    button{
+      background: #dd3534;
+          color: whitesmoke;
+      
+    }
+  }
+
+  .mobileHeadLinksCol{
+    .mobileHeadLinkUl{
+      @include x-sb;
+
+      img{
+        border-radius:50%;
+      }
+    }
+   
+  }
+}
+
+
+
+// custom head styling ends
+
+
 
   .modalOverlay {
     overflow: hidden;

@@ -15,6 +15,7 @@ import mailIcon from "../../../Assets/Form/mailIcon.png";
 import callIcon from "../../../Assets/Form/callIcon.png";
 import graduationIcon from "../../../Assets/Form/graduationIcon.png";
 import passIcon from "../../../Assets/Form/passIcon.png";
+import hamIcon from "../../../Assets/Header/hamIcon.png";
 import leftOne from "../../../Assets/FormLeft/formLeftOne.svg";
 import leftTwo from "../../../Assets/FormLeft/formLeftTwo.svg";
 import leftThree from "../../../Assets/FormLeft/formLeftThree.svg";
@@ -23,7 +24,16 @@ import leftFive from "../../../Assets/FormLeft/formLeftFive.svg";
 import leftSix from "../../../Assets/FormLeft/formLeftSix.svg";
 
 const Header = () => {
-  const { activeLink, handleLinkClick, isModalOpen, formData, handleFormChange, handleModalClick } = useContext(LinkContext);
+  const {
+    activeLink,
+    handleLinkClick,
+    isModalOpen,
+    formData,
+    handleFormChange,
+    handleModalClick,
+    isHamOpen,
+    handleHamClick,
+  } = useContext(LinkContext);
   // const [isModalOpen, setIsModalOpen] = useState(false);
   // const [formData, setFormData] = useState({
   //   userName: "",
@@ -64,7 +74,6 @@ const Header = () => {
   return (
     <>
       {/* the mobile header layout begins  */}
-
       <>
         <div className={`container-fluid ${header.mobHeaderContainer}`}>
           <nav
@@ -222,13 +231,161 @@ const Header = () => {
           </nav>
         </div>
       </>
-
       {/* the mobile header layout ends */}
+
+      {/* custom mobile header layout begins */}
+      <>
+        <div className={`container-fluid ${header.customHeadDiv}`}>
+          <div className="row">
+            <div className={`col-7 ${header.logoDiv}`}>
+              <NavLink to={"/"}>
+                <img src={gradLogo} alt="gradLogo" />
+                <div className={header.mobileHeadText}>
+                  <h1>GRADUATION ABROAD</h1>
+                  <p>
+                    Direct Representatives of Govt. <br /> Medical Universities
+                    in Abroad
+                  </p>
+                </div>
+              </NavLink>
+            </div>
+
+            <div
+              className={`col-2 ${header.whatsappDiv}`}
+              onClick={openWhatsapp}
+            >
+              <img src={icon} alt="whatsapp" />
+            </div>
+
+            <div className={`col-3 ${header.hamDiv}`}>
+              <img src={hamIcon} alt="ham Icon" onClick={handleHamClick} />
+            </div>
+          </div>
+
+          <div style={{ display: isHamOpen ? "block" : "none" }}>
+            <ul className={header.textLinkUl}>
+              <li className={header.customHeadLi}>
+                <NavLink
+                  className="nav-link"
+                  to={"/"}
+                  onClick={handleNavCollapse}
+                >
+                  HOME
+                </NavLink>
+              </li>
+
+              <li className={header.customHeadLi}>
+                <NavLink
+                  className="nav-link"
+                  to={"/whyRussia"}
+                  onClick={handleNavCollapse}
+                >
+                  Why Russia
+                </NavLink>
+              </li>
+              <li className={header.customHeadLi}>
+                <NavLink
+                  className="nav-link"
+                  to={"/studyInRussia"}
+                  onClick={handleNavCollapse}
+                >
+                  Study In Russia
+                </NavLink>
+              </li>
+              <li className={header.customHeadLi}>
+                <NavLink
+                  className="nav-link"
+                  to={"/lifeInRussia"}
+                  onClick={handleNavCollapse}
+                >
+                  Life In Russia
+                </NavLink>
+              </li>
+              <li className={header.customHeadLi}>
+                <NavLink
+                  className="nav-link"
+                  to={"/universities"}
+                  onClick={handleNavCollapse}
+                >
+                  Universities
+                </NavLink>
+              </li>
+              <li className={header.customHeadLi}>
+                <NavLink
+                  className="nav-link"
+                  to={"/aboutUs"}
+                  onClick={handleNavCollapse}
+                >
+                  About Us
+                </NavLink>
+              </li>
+              <li className={header.customHeadLi}>
+                <button
+                  className={header.joinUsBtn}
+                  onClick={() => {
+                    handleNavCollapse();
+                    handleModalClick();
+                  }}
+                >
+                  Apply Online
+                </button>
+              </li>
+            </ul>
+
+            {/* the mobile link col begins */}
+
+            <div className={header.mobileHeadLinksCol}>
+              <ul className={header.mobileHeadLinkUl}>
+                <li>
+                  <a
+                    href="https://www.facebook.com/GraduationAbroad"
+                    target="_absolute"
+                  >
+                    <img src={fb} alt="the link pic" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/graduationabroad/"
+                    target="_absolute"
+                  >
+                    <img src={insta} alt="the link pic" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/siddharth-negi-03285969/"
+                    target="_absolute"
+                  >
+                    <img src={linke} alt="the link pic" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com" target="_absolute">
+                    <img src={tweet} alt="the link pic" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com" target="_absolute">
+                    <img src={youtube} alt="the link pic" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* the mobile link col ends */}
+          </div>
+        </div>
+      </>
+
+      {/* custom mobile header ends */}
 
       {/* the real web layout */}
       <div className={`container-fluid ${header.headerContainer}`}>
         <div className="row">
-          <div className={`col-sm-12 col-md-12 col-lg-12 ${header.headerFirstCol}`}>
+          <div
+            className={`col-sm-12 col-md-12 col-lg-12 ${header.headerFirstCol}`}
+          >
             {/* the first header col */}
 
             <div className="row">
@@ -253,7 +410,9 @@ const Header = () => {
                 </NavLink>
               </div>
 
-              <div className={`col-sm-6 col-md-6 col-lg-8 ${header.headLinkCol}`}>
+              <div
+                className={`col-sm-6 col-md-6 col-lg-8 ${header.headLinkCol}`}
+              >
                 <ul className={header.headLinkUl}>
                   <li className={header.fb}>
                     <a
