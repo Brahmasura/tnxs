@@ -253,7 +253,7 @@ const Header = () => {
 
             <div
               className={`col-2 ${header.whatsappDiv}`}
-              onClick={() => {openWhatsapp(); handleHamClick();}} onClick={handleHamClick}
+              onClick={() => {openWhatsapp(); handleHamClick();}} 
             >
               <img src={icon} alt="whatsapp" />
             </div>

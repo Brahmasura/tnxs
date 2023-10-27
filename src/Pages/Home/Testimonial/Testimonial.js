@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import style from "./testimonial.module.scss";
-import studentOne from "../../../Assets/Testimonial/studentOne.jpg";
-import studentTwo from "../../../Assets/Testimonial/studentTwo.jpg";
-import studentThree from "../../../Assets/Testimonial/studentThree.jpg";
-import studentFour from "../../../Assets/Testimonial/studentFour.jpg";
+import studentOne from "../../../Assets/Testimonial/tstudentOne.jpg";
+import studentTwo from "../../../Assets/Testimonial/tstudentTwo.jpg";
+import studentThree from "../../../Assets/Testimonial/tstudentThree.jpg";
+import studentFour from "../../../Assets/Testimonial/tstudentFour.jpg";
 import modalClosePic from "../../../Assets/Testimonial/modalClosePic.svg";
 
 const testiList = [
