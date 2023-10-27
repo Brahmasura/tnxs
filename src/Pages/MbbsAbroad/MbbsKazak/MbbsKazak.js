@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import style from "./mbbsKazak.module.scss";
-import kazakPic from "../../../Assets/Destination/kazakhstan.jpg";
+import kazakPic from "../../../Assets/Destination/kazakhstan.webp";
 import { LinkContext } from "../../../App";
 import { NavLink } from "react-router-dom";
 import Steps from "../../Home/Steps/Steps";

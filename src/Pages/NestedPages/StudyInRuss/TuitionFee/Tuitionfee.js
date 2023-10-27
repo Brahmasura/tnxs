@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import style from "./tuitionFee.module.scss";
 import { NavLink } from "react-router-dom";
 import { LinkContext } from "../../../../App";
-import tuitionPic from "../../../../Assets/Nested/tuitionFee.png";
+import tuitionPic from "../../../../Assets/Nested/tuitionFee.webp";
 import Steps from "../../../Home/Steps/Steps";
 
 const Tuitionfee = () => {

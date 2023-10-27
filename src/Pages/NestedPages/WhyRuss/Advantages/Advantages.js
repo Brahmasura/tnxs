@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { LinkContext } from "../../../../App";
 import { useContext } from "react";
 import advInner from "../../../../Assets/WhyRussia/advantagesInner.webp";
-import advTwo from "../../../../Assets/Nested/Advantages.jpg";
+import advTwo from "../../../../Assets/Nested/Advantages.webp";
 import Steps from "../../../Home/Steps/Steps";
 import { useState } from "react";
 

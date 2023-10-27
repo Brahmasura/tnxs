@@ -1,7 +1,7 @@
 import React from "react";
 import discover from "./discover.module.scss";
-import destiOne from "../../../Assets/Destination/russia.jpeg";
-import destiTwo from "../../../Assets/Destination/kazakhstan.jpg";
+import destiOne from "../../../Assets/Destination/russia.webp";
+import destiTwo from "../../../Assets/Destination/kazakhstan.webp";
 import destiThree from "../../../Assets/Destination/uzbekistan.webp";
 import destiFour from "../../../Assets/Destination/italy.webp";
 import { NavLink } from "react-router-dom";

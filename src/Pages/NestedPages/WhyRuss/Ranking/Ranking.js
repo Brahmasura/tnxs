@@ -1,7 +1,7 @@
 import React from "react";
 import ranking from "./ranking.module.scss";
 import { NavLink } from "react-router-dom";
-import rankPic from "../../../../Assets/Nested/Russian UNiversities in World Ranking.jpg";
+import rankPic from "../../../../Assets/Nested/Russian UNiversities in World Ranking.webp";
 import { useContext } from "react";
 import { LinkContext } from "../../../../App";
 import Steps from "../../../Home/Steps/Steps";

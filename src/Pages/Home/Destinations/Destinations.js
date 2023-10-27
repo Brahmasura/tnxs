@@ -1,7 +1,7 @@
 import React from "react";
 import destination from './destination.module.scss';
-import destiOne from "../../../Assets/Destination/russia.jpeg";
-import destiTwo from "../../../Assets/Destination/kazakhstan.jpg";
+import destiOne from "../../../Assets/Destination/russia.webp";
+import destiTwo from "../../../Assets/Destination/kazakhstan.webp";
 import destiThree from "../../../Assets/Destination/uzbekistan.webp";
 import destiFour from "../../../Assets/Destination/italy.webp";
 
