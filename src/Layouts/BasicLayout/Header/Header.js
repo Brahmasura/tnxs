@@ -16,6 +16,7 @@ import callIcon from "../../../Assets/Form/callIcon.png";
 import graduationIcon from "../../../Assets/Form/graduationIcon.png";
 import passIcon from "../../../Assets/Form/passIcon.png";
 import hamIcon from "../../../Assets/Header/hamIcon.png";
+import hamCloseIcon from "../../../Assets/Header/hamCloseIcon.png";
 import leftOne from "../../../Assets/FormLeft/formLeftOne.svg";
 import leftTwo from "../../../Assets/FormLeft/formLeftTwo.svg";
 import leftThree from "../../../Assets/FormLeft/formLeftThree.svg";
@@ -258,11 +259,11 @@ const Header = () => {
             </div>
 
             <div className={`col-3 ${header.hamDiv}`}>
-              <img src={hamIcon} alt="ham Icon" onClick={handleHamClick} />
+              <img src={ isHamOpen ? hamCloseIcon : hamIcon} alt="ham Icon" onClick={handleHamClick} />
             </div>
           </div>
 
-          <div style={{ display: isHamOpen ? "block" : "none" }}>
+          <div className={header.customContentDiv} style={{ display: isHamOpen ? "block" : "none" }}>
             <ul className={header.textLinkUl}>
               <li className={header.customHeadLi}>
                 <NavLink className="nav-link" to={"/"} onClick={handleHamClick}>
