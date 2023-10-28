@@ -31,7 +31,7 @@
 
     a {
       @include xmar1;
-    //   align-self: center;
+      //   align-self: center;
     }
 
     .tabs {
@@ -58,9 +58,9 @@
 
   // styling for the active tabs ends
 
-  .docLink{
-        align-self: center;
-        font-size:1.5vw;
+  .docLink {
+    align-self: center;
+    font-size: 1.5vw;
   }
 
   img {
@@ -87,7 +87,7 @@
 // styling for mobile portrait begins
 
 @media (max-width: 576px) and (orientation: portrait) {
-  .italianUniContainer {
+  .italyUniContainer {
     width: 90%;
 
     .linkDiv {
@@ -99,6 +99,10 @@
       overflow-x: auto;
       justify-content: start;
       padding-inline: unset;
+    }
+
+    .docLink {
+      font-size: 4.5vw;
     }
   }
 }
