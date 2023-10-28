@@ -18,6 +18,7 @@ const eduList = [
   },
   {
     image: courseOffered,
+    link: "/italyUni",
     text: "COURSES IN ITALIAN UNIVERSITIES",
     para: "Learn about courses, eligibility, intake, and deadlines",
   },

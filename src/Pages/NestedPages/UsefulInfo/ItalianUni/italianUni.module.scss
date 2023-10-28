@@ -1,0 +1,106 @@
+@import "../../../../mixins.module.scss";
+
+.divContainer {
+  @include x-center;
+}
+
+.italyUniContainer {
+  width: 80%;
+  @include verticalPad;
+  @include y-start;
+
+  .linkDiv {
+    align-self: center;
+    margin-bottom: 4%;
+
+    a {
+      @include theLink;
+    }
+    p {
+      display: inline;
+    }
+  }
+
+  // styling for the actve tabs begins
+
+  .tabsDiv {
+    width: 100%;
+    margin-bottom: 3%;
+    padding-inline: 15%;
+    @include x-center;
+
+    a {
+      @include xmar1;
+    //   align-self: center;
+    }
+
+    .tabs {
+      background-color: white;
+      border-radius: 20px;
+      border: 2px solid #143f6b;
+      height: 2rem;
+      padding-inline: 10px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .activeTabs {
+      background-color: #143f6b;
+      color: white;
+      border-radius: 20px;
+      border: 2px solid #143f6b;
+      height: 2rem;
+      padding-inline: 10px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+  }
+
+  // styling for the active tabs ends
+
+  .docLink{
+        align-self: center;
+        font-size:1.5vw;
+  }
+
+  img {
+    @include theImage;
+  }
+
+  h1 {
+    @include mainHeading;
+  }
+
+  h2 {
+    @include subHeading;
+  }
+
+  p {
+    @include para;
+  }
+
+  .redPara {
+    color: red;
+  }
+}
+
+// styling for mobile portrait begins
+
+@media (max-width: 576px) and (orientation: portrait) {
+  .italianUniContainer {
+    width: 90%;
+
+    .linkDiv {
+      margin-bottom: 5%;
+    }
+
+    .tabsDiv {
+      margin-bottom: 7%;
+      overflow-x: auto;
+      justify-content: start;
+      padding-inline: unset;
+    }
+  }
+}
+
+// styling for mobile portrait ends

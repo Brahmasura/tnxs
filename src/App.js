@@ -39,6 +39,9 @@ import OurServices from "./Pages/AboutUs/OurServices/OurServices";
 import DirectorDesk from "./Pages/AboutUs/DirectorDesk/DirectorDesk";
 import Sitemap from "./Pages/NestedPages/SiteMap/Sitemap";
 import WhyRussTesti from "./Pages/NestedPages/WhyRuss/whyRussTesti/WhyRussTesti";
+import ItalianUni from "./Pages/NestedPages/UsefulInfo/ItalianUni/ItalianUni";
+import ItalyManagement from "./Pages/NestedPages/UsefulInfo/ItalianUni/ItalyManagement";
+import ItalyEngineering from "./Pages/NestedPages/UsefulInfo/ItalianUni/ItalyEngineering";
 
 export const LinkContext = createContext();
 
@@ -119,6 +122,9 @@ function App() {
             <Route path="/degreeValidation" exact element={<Validation/>}/>
             <Route path="/guidelines" exact element={<Guidelines/>}/>
             <Route path="/documents" exact element={<ItalyDocs/>}/>
+            <Route path="/italyUni" exact element={<ItalianUni/>}/>
+            <Route path="/italyMan" exact element={<ItalyManagement/>}/>
+            <Route path="/italyEng" exact element={<ItalyEngineering/>}/>
             <Route path="/expenses" exact element={<Expenses/>}/>
             <Route path="/siteMap" exact element={<Sitemap/>}/>
 
