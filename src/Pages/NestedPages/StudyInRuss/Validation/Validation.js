@@ -83,7 +83,7 @@ const Validation = () => {
           {/* the tab div ends  */}
 
           <h1>Validation Of Degree</h1>
-          <img src={validationPic} alt="the advantages" />
+          <img src={validationPic} alt="the advantages" loading="lazy"/>
 
           <p>
             Validating an MBBS degree from Russia is a crucial step for Indian

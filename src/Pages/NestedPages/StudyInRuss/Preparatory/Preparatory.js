@@ -83,7 +83,7 @@ const Preparatory = () => {
           {/* the tab div ends  */}
 
           <h1>Preparatory Department</h1>
-          <img src={prepPic} alt="the advantages" />
+          <img src={prepPic} alt="the advantages" loading="lazy" />
 
           <p>
             The preparatory departments of universities provide specialized

@@ -82,7 +82,7 @@ const StudyInEng = () => {
           {/* the tab div ends  */}
 
           <h1>Study In English</h1>
-          <img src={studyInEng} alt="the advantages" />
+          <img src={studyInEng} alt="the advantages" loading="lazy" />
 
           <p>
             New academic courses taught in English are being made available at

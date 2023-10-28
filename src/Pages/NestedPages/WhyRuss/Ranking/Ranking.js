@@ -69,7 +69,7 @@ const Ranking = () => {
           {/* the tab div ends */}
 
           <h1>Russian Universities in World University Ranking</h1>
-          <img src={rankPic} alt="the ranking" />
+          <img src={rankPic} alt="the ranking" loading="lazy" />
 
           <h2>ARWU (Academic Ranking of World Universities)</h2>
           <p>

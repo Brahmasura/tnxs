@@ -83,7 +83,7 @@ const Tuitionfee = () => {
           {/* the tab div ends  */}
 
           <h1>Tuition Fees</h1>
-          <img src={tuitionPic} alt="the advantages" />
+          <img src={tuitionPic} alt="the advantages" loading="lazy"/>
 
           <h2>
             "How much does higher education for Indian students in the Russian

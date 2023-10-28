@@ -63,7 +63,7 @@ const MbbsRuss = () => {
           {/* the tab div ends  */}
 
           <h1>MBBS In Russia</h1>
-          <img src={russiaPic} alt="Russia" />
+          <img src={russiaPic} alt="Russia" loading="lazy" />
           <h2>
             A new destination for the medical students, have you reviewed MBBS
             courses in Russia?
