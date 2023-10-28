@@ -8,6 +8,7 @@
   width: 80%;
   @include verticalPad;
   @include y-start;
+  min-height:50vh;
 
   .linkDiv {
     align-self: center;
