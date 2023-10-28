@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { LinkContext } from "../../../../App";
 import style from "./transport.module.scss";
 import { NavLink } from "react-router-dom";
-import lifeThree from "../../../../Assets/LifeInRussia/inTransport.webp";
+import lifeThree from "../../../../Assets/LifeInRussia/inTransport.jpg";
 import Steps from "../../../Home/Steps/Steps";
 
 const Transport = () => {

@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { LinkContext } from "../../../../App";
 import style from "./prices.module.scss";
 import { NavLink } from "react-router-dom";
-import lifeTwo from "../../../../Assets/LifeInRussia/inPrices.webp";
+import lifeTwo from "../../../../Assets/LifeInRussia/inPrices.jpg";
 import infoThree from "../../../../Assets/Information/infoThree.webp";
 import studyThree from "../../../../Assets/StudyInRussia/studyThree.jpg";
 import Steps from "../../../Home/Steps/Steps";

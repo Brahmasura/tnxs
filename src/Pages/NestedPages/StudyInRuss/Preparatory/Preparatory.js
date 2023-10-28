@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import style from "./preparatory.module.scss";
 import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
-import prepPic from "../../../../Assets/StudyInRussia/innerPrepTwo.jpg";
+import prepPic from "../../../../Assets/StudyInRussia/innerPrepTwo.webp";
 import Steps from "../../../Home/Steps/Steps";
 
 const Preparatory = () => {
