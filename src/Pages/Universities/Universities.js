@@ -13,7 +13,6 @@ const Universities = () => {
 
   return (
     <>
-      {/* <div onLoad={handleLinkClick(4)}> */}
       <div>
         <UniversitiesIntro />
         <UniList />

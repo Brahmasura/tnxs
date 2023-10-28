@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import style from "./whyRussTesti.module.scss";
 import { LinkContext } from "../../../../App";
 import { NavLink } from "react-router-dom";
-import Testimonial from "../../../Home/Testimonial/Testimonial";
+// import Testimonial from "../../../Home/Testimonial/Testimonial";
 import Steps from "../../../Home/Steps/Steps";
 import Testitrial from "../../../Home/Testitrial/Testitrial";
 

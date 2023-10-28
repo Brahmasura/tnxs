@@ -43,7 +43,7 @@ const eduList = [
   {
     image: destiFour,
     text: "ITALY",
-    link:"/mbbsItaly",
+    link: "/mbbsItaly",
     textOne: "universities",
     uValue: "28",
     textTwo: "population",
@@ -60,7 +60,10 @@ const DiscoverRussia = () => {
       <div className={`container-fluid ${discover.colsContainer}`}>
         <div className={`row ${discover.rowOptions}`}>
           {eduList.map((option, index) => (
-            <div key={index} className={` col-12 col-sm-12 col-md-3 col-lg-3 ${discover.optionContainer}`}>
+            <div
+              key={index}
+              className={` col-12 col-sm-12 col-md-3 col-lg-3 ${discover.optionContainer}`}
+            >
               <div className="row">
                 <NavLink to={option.link} onClick={() => window.scrollTo(0, 0)}>
                   <div
@@ -72,7 +75,6 @@ const DiscoverRussia = () => {
                       backgroundRepeat: "no-repeat",
                     }}
                   >
-                   
                     <p>{option.text}</p>
                   </div>
                   <div

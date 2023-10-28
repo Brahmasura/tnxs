@@ -14,7 +14,7 @@ const WhyRussia = () => {
   
   return (
     <> 
-      {/* <div onLoad={handleLinkClick(1)}> */}
+     
       <div>
         <RussIntro/>
         <WhyRussInfo/>

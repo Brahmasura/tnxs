@@ -63,14 +63,12 @@ const Students = () => {
 
   return (
     <>
-    <div className={students.studentContainer} >
-      <Slider {...StudentSettings} >
-        <div className={students.slideOne}></div>
-        <div className={students.slideTwo}></div>
-        <div className={students.slideThree}></div>
-        {/* <div className={students.slideFour}></div>
-        <div className={students.slideFive}></div> */}
-      </Slider>
+      <div className={students.studentContainer}>
+        <Slider {...StudentSettings}>
+          <div className={students.slideOne}></div>
+          <div className={students.slideTwo}></div>
+          <div className={students.slideThree}></div>
+        </Slider>
       </div>
     </>
   );

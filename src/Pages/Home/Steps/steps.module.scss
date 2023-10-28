@@ -1,12 +1,10 @@
 @import "../../../mixins.module.scss";
 
 .stepsContainer {
-  // height: 75vh;
   height: 74.5vh;
   padding-inline: 7%;
   @include y-center;
-  // @include border;
-  // @include bgcolor;
+
   background-color: white;
 
   a {
@@ -16,18 +14,8 @@
 
     :hover {
       font-weight: 500;
-      // text-decoration: underline;
-      // text-decoration-thickness: 2px;
     }
   }
-
-  // .unHoveredLink {
-  //   text-decoration: none !important;
-  // }
-
-  // .hoveredLink {
-  //   text-decoration: dashed !important;
-  // }
 
   h1 {
     @include heading;
@@ -53,7 +41,6 @@
 
   .stepsUpper {
     height: 21vh;
-    // @include border;
     background-size: 100% 100%;
     background-position: 50% -102%;
     @include x-center;
@@ -61,7 +48,6 @@
 
   .stepsLower {
     height: 20vh;
-    // @include border;
     @include y-sa;
     background-color: white;
 

@@ -14,7 +14,6 @@ const eduList = [
     text: "TOP RUSSIAN UNIVERSITIES",
     para: "Learn about tuition fee, distance from MOSCOW, and necessary details ",
   },
-  // { image: imgSix, link:"/faqInfo", text: "FREQUENTLY ASKED QUESTIONS", para: "Diagnose your basic doubts about studying abroad" },
   { image: applyImg },
 
   {

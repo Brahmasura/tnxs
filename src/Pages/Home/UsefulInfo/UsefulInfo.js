@@ -3,8 +3,6 @@ import style from "./usefulInfo.module.scss";
 import faqOne from "../../../Assets/UsefulInfo/faq.jpeg";
 import courseOffered from "../../../Assets/UsefulInfo/courseOffered.webp";
 import italy from "../../../Assets/UsefulInfo/italyUsefulInfo.webp";
-// import faqFour from "../../../Assets/UsefulInfo/MBBS.jpeg";
-// import applyImg from "../../../Assets/UsefulInfo/apply.png";
 import imgSix from "../../../Assets/Education/imgSix.jpg";
 import { NavLink } from "react-router-dom";
 
@@ -22,7 +20,7 @@ const eduList = [
     text: "COURSES IN ITALIAN UNIVERSITIES",
     para: "Learn about courses, eligibility, intake, and deadlines",
   },
-  // { image: applyImg, text: "Study MBBS in Abroad" },
+ 
   {
     image: imgSix,
     link: "/faqInfo",

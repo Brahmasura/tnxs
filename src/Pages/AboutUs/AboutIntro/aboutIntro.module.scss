@@ -5,22 +5,14 @@
 }
 
 .contentContainer {
-  // width: 70%;
-  // padding-top: 5%;
-  // padding-bottom: 5%;
   width: 80%;
   @include verticalPad;
   @include y-start;
 
-  // a {
-  //   @include x-center;
-  //   @include theLink;
-  // }
-
   .linkDiv {
     align-self: center;
-    // @include x-center;
-    margin-bottom:4%;
+
+    margin-bottom: 4%;
 
     a {
       @include theLink;
@@ -49,7 +41,7 @@
       height: 2rem;
       padding-inline: 10px;
       font-weight: 600;
-      white-space:nowrap;
+      white-space: nowrap;
     }
 
     .activeTabs {
@@ -60,26 +52,19 @@
       height: 2rem;
       padding-inline: 10px;
       font-weight: 600;
-      white-space:nowrap;
+      white-space: nowrap;
     }
   }
 
-
   .mainHeading {
-   @include mainHeading;
- 
-
+    @include mainHeading;
   }
 
   h3 {
-    // font-size: 27px;
-    // font-weight: 700;
     @include subHeading;
   }
 
   p {
-    // font-size: 24px;
-    // text-align: justify;
     @include para;
   }
 
@@ -96,22 +81,21 @@
   }
 }
 
-
 // styling for mobile portrait begins
 
 @media (max-width: 576px) and (orientation: portrait) {
   .contentContainer {
     width: 90%;
 
-    .linkDiv{
-      margin-bottom:5%;
+    .linkDiv {
+      margin-bottom: 5%;
     }
 
     .tabsDiv {
-      margin-bottom:7%;
+      margin-bottom: 7%;
       overflow-x: auto;
       justify-content: start;
-      padding-inline:unset;
+      padding-inline: unset;
     }
   }
 }

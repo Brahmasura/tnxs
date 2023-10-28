@@ -3,17 +3,14 @@
 @import "../../../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../../../node_modules/slick-carousel/slick/slick-theme.scss";
 
-
 .testiContainer {
   height: 81.5vh;
-  padding-top:3%;
+  padding-top: 3%;
 
   .testiTitle {
     @include heading;
-    // font-family: "Playfair Display SC", serif;
     font-family: "Open Sans", sans-serif;
     margin-bottom: 3%;
-    // color: #dde6ed;
   }
 
   .studentCard {
@@ -59,174 +56,149 @@
 
 // the modal styling begins
 .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modalContent {
-    position: relative;
-    width: 50%;
-    height: auto;
-    background-color: white;
-    z-index: 100;
-    padding: 20px;
-  
-    .modalQoute {
-      text-align: center;
-      font-size: 2vw;
-      font-weight: 500;
-      line-height: 2rem;
-    }
-  
-    .modalBottomPara {
-      margin-bottom: 0;
-    }
-  }
-  
-  .closeButton {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
-  }
-  
-  // the modal styling ends
-
-    // xxl laptop styling begins
-@media (min-width: 1400px) and (orientation: landscape) {
-    .testiContainer {
-     height:80vh;
-    }
-  }
-  
-  // xxl laptop styling ends
-
-  // tab landscape styling begins
-@media (max-width: 1200px) and (orientation: landscape) {
-    .testiContainer {
-     height:60vh;
-    }
-  }
-  
-  // tab landscape styling ends
-
-
-// small tab portrait styling begins
-@media (max-width: 850px) and (orientation: portrait){
-    .testiContainer{
-        height:30vh;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.modalContent {
+  position: relative;
+  width: 50%;
+  height: auto;
+  background-color: white;
+  z-index: 100;
+  padding: 20px;
+
+  .modalQoute {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  .modalBottomPara {
+    margin-bottom: 0;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+// the modal styling ends
+
+// xxl laptop styling begins
+@media (min-width: 1400px) and (orientation: landscape) {
+  .testiContainer {
+    height: 80vh;
+  }
+}
+
+// xxl laptop styling ends
+
+// tab landscape styling begins
+@media (max-width: 1200px) and (orientation: landscape) {
+  .testiContainer {
+    height: 60vh;
+  }
+}
+
+// tab landscape styling ends
+
+// small tab portrait styling begins
+@media (max-width: 850px) and (orientation: portrait) {
+  .testiContainer {
+    height: 30vh;
+  }
+}
 
 // small tab portrait styling ends
 
-
-// mobile landscape styling begins 
-@media (max-width: 900px) and (orientation: landscape){
-    .testiContainer{
-        height:80vh;
-        .testiTitle{
-            font-size: 3.8vw;
-        }
+// mobile landscape styling begins
+@media (max-width: 900px) and (orientation: landscape) {
+  .testiContainer {
+    height: 80vh;
+    .testiTitle {
+      font-size: 3.8vw;
     }
-    .modalOverlay {
-        overflow: hidden;
-      }
-    
-      .modalContent {
-        max-height: 90%;
-        overflow-y: auto;
-      }
+  }
+  .modalOverlay {
+    overflow: hidden;
+  }
 
+  .modalContent {
+    max-height: 90%;
+    overflow-y: auto;
+  }
 }
-
 
 // mobile landscape styoing ends
 
-// mobile portrait styling begins 
-@media(max-width:576px) and (orientation:portrait){
-    .testiContainer{
-        height:auto;
-        padding:12% 4%;
+// mobile portrait styling begins
+@media (max-width: 576px) and (orientation: portrait) {
+  .testiContainer {
+    height: auto;
+    padding: 12% 4%;
 
-        .testiTitle{
-            font-size: 7vw;
-            line-height: 2rem;
-           margin-bottom:1.5rem;
-        }
-
-        .studentCard{
-
-            img{
-                width:45%;
-            }
-            .namePara {
-                font-size: 6.5vw;
-                margin-bottom: 0;
-                margin-top: 2%;
-              }
-      
-              .uniPara {
-                font-size: 4.8vw;
-                line-height:normal;
-                margin-bottom:1.5rem;
-              }
-      
-              .cardQoute {
-                font-size: 4.5vw;
-              }
-        }
+    .testiTitle {
+      font-size: 7vw;
+      line-height: 2rem;
+      margin-bottom: 1.5rem;
     }
 
-    .modalOverlay {
-        overflow: hidden;
+    .studentCard {
+      img {
+        width: 45%;
       }
-    
-      .modalContent {
-        width: 95%;
-        max-height: 90%;
-        overflow-y: auto;
-    
-        .modalTitlePara {
-          font-size: 4.5vw;
-        }
-    
-        .modalQoute {
-          font-size: 5vw;
-        }
-    
-        .modalBottomPara {
-          font-size: 4vw;
-        }
+      .namePara {
+        font-size: 6.5vw;
+        margin-bottom: 0;
+        margin-top: 2%;
       }
+
+      .uniPara {
+        font-size: 4.8vw;
+        line-height: normal;
+        margin-bottom: 1.5rem;
+      }
+
+      .cardQoute {
+        font-size: 4.5vw;
+      }
+    }
+  }
+
+  .modalOverlay {
+    overflow: hidden;
+  }
+
+  .modalContent {
+    width: 95%;
+    max-height: 90%;
+    overflow-y: auto;
+
+    .modalTitlePara {
+      font-size: 4.5vw;
+    }
+
+    .modalQoute {
+      font-size: 5vw;
+    }
+
+    .modalBottomPara {
+      font-size: 4vw;
+    }
+  }
 }
 
-
-
 // mobile portrait styling ends
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

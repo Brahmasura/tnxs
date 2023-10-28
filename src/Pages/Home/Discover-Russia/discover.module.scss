@@ -1,34 +1,18 @@
 @import "../../../mixins.module.scss";
 
 .discoverContainer {
-  // background: url("../../../Assets/Destination/discoverBack.png");
-  // @include bg-center;
   @include nopad;
   @include y-center;
-  // height: 79vh;
   height: 81.5vh;
   padding-inline: 4% !important;
-  // padding-top: 7% !important;
 
   border: 1px 0 solid black;
-  //   @include bgcolor;
 }
 .discoverTitle {
   @include heading;
-  // font-family: "cinzel decorative";
   color: #002838;
   margin-bottom: 3%;
-
-  // font-family: 'Caveat', cursive;
-  // font-family: 'Cinzel Decorative', serif;
-  // font-family: 'Croissant One', serif;
-  // font-family: 'Fuggles', cursive;
-  // font-family: "Gloock", serif;
-  // font-family: 'Inter', sans-serif;
-  // font-family: 'Montserrat', sans-serif;
   font-family: "Open Sans", sans-serif;
-  // font-family: 'Permanent Marker', cursive;
-  // font-family: 'Playfair Display SC', serif;
 }
 
 .colsContainer {
@@ -54,14 +38,12 @@
       @include y-bot-left;
       height: 34vh;
       p {
-        // font-family: sans-serif;
-        // font-family: "croissant one", sans-serif;
         font-family: "Open Sans", sans-serif;
 
         font-size: 2vw;
         color: whitesmoke;
         background-color: rgba(0, 0, 0, 0.5);
-        padding-left:2%;
+        padding-left: 2%;
       }
     }
 
@@ -174,15 +156,6 @@
             }
           }
         }
-        // p {
-        //   font-size: 1.3vw;
-        //   margin-bottom: 0;
-        // }
-
-        // .subText {
-        //   font-size: 1.1vw;
-        //   margin-bottom: 0;
-        // }
       }
     }
   }
@@ -199,9 +172,8 @@
   }
 
   .discoverTitle {
-    font-size: 7vw;
+    font-size: 6vw;
     line-height: 2rem;
-    font-family: "'Cinzel Decorative'";
     font-weight: 600;
     color: #002838;
   }

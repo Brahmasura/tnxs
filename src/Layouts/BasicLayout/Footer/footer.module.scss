@@ -2,14 +2,10 @@
 
 .footerContainer {
   background: url("../../../Assets/Footer/footerTwo.jpg");
-  // @include bg-center;
   background-size: cover;
   background-position: center 62%;
   @include x-center;
-  // @include padTwo;
   padding-inline: 1%;
-  // @include border;
-  // height: 80vh;
   height: auto;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -73,7 +69,6 @@
   li {
     color: whitesmoke;
     font-family: sans-serif;
-    // font-size: 15px;
     font-size: 1.1vw;
     margin-bottom: 6.5%;
     line-height: 1.5rem;
@@ -84,7 +79,6 @@
       color: #dd3534;
     }
     p {
-      // color: #dd3534;
       font-size: 1.3vw;
       font-weight: 800;
       margin-bottom: 2%;
@@ -96,7 +90,6 @@
     }
 
     button {
-      // width:40%;
       margin-top: 2%;
       background-color: #dd3534;
       color: whitesmoke;
@@ -176,8 +169,8 @@
         font-size: 3.3vw;
       }
 
-      input{
-        height:2.5vh;
+      input {
+        height: 2.5vh;
       }
     }
   }

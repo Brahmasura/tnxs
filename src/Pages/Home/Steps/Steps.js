@@ -16,12 +16,11 @@ const stepsList = [
 ];
 
 const Steps = () => {
+  const [hoveredStep, setHoveredStep] = useState(null);
 
-    const [hoveredStep, setHoveredStep] = useState(null);
-
-    const handleStepHover = (index) => {
-        setHoveredStep(index);
-    }
+  const handleStepHover = (index) => {
+    setHoveredStep(index);
+  };
   return (
     <>
       <div className={steps.stepsContainer}>
@@ -32,9 +31,12 @@ const Steps = () => {
         <div className={`container-fluid ${steps.colContainer}`}>
           <div className={`row ${steps.rowContainer}`}>
             {stepsList.map((item, index) => (
-              <div key={index} className={`col ${steps.stepContainer}`} 
+              <div
+                key={index}
+                className={`col ${steps.stepContainer}`}
                 onMouseEnter={() => handleStepHover(index)}
-                onMouseLeave={() => handleStepHover(null)} >
+                onMouseLeave={() => handleStepHover(null)}
+              >
                 <div className={`row ${steps.stepsRow}`}>
                   <NavLink
                     to={"/nestedSteps"}
@@ -42,12 +44,35 @@ const Steps = () => {
                   >
                     <div
                       className={`col-md-12 col-lg-12 ${steps.stepsUpper}`}
-                      style={{ backgroundImage: `url(${item.image})`}}
+                      style={{ backgroundImage: `url(${item.image})` }}
                     ></div>
-                    <div className={`col-md-12 col-lg-12 ${steps.stepsLower}`}
-                     >
-                      <p >{item.text}</p>
-                    <div className={steps.circle} style={{borderColor: hoveredStep !==null && hoveredStep >= index ? "#5780c0" : "#dd3534", backgroundColor: hoveredStep !==null && hoveredStep >= index ? "#5780c0" : "#fff"}}> <p style={{ color: hoveredStep !== null && hoveredStep >= index ? "#fff" : "#dd3534"}}>{index + 1}</p></div>
+                    <div className={`col-md-12 col-lg-12 ${steps.stepsLower}`}>
+                      <p>{item.text}</p>
+                      <div
+                        className={steps.circle}
+                        style={{
+                          borderColor:
+                            hoveredStep !== null && hoveredStep >= index
+                              ? "#5780c0"
+                              : "#dd3534",
+                          backgroundColor:
+                            hoveredStep !== null && hoveredStep >= index
+                              ? "#5780c0"
+                              : "#fff",
+                        }}
+                      >
+                        {" "}
+                        <p
+                          style={{
+                            color:
+                              hoveredStep !== null && hoveredStep >= index
+                                ? "#fff"
+                                : "#dd3534",
+                          }}
+                        >
+                          {index + 1}
+                        </p>
+                      </div>
                     </div>
                   </NavLink>
                 </div>

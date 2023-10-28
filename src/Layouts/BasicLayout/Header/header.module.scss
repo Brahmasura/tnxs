@@ -1,9 +1,5 @@
 @import "../../../mixins.module.scss";
 
-.mobHeaderContainer {
-  display: none;
-}
-
 .customHeadDiv {
   display: none;
 }
@@ -11,10 +7,8 @@
 // element styling
 .headerContainer {
   @include x-center;
-  // padding-inline: 7% !important;
   height: auto;
-  // border: 1px solid black;
-  // background-color: rgba(255, 255, 255, 0.8);
+
   background-color: rgba(0, 0, 0, 0.7);
   position: sticky;
   top: 0;
@@ -33,7 +27,6 @@
 }
 
 .brandCol {
-  // @include x-center;
   @include nopad;
   a {
     text-decoration: none;
@@ -56,14 +49,9 @@
 
   .headText {
     padding-left: 4%;
-    // display:flex;
-    // flex-direction: column;
-    // justify-content: center;
+
     @include y-start;
     h1 {
-      // font-family: sans-serif;
-      // font-family:"playfair display sc";
-
       font-style: normal;
       font-weight: 700;
       font-size: 1.5vw;
@@ -73,7 +61,6 @@
       animation: textAni 1.4s ease-out forwards;
     }
     p {
-      // font-family: sans-serif;
       font-family: "open sans";
 
       font-weight: 600;
@@ -101,10 +88,6 @@
     @include x-sb;
     width: 45%;
     margin-bottom: 0;
-    // img{
-    //   width:90%;
-    //   height:auto;
-    // }
 
     // fb
     .fb {
@@ -163,8 +146,7 @@
 
   a {
     text-decoration: none;
-    // color:black;
-    // color: black;
+
     color: white;
     font-weight: 700;
     font-size: 1.2vw;
@@ -206,10 +188,6 @@ ul li {
 .activeLink {
   color: red !important;
 }
-
-// .inactiveLink{
-//   color:white !important;
-// }
 
 .buttonCol {
   @include x-end;
@@ -318,7 +296,6 @@ ul li {
         height: 114px;
         background-color: white;
         @include y-center;
-        // height: 90%;
         img {
           width: 40%;
         }
@@ -562,97 +539,6 @@ ul li {
 // mobile header styling begins
 
 @media (max-width: 576px) and (orientation: portrait) {
-  .mobHeaderContainer {
-    // display: block;
-    display: none;
-    padding: 3%;
-
-    .mobHeaderLogo {
-      display: inline;
-      @include x-sb;
-
-      .navbar-brand {
-        display: inline;
-      }
-
-      a {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          width: 100%;
-          height: auto;
-          max-height: 13.5vw;
-          border-radius: 100%;
-        }
-
-        .mobileHeadText {
-          margin-left: 2.5%;
-
-          h1 {
-            font-size: 3.8vw;
-            color: #dd3534;
-            margin-bottom: 0;
-          }
-
-          p {
-            font-size: 2.8vw;
-            line-height: 0.9rem;
-            margin-bottom: 0;
-          }
-        }
-      }
-
-      .whatsappDiv {
-        @include x-center;
-        img {
-          width: 8.2vw;
-          height: auto;
-        }
-      }
-
-      .textLinkUl {
-        margin-top: 4%;
-
-        button {
-          background: #dd3534;
-          color: whitesmoke;
-        }
-
-        // .mobApplyDiv{
-        //   @include x-sa;
-
-        //   .whatsappDiv{
-        //     @include x-center;
-
-        //     p{
-        //       margin-bottom:0;
-        //       margin-left:2%;
-        //     }
-        //   }
-
-        // }
-      }
-
-      li {
-        display: flex !important;
-        justify-content: center;
-        margin: 1%;
-      }
-
-      .mobileHeadLinksCol {
-        margin-top: 3.5%;
-        .mobileHeadLinkUl {
-          padding: 0 !important;
-          margin-bottom: 0;
-          @include x-sa;
-        }
-      }
-    }
-  }
-
   .headerContainer {
     display: none !important;
   }
@@ -676,8 +562,6 @@ ul li {
         }
 
         .mobileHeadText {
-          // margin-left:2%;
-
           h1 {
             font-size: 3.8vw;
             color: #dd3534;
@@ -722,8 +606,8 @@ ul li {
         animation: listAni 0.5s ease-in-out forwards;
       }
 
-      @keyframes listAni{
-        to{
+      @keyframes listAni {
+        to {
           transform: translateX(0);
         }
       }
@@ -741,7 +625,7 @@ ul li {
     .mobileHeadLinksCol {
       .mobileHeadLinkUl {
         @include x-sa;
-        padding:0;
+        padding: 0;
 
         img {
           border-radius: 50%;

@@ -5,8 +5,7 @@
   @include y-center;
   height: 81.5vh;
   padding-inline: 4% !important;
-  // padding-top: 7% !important;
-  // border:1px solid black;
+
   @include bgcolor;
 }
 .eduTitle {
@@ -39,7 +38,6 @@
     height: 100%;
     width: 22%;
     margin-inline: 1%;
-    // border: 2px solid red;
 
     a {
       text-decoration: none;
@@ -54,18 +52,11 @@
     .optionUpper {
       @include x-center;
       height: 30vh;
-      // border:1px solid black;
-
-      // img{
-      //   width:100%;
-      //   height:auto;
-      // }
     }
 
     .optionLower {
       @include y-center;
       height: 24vh;
-      // border:1px solid black;
       background-color: white;
       p {
         font-family: sans-serif;
@@ -105,7 +96,6 @@
 @media (max-width: 850px) and (orientation: portrait) {
   .eduContainer {
     height: auto;
-    // padding-inline:0 !important;
     padding: 1% 0 3% 0 !important;
   }
 
@@ -181,7 +171,6 @@
 @media (max-width: 576px) and (orientation: portrait) {
   .eduContainer {
     height: auto;
-    // padding-inline: 0 !important;
     padding: 12% 4% !important;
   }
 

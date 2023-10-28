@@ -141,7 +141,6 @@
   }
 
   .colSixContainer {
-    // background: url("../../../../Assets/LifeInRussia/lifeSix.jpg");
     background: url("../../../../Assets/students/IntroSeven.webp");
 
     @include bg-center;
@@ -177,27 +176,6 @@
     margin: 0;
   }
 }
-
-// // styling for mobile landscape begins
-// @media (max-width:900px) and (orientation:landscape){
-//   .colTwoContainer:hover{
-//     background-size:110% !important;
-//   }
-
-//   .colThreeContainer:hover{
-//     background-size:110% !important;
-//   }
-
-//   .colFourContainer:hover{
-//     background-size:110% !important;
-//   }
-
-//   .colFiveContainer:hover{
-//     background-size:110% !important;
-//   }
-// }
-
-// // styling for mobile lnadscape ends
 
 // styling for the info image hover begins
 @media (max-width: 1200px) {

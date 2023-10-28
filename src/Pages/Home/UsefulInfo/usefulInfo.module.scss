@@ -1,32 +1,21 @@
 @import "../../../mixins.module.scss";
 
 .faqContainer {
-  //   background: url("../../../Assets/UsefulInfo/usefulInfoBack.png");
-  // @include bg-center;
   @include nopad;
   @include y-center;
-  // height: 79vh;
+
   height: 81.5vh;
   padding-inline: 4% !important;
-  // padding-top: 7% !important;
+
   border: 1px 0 solid black;
   @include bgcolor;
 }
 .faqTitle {
   @include heading;
-  // font-family: "croissant One";
+
   margin-bottom: 3%;
 
-    // font-family: 'Caveat', cursive;
-  // font-family: 'Cinzel Decorative', serif;
-  // font-family: 'Croissant One', serif;
-  // font-family: 'Fuggles', cursive;
-  // font-family: 'Gloock', serif;
-  // font-family: 'Inter', sans-serif;
-  // font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  // font-family: 'Permanent Marker', cursive;
-  // font-family: 'Playfair Display SC', serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .colsContainer {
@@ -43,7 +32,6 @@
     height: 100%;
     width: 22%;
     margin-inline: 1%;
-    // border: 2px solid red;
 
     a {
       text-decoration: none;
@@ -56,13 +44,12 @@
     .optionUpper {
       @include x-center;
       height: 30vh;
-      // border: 1px solid black;
     }
 
     .optionLower {
       @include y-center;
       height: 24vh;
-      // border: 1px solid black;
+
       background-color: white;
 
       p {
@@ -83,21 +70,20 @@
 }
 
 // tab landscape styling begins
-@media(max-width:1200px) and (orientation:landscape){
-  .colsContainer{
-    .optionContainer{
-      height:40vh;
-      .optionUpper{
-        height:20vh;
+@media (max-width: 1200px) and (orientation: landscape) {
+  .colsContainer {
+    .optionContainer {
+      height: 40vh;
+      .optionUpper {
+        height: 20vh;
       }
 
-      .optionLower{
-        height:20vh;
+      .optionLower {
+        height: 20vh;
       }
     }
   }
 }
-
 
 // tab landscape styling ends
 
@@ -108,33 +94,33 @@
     padding: 1% 0 3% 0 !important;
   }
 
-  .faqTitle{
-    font-size:5vw;
+  .faqTitle {
+    font-size: 5vw;
   }
 
-  .colsContainer{
-    .rowOptions{
-      height:22vh;
+  .colsContainer {
+    .rowOptions {
+      height: 22vh;
     }
 
-    .optionContainer{
-      width:23%;
+    .optionContainer {
+      width: 23%;
 
-      .optionUpper{
-        height:10vh;
+      .optionUpper {
+        height: 10vh;
       }
 
-      .optionLower{
-        height:12vh;
-        padding-inline:1%;
-       
-        p{
-          font-size:1.6vw;
-          margin-bottom:0.5rem;
+      .optionLower {
+        height: 12vh;
+        padding-inline: 1%;
+
+        p {
+          font-size: 1.6vw;
+          margin-bottom: 0.5rem;
         }
 
-        .subText{
-         font-size:1.2vw;
+        .subText {
+          font-size: 1.2vw;
         }
       }
     }
@@ -200,8 +186,8 @@
         height: 54vh;
       }
 
-      .optionUpper{
-        height:36vh;
+      .optionUpper {
+        height: 36vh;
       }
 
       .optionLower {

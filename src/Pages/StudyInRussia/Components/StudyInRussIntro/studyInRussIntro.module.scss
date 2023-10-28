@@ -1,7 +1,7 @@
-@import '../../../../mixins.module.scss';
+@import "../../../../mixins.module.scss";
 
-.studyIntroContainer{
-    height: auto;
+.studyIntroContainer {
+  height: auto;
   @include y-top-center;
   @include padThree;
   @include verticalPad;
@@ -20,17 +20,13 @@
 
   h1 {
     @include mainHeading;
-   
   }
 
   p {
-    // font-size: 1.3vw;
-    // text-align: justify;
     @include para;
-    line-height:normal;
+    line-height: normal;
   }
 }
-
 
 // styling mobile portrait begins
 

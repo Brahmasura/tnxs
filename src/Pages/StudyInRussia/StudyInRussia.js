@@ -13,7 +13,7 @@ const StudyInRussia = () => {
   
   return (
     <>
-      {/* <div onLoad={handleLinkClick(2)}> */}
+     
       <div>
         <StudyInRussIntro />
         <StudyInRussInfo />

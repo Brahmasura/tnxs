@@ -4,15 +4,8 @@
   background: url("../../../Assets/Information/infoOne.webp");
   @include bg-center;
   background-position: 70%;
-  // @include border;
   @include y-bot-left;
-  // padding-bottom:4%;
-  // padding-left:2% !important;
-  // height: 85vh;
-  // position:relative;  //new code
-  // z-index:-1;
   transition: background-size 0.3s ease-in-out;
-
   @include colStyles;
   height: 85vh;
 
@@ -37,7 +30,6 @@
 }
 
 .rightCol {
-  // @include border;
   height: 85vh;
 }
 
@@ -45,7 +37,6 @@
   background: url("../../../Assets/Information/infoTwo.webp");
   @include bg-center;
   background-position: 80% 35%;
-  // @include border;
   @include y-bot-left;
   @include colStyles;
   height: 42.5vh;
@@ -71,14 +62,12 @@
 }
 
 .rightBotCol {
-  // @include border;
   height: 42.5vh;
 }
 
 .rightBotLeft {
   background: url("../../../Assets/Information/infoThree.webp");
   @include bg-center;
-  // @include border;
   @include y-bot-left;
   @include colStyles;
   height: 42.5vh;
@@ -109,7 +98,6 @@
   @include y-bot-left;
   padding-bottom: 4%;
   padding-left: 2% !important;
-  // @include border;
   position: relative; //new code
   transition: background-size 0.3s ease-in-out;
 
@@ -216,7 +204,6 @@
   }
 
   .leftCol:hover {
-    // background-size:180%;
     background-size: cover;
   }
 
@@ -245,7 +232,6 @@
   }
 
   .rightBotLeft:hover {
-    // background-size:150%;
     background-size: cover;
   }
 
@@ -260,7 +246,6 @@
   }
 
   .rightBotRight:hover {
-    //  background-size:150%;
     background-size: cover;
   }
 
@@ -287,7 +272,6 @@
   }
 
   .leftCol:hover {
-    // background-size: 160%;
     background-size: cover;
   }
 
@@ -330,7 +314,6 @@
   }
 
   .rightBotLeft:hover {
-    // background-size: 180%;
     background-size: cover;
   }
 
@@ -348,7 +331,6 @@
   }
 
   .rightBotRight:hover {
-    // background-size: 180%;
     background-size: cover;
   }
 }

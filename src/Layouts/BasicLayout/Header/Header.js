@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 import header from "./header.module.scss";
 import { NavLink } from "react-router-dom";
 import gradLogo from "../../../Assets/Header/gradLogo.png";
@@ -35,37 +35,6 @@ const Header = () => {
     isHamOpen,
     handleHamClick,
   } = useContext(LinkContext);
-  // const [isModalOpen, setIsModalOpen] = useState(false);
-  // const [formData, setFormData] = useState({
-  //   userName: "",
-  //   userMail: "",
-  //   userContact: "",
-  //   userCourse: "",
-  //   userPassport: "",
-  //   userMessage: "",
-  // });
-
-  // const handleFormChange = (e) => {
-  //   setFormData({ ...formData, [e.target.name]: [e.target.value] });
-  // };
-
-  // const handleModalClick = () => {
-  //   setIsModalOpen(!isModalOpen);
-  //   setFormData({
-  //     userName: "",
-  //     userMail: "",
-  //     userContact: "",
-  //     userCourse: "",
-  //     userPassport: "",
-  //     userMessage: "",
-  //   });
-  // };
-
-  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-
-  const handleNavCollapse = () => {
-    setIsNavCollapsed(!isNavCollapsed);
-  };
 
   // handling the whatsapp click
   const openWhatsapp = () => {
@@ -74,166 +43,6 @@ const Header = () => {
 
   return (
     <>
-      {/* the mobile header layout begins  */}
-      <>
-        <div className={`container-fluid ${header.mobHeaderContainer}`}>
-          <nav
-            className={`navbar navbar-expand-lg navbar-light ${header.mobHeaderLogo}`}
-          >
-            <NavLink className="navbar-brand" to={"/"}>
-              <img src={gradLogo} alt="brand logo" />
-              <div className={header.mobileHeadText}>
-                <h1>GRADUATION ABROAD</h1>
-                <p>
-                  Direct Representatives of Govt. <br /> Medical Universities in
-                  Abroad
-                </p>
-              </div>
-            </NavLink>
-
-            {/* whatsapp icon */}
-            <div className={header.whatsappDiv} onClick={openWhatsapp}>
-              <img src={icon} alt="whatsapp" />
-              {/* <p>Chat</p> */}
-            </div>
-            <button
-              className="navbar-toggler"
-              type="button"
-              onClick={handleNavCollapse}
-              // data-bs-toggle="collapse"
-              // data-bs-target="#navbarTogglerDemo01"
-              // aria-controls="navbarTogglerDemo01"
-              // aria-expanded="false"
-              // aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div
-              className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
-              id="navbarTogglerDemo01"
-            >
-              <ul className={`navbar-nav ms-auto ${header.textLinkUl}`}>
-                <li className="navbar-item">
-                  <NavLink
-                    className="nav-link"
-                    to={"/"}
-                    onClick={handleNavCollapse}
-                  >
-                    HOME
-                  </NavLink>
-                </li>
-
-                <li className="navbar-item">
-                  <NavLink
-                    className="nav-link"
-                    to={"/whyRussia"}
-                    onClick={handleNavCollapse}
-                  >
-                    Why Russia
-                  </NavLink>
-                </li>
-                <li className="navbar-item">
-                  <NavLink
-                    className="nav-link"
-                    to={"/studyInRussia"}
-                    onClick={handleNavCollapse}
-                  >
-                    Study In Russia
-                  </NavLink>
-                </li>
-                <li className="navbar-item">
-                  <NavLink
-                    className="nav-link"
-                    to={"/lifeInRussia"}
-                    onClick={handleNavCollapse}
-                  >
-                    Life In Russia
-                  </NavLink>
-                </li>
-                <li className="navbar-item">
-                  <NavLink
-                    className="nav-link"
-                    to={"/universities"}
-                    onClick={handleNavCollapse}
-                  >
-                    Universities
-                  </NavLink>
-                </li>
-                <li className="navbar-item">
-                  <NavLink
-                    className="nav-link"
-                    to={"/aboutUs"}
-                    onClick={handleNavCollapse}
-                  >
-                    About Us
-                  </NavLink>
-                </li>
-                <li className="navbar-item">
-                  {/* whatsapp icon */}
-                  {/* <div class={header.whatsappDiv} onClick={openWhatsapp}>
-                  <img src={icon} alt="whatsapp" />
-                  <p>Chat</p>
-                </div> */}
-                  <button
-                    className={header.joinUsBtn}
-                    onClick={() => {
-                      handleNavCollapse();
-                      handleModalClick();
-                    }}
-                  >
-                    Apply Online
-                  </button>
-                </li>
-              </ul>
-
-              {/* the mobile link col begins */}
-
-              <div className={`navbar-item ${header.mobileHeadLinksCol}`}>
-                <ul className={header.mobileHeadLinkUl}>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/GraduationAbroad"
-                      target="_absolute"
-                    >
-                      <img src={fb} alt="the link pic" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/graduationabroad/"
-                      target="_absolute"
-                    >
-                      <img src={insta} alt="the link pic" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/siddharth-negi-03285969/"
-                      target="_absolute"
-                    >
-                      <img src={linke} alt="the link pic" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.twitter.com" target="_absolute">
-                      <img src={tweet} alt="the link pic" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com" target="_absolute">
-                      <img src={youtube} alt="the link pic" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              {/* the mobile link col ends */}
-            </div>
-          </nav>
-        </div>
-      </>
-      {/* the mobile header layout ends */}
-
       {/* custom mobile header layout begins */}
       <>
         <div className={`container-fluid ${header.customHeadDiv}`}>
@@ -253,17 +62,27 @@ const Header = () => {
 
             <div
               className={`col-2 ${header.whatsappDiv}`}
-              onClick={() => {openWhatsapp(); handleHamClick();}} 
+              onClick={() => {
+                openWhatsapp();
+                handleHamClick();
+              }}
             >
               <img src={icon} alt="whatsapp" />
             </div>
 
             <div className={`col-3 ${header.hamDiv}`}>
-              <img src={ isHamOpen ? hamCloseIcon : hamIcon} alt="ham Icon" onClick={handleHamClick} />
+              <img
+                src={isHamOpen ? hamCloseIcon : hamIcon}
+                alt="ham Icon"
+                onClick={handleHamClick}
+              />
             </div>
           </div>
 
-          <div className={header.customContentDiv} style={{ display: isHamOpen ? "block" : "none" }}>
+          <div
+            className={header.customContentDiv}
+            style={{ display: isHamOpen ? "block" : "none" }}
+          >
             <ul className={header.textLinkUl}>
               <li className={header.customHeadLi}>
                 <NavLink className="nav-link" to={"/"} onClick={handleHamClick}>
@@ -346,7 +165,11 @@ const Header = () => {
                     href="https://www.instagram.com/graduationabroad/"
                     target="_absolute"
                   >
-                    <img src={insta} alt="the link pic" onClick={handleHamClick} />
+                    <img
+                      src={insta}
+                      alt="the link pic"
+                      onClick={handleHamClick}
+                    />
                   </a>
                 </li>
                 <li>
@@ -354,17 +177,29 @@ const Header = () => {
                     href="https://www.linkedin.com/in/siddharth-negi-03285969/"
                     target="_absolute"
                   >
-                    <img src={linke} alt="the link pic" onClick={handleHamClick} />
+                    <img
+                      src={linke}
+                      alt="the link pic"
+                      onClick={handleHamClick}
+                    />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.twitter.com" target="_absolute">
-                    <img src={tweet} alt="the link pic" onClick={handleHamClick} />
+                    <img
+                      src={tweet}
+                      alt="the link pic"
+                      onClick={handleHamClick}
+                    />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.youtube.com" target="_absolute">
-                    <img src={youtube} alt="the link pic" onClick={handleHamClick} />
+                    <img
+                      src={youtube}
+                      alt="the link pic"
+                      onClick={handleHamClick}
+                    />
                   </a>
                 </li>
               </ul>

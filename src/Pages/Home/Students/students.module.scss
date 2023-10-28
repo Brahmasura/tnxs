@@ -29,24 +29,6 @@
   z-index: -1;
 }
 
-// .slideFour {
-//   background: url("../../../Assets/students/IntroEight.jpg");
-//   @include bg-center;
-//   height: 85vh;
-//   position: relative;
-//   z-index: -1;
-// }
-
-// .slideFive {
-//   background: url("../../../Assets/students/IntroTen.jpg");
-//   // background-size: cover;
-//   // background-position: center;
-//   @include bg-center;
-//   height: 85vh;
-//   position: relative;
-//   z-index: -1;
-// }
-
 // small tab portrait styling begins
 @media (max-width: 850px) and (orientation: portrait) {
   .studentContainer {
@@ -90,24 +72,3 @@
 }
 
 // styling for mobile portrait ends
-
-// .studentContainer {
-//   height: 85vh;
-//   @include y-center;
-//   @include border;
-
-//   h1 {
-//     font-family: fantasy, sans-serif;
-//     font-style: normal;
-//     font-size: 70px;
-//     font-weight: 400;
-//     line-height: 100px;
-//   }
-
-//   p {
-//     font-family: monospace;
-//     font-style: normal;
-//     font-size: 18px;
-//     line-height: 3px;
-//   }
-// }
