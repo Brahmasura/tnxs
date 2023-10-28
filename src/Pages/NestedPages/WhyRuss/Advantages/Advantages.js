@@ -79,7 +79,7 @@ const Advantages = () => {
 
           {/* the tab div ends */}
           <h1>ADVANTAGES</h1>
-          <img src={advInner} alt="the advantages" />
+          <img src={advInner} alt="the advantages" loading="lazy" />
           <div className={advantage.greyDiv}>
             <p>
               According to the Organisation for Economic Cooperation and
